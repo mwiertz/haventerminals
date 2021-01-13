@@ -1,0 +1,28 @@
+ter_id,ter_name,ter_tms_id,ter_country,ter_code,ter_type,ter_mid_status_support,ter_im4,ter_im7,ter_pie,ter_mrn,ter_nt1,ter_ex,ter_co,ter_eu,ter_rt1,ter_rt2,ter_tt1,ter_tt2
+12,APM Terminals Maasvlakte II B.V.,1,NL,3199LC910,1,false,true,true,true,true,false,true,true,true,true,true,true,true
+13,APM Terminals Rotterdam B.V.,1,NL,3199LA050,1,false,true,true,true,true,false,true,true,true,true,true,true,true
+14,Barge Center Waalhaven B.V.,1,NL,3089KR062,1,true,true,false,false,true,true,false,false,false,false,false,false,false
+15,Broekman Distripoort,1,NL,3197LR003,1,false,true,true,true,true,true,true,true,true,true,true,true,true
+16,CCT Moerdijk,1,NL,4782PM035,1,true,true,false,true,false,true,true,true,true,true,true,true,true
+17,Hutchison Ports ECT Delta,1,NL,3199LD875,1,false,true,true,true,true,true,true,true,true,true,true,true,true
+18,Hutchison Ports ECT Euromax,1,NL,3199LD951,1,false,true,true,true,true,true,true,true,true,true,true,true,true
+19,Hutchison Ports ECT Euromax,1,NL,3199LZ951,1,false,true,true,true,true,true,true,true,true,true,true,true,true
+20,Kramer City Rotterdam,1,NL,3089KM025,1,false,true,false,false,true,true,false,false,false,false,false,false,false
+21,KCL,1,NL,3199LB030,1,false,true,false,false,true,true,false,false,false,false,false,false,false
+22,Kloosterboer Vlissingen,1,NL,4455TE010,1,true,true,true,true,true,false,true,true,true,true,true,true,true
+23,Matrans Rotterdam Terminal,1,NL,3195KN015,1,true,true,true,true,true,false,true,true,true,true,true,true,true
+24,Rhenus Maasvlakte,1,NL,3199KA199,1,false,false,false,false,true,true,true,true,true,true,true,true,true
+25,RCT,1,NL,3199LB017,1,false,true,false,false,true,true,false,false,false,false,false,false,false
+26,Rhenus Waalhaven,1,NL,3087BB021,1,false,false,false,false,true,true,true,true,true,true,true,true,true
+27,Rotterdam Shortsea Terminals,1,NL,3089KM035,1,true,true,true,true,true,false,true,true,true,true,true,true,true
+28,Rotterdam World Gateway (RWG),1,NL,3199KD050,1,false,true,true,true,true,false,true,true,true,true,true,true,true
+29,TMA Amsterdam,1,NL,1047HM100,1,true,true,true,true,true,true,true,true,true,true,true,true,true
+30,Verbrugge Vlissingen,1,NL,4389PC012,1,true,true,false,false,true,false,false,false,false,false,false,false,false
+31,Zoomweg Zeeland Coldstore,1,NL,4416PK004,1,true,true,true,true,false,false,true,true,true,true,true,true,true
+32,C.RO Ports Rotterdam,1,NL,3197KG070,2,true,true,true,true,true,true,true,true,true,true,true,true,true
+33,C.RO Ports Vlissingen,1,NL,4389PA497,2,true,true,true,true,true,true,true,true,true,true,true,true,true
+34,P&O North Sea Ferries Terminal,1,NL,3198LG002,2,true,true,true,true,true,true,true,true,true,true,true,true,true
+35,DFDS Seaways Rotterdam B.V.,1,NL,3134KL020,2,true,true,true,true,true,false,true,true,true,true,true,true,true
+36,KVSA (DFDS) IJmuiden,1,NL,1975AG033,2,true,true,true,true,true,false,true,true,true,true,true,true,true
+37,Stena Line Hoek van Holland,1,NL,3151XN013,2,true,true,true,true,true,false,true,true,true,true,true,true,true
+38,Stena Line Rotterdam,1,NL,3198LC091,2,true,true,true,true,true,false,true,true,true,true,true,true,true
