@@ -1,0 +1,32 @@
+# inlezen en uitbreiden lijst terminals uit csv (dump uit mcc database, tabel mda_ter_terminal)
+lijst_terminals = pd.read_csv('mda_ter_terminal.csv')
+lijst_terminals['ter_desc'] = lijst_terminals['ter_name'] + ' | ' + lijst_terminals['ter_code']
+
+gekozen_terminal = st.selectbox('Kies terminal', lijst_terminals['ter_desc'])
+
+# ondersteund terminal mrn
+#documenttype_ondersteund = True
+mrn = lijst_terminals.loc[lijst_terminals['ter_desc'] == gekozen_terminal, 'ter_mrn'].iloc[0]
+
+'gekozen:',  gekozen_terminal
+'mrn:', mrn
+
+#lijst_terminals
+
+X-705 ferry DFDS534548380001
+
+X-705 deepsea YMLUN236197722
+
+TCLU 275439-5
+SEKU 440137-1
+MSCU 517820-2
+
+VERDERGAAN BIJ
+- invoer: boekingsreferentie ferry overnemen
+- invoer en uitvoer: controle op containernummers
+- uitvoer: containers overnemen
+- uitvoer: equipment ids laten zien bij ferry
+- invoer: controle op x-705
+- invoer: controle op voorafgaand document referentie bij ferry
+- foutmelding rood maken
+- xml elementen erbij zetten

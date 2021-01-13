@@ -1,0 +1,8063 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<cls>
+	<kopregel>
+		<verwerking>2021-01-12</verwerking>
+	</kopregel>
+	<cbk>
+		<bnm>Codeboek Sagitta, onderdeel Transit</bnm>
+		<tbl>
+			<tnr>008</tnr>
+			<tnm>ALLE LANDEN</tnm>
+			<elm>
+				<ecd>AD</ecd>
+				<oms>ANDORRA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AE</ecd>
+				<oms>VERENIGDE ARABISCHE EMIRATEN+B62</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AF</ecd>
+				<oms>AFGHANISTAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AG</ecd>
+				<oms>ANTIGUA EN BARBUDA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AI</ecd>
+				<oms>ANGUILLA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AL</ecd>
+				<oms>ALBANIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AM</ecd>
+				<oms>ARMENIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AO</ecd>
+				<oms>ANGOLA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AQ</ecd>
+				<oms>ANTARCTICA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AR</ecd>
+				<oms>ARGENTINIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AS</ecd>
+				<oms>AMERIKAANS-SAMOA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AT</ecd>
+				<oms>OOSTENRIJK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AU</ecd>
+				<oms>AUSTRALIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AW</ecd>
+				<oms>ARUBA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AX</ecd>
+				<oms>ALAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AZ</ecd>
+				<oms>AZERBEIDZJAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BA</ecd>
+				<oms>BOSNIE-HERZEGOVINA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BB</ecd>
+				<oms>BARBADOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BD</ecd>
+				<oms>BANGLADESH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BE</ecd>
+				<oms>BELGIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BF</ecd>
+				<oms>BURKINA FASO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BG</ecd>
+				<oms>BULGARIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BH</ecd>
+				<oms>BAHREIN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BI</ecd>
+				<oms>BOEROENDI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BJ</ecd>
+				<oms>BENIN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BL</ecd>
+				<oms>SINT BARTHOLOMEUS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BM</ecd>
+				<oms>BERMUDA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BN</ecd>
+				<oms>BRUNEI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BO</ecd>
+				<oms>BOLIVIA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BQ</ecd>
+				<oms>BONAIRE, SINT EUSTATIUS EN SABA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BR</ecd>
+				<oms>BRAZILIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BS</ecd>
+				<oms>BAHAMAS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BT</ecd>
+				<oms>BHOETAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BV</ecd>
+				<oms>BOUVETEILAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BW</ecd>
+				<oms>BOTSWANA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BY</ecd>
+				<oms>WIT-RUSLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BZ</ecd>
+				<oms>BELIZE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CA</ecd>
+				<oms>CANADA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC</ecd>
+				<oms>COCOSEILANDEN (OF KEELINGEILANDEN)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD</ecd>
+				<oms>KONGO (DEMOCR. REPL.)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CF</ecd>
+				<oms>CENTRAAL AFRIKAANSE REPUBLIEK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CG</ecd>
+				<oms>KONGO REPUBLIEK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CH</ecd>
+				<oms>ZWITSERLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CI</ecd>
+				<oms>IVOORKUST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CK</ecd>
+				<oms>COOKEILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CL</ecd>
+				<oms>CHILI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CM</ecd>
+				<oms>KAMEROEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CN</ecd>
+				<oms>CHINA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CO</ecd>
+				<oms>COLOMBIA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CR</ecd>
+				<oms>COSTA RICA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CS</ecd>
+				<oms>SERVIE EN MONTENEGRO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CU</ecd>
+				<oms>CUBA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CV</ecd>
+				<oms>KAAPVERDIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CW</ecd>
+				<oms>CURACAO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CX</ecd>
+				<oms>CHRISTMASEILAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CY</ecd>
+				<oms>CYPRUS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CZ</ecd>
+				<oms>TSJECHISCHE REPUBLIEK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DE</ecd>
+				<oms>DUITSLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DJ</ecd>
+				<oms>DJIBOUTI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DK</ecd>
+				<oms>DENEMARKEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DM</ecd>
+				<oms>DOMINICA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DO</ecd>
+				<oms>DOMINICAANSE REPUBLIEK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DZ</ecd>
+				<oms>ALGERIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EC</ecd>
+				<oms>ECUADOR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EE</ecd>
+				<oms>ESTLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EG</ecd>
+				<oms>EGYPTE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EH</ecd>
+				<oms>WESTELIJKE SAHARA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ER</ecd>
+				<oms>ERITREA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ES</ecd>
+				<oms>SPANJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ET</ecd>
+				<oms>ETHIOPIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EU</ecd>
+				<oms>EUROPESE UNIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FI</ecd>
+				<oms>FINLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FJ</ecd>
+				<oms>FIDJI-EILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FK</ecd>
+				<oms>FALKLANDEILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FM</ecd>
+				<oms>FEDERATIE VAN MICRONESISCHE STATEN+B101 B101</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FO</ecd>
+				<oms>FAEROER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FR</ecd>
+				<oms>FRANKRIJK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GA</ecd>
+				<oms>GABON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GB</ecd>
+				<oms>VERENIGD KONINKRIJK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GD</ecd>
+				<oms>GRENADA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GE</ecd>
+				<oms>GEORGIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GF</ecd>
+				<oms>FRANS GUYANA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GG</ecd>
+				<oms>GUERNSEY</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GH</ecd>
+				<oms>GHANA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GI</ecd>
+				<oms>GIBRALTAR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GL</ecd>
+				<oms>GROENLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GM</ecd>
+				<oms>GAMBIA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GN</ecd>
+				<oms>GUINEE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GP</ecd>
+				<oms>GUADELOUPE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GQ</ecd>
+				<oms>EQUATORIAAL-GUINEA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GR</ecd>
+				<oms>GRIEKENLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GS</ecd>
+				<oms>ZUID-GEORGIE EN DE ZUID SANDWICHEILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GT</ecd>
+				<oms>GUATEMALA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GU</ecd>
+				<oms>GUAM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GW</ecd>
+				<oms>GUINEE-BISSAU</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GY</ecd>
+				<oms>GUYANA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HK</ecd>
+				<oms>HONGKONG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HM</ecd>
+				<oms>HEARD EILAND EN MCDONALD EILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HN</ecd>
+				<oms>HONDURAS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HR</ecd>
+				<oms>KROATIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HT</ecd>
+				<oms>HAITI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HU</ecd>
+				<oms>HONGARIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ID</ecd>
+				<oms>INDONESIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IE</ecd>
+				<oms>IERLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IL</ecd>
+				<oms>ISRAEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IM</ecd>
+				<oms>EILAND VAN MAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IN</ecd>
+				<oms>INDIA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IO</ecd>
+				<oms>BRITS GEBIED IN DE INDISCHE OCEAAN+B153</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IQ</ecd>
+				<oms>IRAK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IR</ecd>
+				<oms>IRAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IS</ecd>
+				<oms>IJSLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IT</ecd>
+				<oms>ITALIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JE</ecd>
+				<oms>JERSEY</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JM</ecd>
+				<oms>JAMAICA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JO</ecd>
+				<oms>JORDANIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JP</ecd>
+				<oms>JAPAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KE</ecd>
+				<oms>KENIA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KG</ecd>
+				<oms>KIRGIZIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KH</ecd>
+				<oms>KAMBODJA (KAMPOETSJEA)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KI</ecd>
+				<oms>KIRIBATI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KM</ecd>
+				<oms>COMOREN (MET UITZ. VAN MAYOTTE)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KN</ecd>
+				<oms>ST. CHRISTOPH EN NEVIS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KP</ecd>
+				<oms>NOORD-KOREA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KR</ecd>
+				<oms>ZUID-KOREA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KW</ecd>
+				<oms>KOEWEIT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KY</ecd>
+				<oms>CAYMAN-EILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KZ</ecd>
+				<oms>KAZACHSTAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LA</ecd>
+				<oms>LAOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LB</ecd>
+				<oms>LIBANON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LC</ecd>
+				<oms>ST. LUCIA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LI</ecd>
+				<oms>LIECHTENSTEIN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LK</ecd>
+				<oms>SRI LANKA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LR</ecd>
+				<oms>LIBERIA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LS</ecd>
+				<oms>LESOTHO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LT</ecd>
+				<oms>LITOUWEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LU</ecd>
+				<oms>LUXEMBURG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LV</ecd>
+				<oms>LETLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LY</ecd>
+				<oms>LIBIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MA</ecd>
+				<oms>MAROKKO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MC</ecd>
+				<oms>MONACO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MD</ecd>
+				<oms>MOLDAVIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ME</ecd>
+				<oms>MONTENEGRO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MF</ecd>
+				<oms>SINT MAARTEN (FRANS DEEL)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MG</ecd>
+				<oms>MADAGASCAR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MH</ecd>
+				<oms>MARSHALLEILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MK</ecd>
+				<oms>Noord-Macedonie</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ML</ecd>
+				<oms>MALI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MM</ecd>
+				<oms>MYANMAR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MN</ecd>
+				<oms>MONGOLIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MO</ecd>
+				<oms>MACAO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MP</ecd>
+				<oms>NOORD-MARIANEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MQ</ecd>
+				<oms>MARTINIQUE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MR</ecd>
+				<oms>MAURETANIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MS</ecd>
+				<oms>MONTSERRAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MT</ecd>
+				<oms>MALTA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MU</ecd>
+				<oms>MAURITIUS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MV</ecd>
+				<oms>MALEDIVEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MW</ecd>
+				<oms>MALAWI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MX</ecd>
+				<oms>MEXICO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MY</ecd>
+				<oms>MALEISIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MZ</ecd>
+				<oms>MOZAMBIQUE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NA</ecd>
+				<oms>NAMIBIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NC</ecd>
+				<oms>NIEUW CALEDONIE EN ONDERHORIGHEDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NE</ecd>
+				<oms>NIGER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NF</ecd>
+				<oms>NORFOLK EILAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NG</ecd>
+				<oms>NIGERIA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NI</ecd>
+				<oms>NICARAGUA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NL</ecd>
+				<oms>NEDERLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NO</ecd>
+				<oms>NOORWEGEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NP</ecd>
+				<oms>NEPAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NR</ecd>
+				<oms>NAUROE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NU</ecd>
+				<oms>NIUE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NZ</ecd>
+				<oms>NIEUW-ZEELAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OM</ecd>
+				<oms>OMAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PA</ecd>
+				<oms>PANAMA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PE</ecd>
+				<oms>PERU</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PF</ecd>
+				<oms>FRANS-POLYNESIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PG</ecd>
+				<oms>PAPOEA NIEUW-GUINEA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PH</ecd>
+				<oms>FILIPPIJNEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PK</ecd>
+				<oms>PAKISTAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PL</ecd>
+				<oms>POLEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PM</ecd>
+				<oms>ST. PIERRE EN MIGUELON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PN</ecd>
+				<oms>PITCAIRN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PR</ecd>
+				<oms>PUERTO RICO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PS</ecd>
+				<oms>GEBIED ONDER DE PALESTIJNSE AUTORITEIT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PT</ecd>
+				<oms>PORTUGAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PW</ecd>
+				<oms>PALAU</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PY</ecd>
+				<oms>PARAGUAY</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QA</ecd>
+				<oms>QUATAR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QQ</ecd>
+				<oms>BOORDPROVISIE EN BENODIGHEDEN, ALSMEDE BUNKERMATERIAAL</oms>
+				<wet>Boordprovisie en benodigdheden, alsmede bunkermateriaal</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QR</ecd>
+				<oms>BOORDPROV. EN BUNKERMAT. IHK INTRACOMM. HANDELSVERKEER</oms>
+				<wet>Boordprovisie en bunkermateriaal in het kader van het intracommunautair handelsverkeer.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QS</ecd>
+				<oms>BOORDPROV. EN BUNKERMAT. IHK HANDELSVERKEER 3E LANDEN</oms>
+				<wet>Boordprovisie en bunkermateriaal in het kader van het handelsverkeer met 3e landen.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QU</ecd>
+				<oms>NIET NADER BEPAALDE LANDEN EN GEBIEDEN</oms>
+				<wet>Niet nader bepaalde landen en gebieden.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QV</ecd>
+				<oms>NIET NADER BEP. LANDEN IHK INTRACOMM. HANDELSVERKEER</oms>
+				<wet>Niet nader bepaalde landen in het kader van het communautair handelsverkeer.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QW</ecd>
+				<oms>NIET NADER BEP. LANDEN IHK HANDELSVERKEER 3E LANDEN</oms>
+				<wet>Niet nader bepaalde landen en gebieden in het kader van het handelsverkeer met derde landen</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QX</ecd>
+				<oms>OM COMMERCIELE OF MILITAIRE REDENEN NT NADER AANG LANDEN/GEB</oms>
+				<wet>Om commerciele of militaire redenen niet nader aangegeven landen en gebieden</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QY</ecd>
+				<oms>NIET NADER AANGEGEVEN LANDEN EN GEBIEDEN</oms>
+				<wet>Om commerciele en militaire redenen niet nader aangegeven landen en gebieden in het kader van het intra-communautaire handelsverkeer</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QZ</ecd>
+				<oms>MILITAIRE LEVERING NNB IHK HANDELSVERKEER 3E LANDEN</oms>
+				<wet>Militaire levering niet nader benoemd in het kader van het handelsverkeer met 3e landen.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RE</ecd>
+				<oms>REUNION</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RO</ecd>
+				<oms>ROEMENIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RS</ecd>
+				<oms>SERVIE</oms>
+				<wet>Bij regeling gemeenschappelijk douanevervoer (zie bijl. D2 Aanh. III Overeenkomst. gem. douaneverv.)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RU</ecd>
+				<oms>RUSLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RW</ecd>
+				<oms>RWANDA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SA</ecd>
+				<oms>SAOEDI-ARABIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SB</ecd>
+				<oms>SALOMONSEILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SC</ecd>
+				<oms>SEYCHELLEN EN ONDERHORIGHEDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SD</ecd>
+				<oms>SOEDAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SE</ecd>
+				<oms>ZWEDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SG</ecd>
+				<oms>SINGAPORE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SH</ecd>
+				<oms>ST. HELENA EN ONDERHORIGHEDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SI</ecd>
+				<oms>SLOVENIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SJ</ecd>
+				<oms>SVALBARD EN JAN MAYEN EILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SK</ecd>
+				<oms>SLOWAKIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SL</ecd>
+				<oms>SIERRA LEONE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SM</ecd>
+				<oms>SAN MARINO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SN</ecd>
+				<oms>SENEGAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SO</ecd>
+				<oms>SOMALIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SR</ecd>
+				<oms>SURINAME</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SS</ecd>
+				<oms>ZUID SOEDAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ST</ecd>
+				<oms>SAO TOME EN PRINCIPE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SV</ecd>
+				<oms>EL SALVADOR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SX</ecd>
+				<oms>SINT MAARTEN (NEDERLANDS DEEL)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SY</ecd>
+				<oms>SYRIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SZ</ecd>
+				<oms>SWAZILAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TC</ecd>
+				<oms>TURKS- EN CAICOS-EILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TD</ecd>
+				<oms>TSJAAD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TF</ecd>
+				<oms>FRANSE ZUIDELIJKE GEBIEDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TG</ecd>
+				<oms>TOGO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TH</ecd>
+				<oms>THAILAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TJ</ecd>
+				<oms>TADZJIKISTAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TK</ecd>
+				<oms>TOKELAU-EILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TL</ecd>
+				<oms>TIMOR-LESTE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TM</ecd>
+				<oms>TURKMENISTAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TN</ecd>
+				<oms>TUNESIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TO</ecd>
+				<oms>TONGA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TR</ecd>
+				<oms>TURKIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TT</ecd>
+				<oms>TRINIDAD EN TOBAGO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TV</ecd>
+				<oms>TUVALU</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TW</ecd>
+				<oms>TAIWAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TZ</ecd>
+				<oms>TANZANIA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>UA</ecd>
+				<oms>OEKRAINE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>UG</ecd>
+				<oms>OEGANDA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>UM</ecd>
+				<oms>VERAFGELEGEN EILANDJES VAN DE VERENIGDE STATEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>US</ecd>
+				<oms>VERENIGDE STATEN VAN AMERIKA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>UY</ecd>
+				<oms>URUGUAY</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>UZ</ecd>
+				<oms>OEZBEKISTAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VA</ecd>
+				<oms>VATICAANSTAD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VC</ecd>
+				<oms>ST. VINCENT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VE</ecd>
+				<oms>VENEZUELA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VG</ecd>
+				<oms>BRITSE MAAGDENEILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VI</ecd>
+				<oms>MAAGDENEILANDEN BEHORENDE TOT DE VS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VN</ecd>
+				<oms>VIETNAM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VU</ecd>
+				<oms>VANUATU</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WF</ecd>
+				<oms>WALLIS- EN FUTUNA-EILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WS</ecd>
+				<oms>WEST-SAMOA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XC</ecd>
+				<oms>CEUTA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XI</ecd>
+				<oms>Verenigd Koninkrijk (Noord-Ierland)</oms>
+				<wet>Code te gebruiken indien het Verenigd Koninkrijk (uitsluitend Noord-Ierland) apart moet worden vermeld overeenkomstig de voorwaarden in de bepalingen van de Unie ter zake.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XK</ecd>
+				<oms>KOSOVO</oms>
+				<wet>Kosovo (zoals gedefinieerd in Resolutie 1244 van de Veiligheidsraad van de VN van 10 juni 1999)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XL</ecd>
+				<oms>MELILLA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YE</ecd>
+				<oms>JEMEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YT</ecd>
+				<oms>MAYOTTE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZA</ecd>
+				<oms>ZUID AFRIKA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZM</ecd>
+				<oms>ZAMBIA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZW</ecd>
+				<oms>ZIMBABWE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>009</tnr>
+			<tnm>NCTS LANDEN</tnm>
+			<elm>
+				<ecd>AD</ecd>
+				<oms>ANDORRA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AT</ecd>
+				<oms>OOSTENRIJK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AX</ecd>
+				<oms>ALAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BE</ecd>
+				<oms>BELGIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BG</ecd>
+				<oms>BULGARIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CH</ecd>
+				<oms>ZWITSERLAND</oms>
+				<wet>Met inbegrip van het Duitse gebied Buesingen en de Italiaanse gemeente Camione d'Italia</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CY</ecd>
+				<oms>CYPRUS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CZ</ecd>
+				<oms>TSJECHISCHE REPUBLIEK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DE</ecd>
+				<oms>DUITSLAND</oms>
+				<wet>Met inbegrip van Helgoland en met uitzondering van het gebied Buesingen.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DK</ecd>
+				<oms>DENEMARKEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EE</ecd>
+				<oms>ESTLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ES</ecd>
+				<oms>SPANJE</oms>
+				<wet>Met inbegrip van de Balearen en de Canarische eilanden en met uitzondering van Ceuta en Melilla.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FI</ecd>
+				<oms>FINLAND</oms>
+				<wet>Met inbegrip van de Alandseilanden.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FR</ecd>
+				<oms>FRANKRIJK</oms>
+				<wet>Met inbegrip van Monaco en de Franse overzeese departementen (Reunion, Guadeloupe, Martinique en Frans Guyana).</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GB</ecd>
+				<oms>VERENIGD KONINKRIJK</oms>
+				<wet>Groot Brittannie, Noord-Ierland, de Kanaaleilanden en Man</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GF</ecd>
+				<oms>FRANS GUYANA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GG</ecd>
+				<oms>GUERNSEY</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GP</ecd>
+				<oms>GUADELOUPE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GR</ecd>
+				<oms>GRIEKENLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HR</ecd>
+				<oms>KROATIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HU</ecd>
+				<oms>HONGARIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IE</ecd>
+				<oms>IERLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IM</ecd>
+				<oms>EILAND VAN MAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IS</ecd>
+				<oms>IJSLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IT</ecd>
+				<oms>ITALIE</oms>
+				<wet>Met inbegrip van Livigno</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JE</ecd>
+				<oms>JERSEY</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LI</ecd>
+				<oms>LIECHTENSTEIN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LT</ecd>
+				<oms>LITOUWEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LU</ecd>
+				<oms>LUXEMBURG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LV</ecd>
+				<oms>LETLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MC</ecd>
+				<oms>MONACO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MF</ecd>
+				<oms>SINT MAARTEN (FRANS DEEL)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MK</ecd>
+				<oms>Noord-Macedonie</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MQ</ecd>
+				<oms>MARTINIQUE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MT</ecd>
+				<oms>MALTA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NL</ecd>
+				<oms>NEDERLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NO</ecd>
+				<oms>NOORWEGEN</oms>
+				<wet>Met inbegrip van de Svalbardarchipel en Jan Mayeneiland.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PL</ecd>
+				<oms>POLEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PT</ecd>
+				<oms>PORTUGAL</oms>
+				<wet>Met inbegrip van de Azoren en Madeira</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RE</ecd>
+				<oms>REUNION</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RO</ecd>
+				<oms>ROEMENIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RS</ecd>
+				<oms>SERVIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SE</ecd>
+				<oms>ZWEDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SI</ecd>
+				<oms>SLOVENIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SJ</ecd>
+				<oms>SVALBARD EN JAN MAYEN EILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SK</ecd>
+				<oms>SLOWAKIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SM</ecd>
+				<oms>SAN MARINO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TR</ecd>
+				<oms>TURKIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XI</ecd>
+				<oms>Verenigd Koninkrijk (Noord-Ierland)</oms>
+				<wet>Code te gebruiken indien het Verenigd Koninkrijk (uitsluitend Noord-Ierland) apart moet worden vermeld overeenkomstig de voorwaarden in de bepalingen van de Unie ter zake.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YT</ecd>
+				<oms>MAYOTTE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>010</tnr>
+			<tnm>EU-LANDEN</tnm>
+			<elm>
+				<ecd>AT</ecd>
+				<oms>OOSTENRIJK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AX</ecd>
+				<oms>ALAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BE</ecd>
+				<oms>BELGIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BG</ecd>
+				<oms>BULGARIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CY</ecd>
+				<oms>CYPRUS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CZ</ecd>
+				<oms>TSJECHISCHE REPUBLIEK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DE</ecd>
+				<oms>DUITSLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DK</ecd>
+				<oms>DENEMARKEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EE</ecd>
+				<oms>ESTLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ES</ecd>
+				<oms>SPANJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FI</ecd>
+				<oms>FINLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FR</ecd>
+				<oms>FRANKRIJK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GF</ecd>
+				<oms>FRANS GUYANA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GP</ecd>
+				<oms>GUADELOUPE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GR</ecd>
+				<oms>GRIEKENLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HR</ecd>
+				<oms>KROATIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HU</ecd>
+				<oms>HONGARIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IE</ecd>
+				<oms>IERLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IT</ecd>
+				<oms>ITALIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LT</ecd>
+				<oms>LITOUWEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LU</ecd>
+				<oms>LUXEMBURG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LV</ecd>
+				<oms>LETLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MC</ecd>
+				<oms>MONACO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MQ</ecd>
+				<oms>MARTINIQUE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MT</ecd>
+				<oms>MALTA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NL</ecd>
+				<oms>NEDERLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PL</ecd>
+				<oms>POLEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PT</ecd>
+				<oms>PORTUGAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RE</ecd>
+				<oms>REUNION</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RO</ecd>
+				<oms>ROEMENIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SE</ecd>
+				<oms>ZWEDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SI</ecd>
+				<oms>SLOVENIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SK</ecd>
+				<oms>SLOWAKIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XI</ecd>
+				<oms>Verenigd Koninkrijk (Noord-Ierland)</oms>
+				<wet>Code te gebruiken indien het Verenigd Koninkrijk (uitsluitend Noord-Ierland) apart moet worden vermeld overeenkomstig de voorwaarden in de bepalingen van de Unie ter zake.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YT</ecd>
+				<oms>MAYOTTE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>012</tnr>
+			<tnm>TAALCODES</tnm>
+			<elm>
+				<ecd>AA</ecd>
+				<oms>AFAR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AB</ecd>
+				<oms>AFGHAANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AF</ecd>
+				<oms>AFRIKAANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AM</ecd>
+				<oms>AMHARIC</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AR</ecd>
+				<oms>ARABISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AS</ecd>
+				<oms>ASSAMEES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AY</ecd>
+				<oms>AYMARA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AZ</ecd>
+				<oms>AZERBEIJAANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BA</ecd>
+				<oms>BASHKIR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BE</ecd>
+				<oms>BYELORUSSAIN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BG</ecd>
+				<oms>BULGAARS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BH</ecd>
+				<oms>BIHARI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BI</ecd>
+				<oms>BISLAMA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BN</ecd>
+				<oms>BENGAALS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BO</ecd>
+				<oms>TIBETAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BR</ecd>
+				<oms>BRETONS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CA</ecd>
+				<oms>CATALAANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CO</ecd>
+				<oms>CORSICAANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CS</ecd>
+				<oms>TSJECHISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CY</ecd>
+				<oms>WELSH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DA</ecd>
+				<oms>DEENS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DE</ecd>
+				<oms>DUITS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DZ</ecd>
+				<oms>BHUTANI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EL</ecd>
+				<oms>GRIEKS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EN</ecd>
+				<oms>ENGELS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EO</ecd>
+				<oms>ESPERANTO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ES</ecd>
+				<oms>SPAANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ET</ecd>
+				<oms>ESTONISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EU</ecd>
+				<oms>BASKISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FA</ecd>
+				<oms>PERSISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FI</ecd>
+				<oms>FINS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FJ</ecd>
+				<oms>FIJI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FO</ecd>
+				<oms>FAROESE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FR</ecd>
+				<oms>FRANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FY</ecd>
+				<oms>FRIES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GA</ecd>
+				<oms>IERS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GD</ecd>
+				<oms>SCHOTS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GL</ecd>
+				<oms>GALICIAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GN</ecd>
+				<oms>GUARANI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GU</ecd>
+				<oms>GUJARATI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HA</ecd>
+				<oms>HAUSA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HI</ecd>
+				<oms>HINDI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HR</ecd>
+				<oms>KROATISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HU</ecd>
+				<oms>HONGAARS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HY</ecd>
+				<oms>ARMENEENS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IA</ecd>
+				<oms>INTERLINGUA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IE</ecd>
+				<oms>INTERLINGUE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IK</ecd>
+				<oms>INUPIAK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IN</ecd>
+				<oms>INDONESISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IS</ecd>
+				<oms>IJSLANDS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IT</ecd>
+				<oms>ITALIAANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IW</ecd>
+				<oms>HEBREEUWS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JA</ecd>
+				<oms>JAPANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JI</ecd>
+				<oms>JIDDISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JV</ecd>
+				<oms>JAVAANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KA</ecd>
+				<oms>GEORGISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KK</ecd>
+				<oms>KAZAKH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KL</ecd>
+				<oms>GROENLANDS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KM</ecd>
+				<oms>CAMBODJAANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KN</ecd>
+				<oms>KANNADA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KO</ecd>
+				<oms>KOREAANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KS</ecd>
+				<oms>KASHMIRI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KU</ecd>
+				<oms>KURDISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KY</ecd>
+				<oms>KIRGHIZ</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LA</ecd>
+				<oms>LATIJN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LN</ecd>
+				<oms>LINGALA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LO</ecd>
+				<oms>LAOTHIAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LT</ecd>
+				<oms>LITAUSCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LV</ecd>
+				<oms>LETS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MG</ecd>
+				<oms>MALAGASY</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MI</ecd>
+				<oms>MAORI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MK</ecd>
+				<oms>MACEDONISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ML</ecd>
+				<oms>MALEIS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MN</ecd>
+				<oms>MONGOOLS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MO</ecd>
+				<oms>MOLDAVIAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MR</ecd>
+				<oms>MARATHI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MS</ecd>
+				<oms>MALAY</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MT</ecd>
+				<oms>MALTEES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MY</ecd>
+				<oms>BURMEES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NA</ecd>
+				<oms>NAURU</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NE</ecd>
+				<oms>NEPALI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NL</ecd>
+				<oms>NEDERLANDS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NO</ecd>
+				<oms>NOORS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OC</ecd>
+				<oms>OCCITAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OM</ecd>
+				<oms>(AFAN) OROMO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OR</ecd>
+				<oms>ORIYA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PA</ecd>
+				<oms>PUNJABI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PL</ecd>
+				<oms>POOLS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PS</ecd>
+				<oms>PASHTO, PUSHTO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PT</ecd>
+				<oms>PORTUGEES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QU</ecd>
+				<oms>QUECHUA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RM</ecd>
+				<oms>RETO-ROMAANS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RN</ecd>
+				<oms>KIRUNDI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RO</ecd>
+				<oms>ROEMEENS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RU</ecd>
+				<oms>RUSSISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RW</ecd>
+				<oms>KINYARWANDA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SA</ecd>
+				<oms>SANSKRIT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SD</ecd>
+				<oms>SINDHI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SG</ecd>
+				<oms>SANGHO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SH</ecd>
+				<oms>SERVO-KROATISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SI</ecd>
+				<oms>SINGHALEES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SK</ecd>
+				<oms>SLOWAAKS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SL</ecd>
+				<oms>SLOVENEENS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SM</ecd>
+				<oms>SAMOAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SN</ecd>
+				<oms>SHONA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SO</ecd>
+				<oms>SOMALIES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SQ</ecd>
+				<oms>ALBANEES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SR</ecd>
+				<oms>SERBIAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SS</ecd>
+				<oms>SISWATI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ST</ecd>
+				<oms>SESOTHO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SU</ecd>
+				<oms>SUNDANEES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SV</ecd>
+				<oms>ZWEEDS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SW</ecd>
+				<oms>SWAHILI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TA</ecd>
+				<oms>TAMIL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TE</ecd>
+				<oms>TELUGU</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TG</ecd>
+				<oms>TAJIK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TH</ecd>
+				<oms>THAIS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TI</ecd>
+				<oms>TIGRINYA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TK</ecd>
+				<oms>TURKMEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TL</ecd>
+				<oms>TAGALOG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TN</ecd>
+				<oms>SETSWANA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TO</ecd>
+				<oms>TONGA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TR</ecd>
+				<oms>TURKS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TS</ecd>
+				<oms>TSONGA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TT</ecd>
+				<oms>TATAR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TW</ecd>
+				<oms>TWI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>UK</ecd>
+				<oms>UKRAINIAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>UR</ecd>
+				<oms>URDU</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>UZ</ecd>
+				<oms>UZBEK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VI</ecd>
+				<oms>VIETNAMEES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VO</ecd>
+				<oms>VOLAPUK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WO</ecd>
+				<oms>WOLOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XH</ecd>
+				<oms>XHOSA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YO</ecd>
+				<oms>YORUBA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZH</ecd>
+				<oms>CHINEES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZU</ecd>
+				<oms>ZULU</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>013</tnr>
+			<tnm>DOCUMENT TYPE</tnm>
+			<elm>
+				<ecd>C641</ecd>
+				<oms>Dissostichus - Vangstdocument, invoer</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>C656</ecd>
+				<oms>VANGSTDOC</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>C673</ecd>
+				<oms>VANGSTCERTIFICAAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y022</ecd>
+				<oms>AFZENDER/EXPORTEUR (AEO-CERTIFICAATNUMMER)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y023</ecd>
+				<oms>GEADRESSEERDE (AEO-CERTIFICAATNUMMER)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y024</ecd>
+				<oms>ANDERE AANGEVER (AEO-CERTIFICAATNUMMER)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y025</ecd>
+				<oms>VERTEGENWOORDIGER (AEO-CERTIFICAATNUMMER)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y026</ecd>
+				<oms>AANGEVER INZAKE DOUANEVERVOER (AEO-CERTIFICAATNUMMER)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y027</ecd>
+				<oms>ENTREPOSEUR (AEO-CERTIFICAATNUMMER)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y028</ecd>
+				<oms>VERVOERDER (AEO-CERTIFICAATNUMMER)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y029</ecd>
+				<oms>ANDER GECERTIFICEERD BEDRIJF (AEO-CERTIFICAATNUMMER)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y031</ecd>
+				<oms>CERTIFICAATCODE BETREFFENDE AEO-PROGRAMMAS</oms>
+				<wet>Deze certificaatcode kan gebruikt worden om aan te duiden dat zendingen komen van of gaan naar een gecertificeerd bedrijf (AEO -Authorised Economic Operator) van een derde land waarmee de Europese Unie (EU) een wederzijdse erkenningsovereenkomst heeft afgesloten betreffende AEO-programmas. Naast de certificaatcode (Y031) dient ook de identificatiecode voor deze AEO van een derde land aangegeven te worden in het desbetreffende vak.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y101</ecd>
+				<oms>BIJZ. VERMELDING AGRIM INVOERCERTIFICAAT VERORD. 634/2011</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y927</ecd>
+				<oms>De aangegeven goederen vallen niet onder Vo 1005/2008</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZZZ</ecd>
+				<oms>OVERIGE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>18</ecd>
+				<oms>CERTIFICAAT INZAKE GOEDERENVERKEER A.TR.1.</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2</ecd>
+				<oms>CERTIFICAAT VAN OVEREENSTEMMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>235</ecd>
+				<oms>CONTAINERLIJST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>271</ecd>
+				<oms>PAKLIJST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3</ecd>
+				<oms>KWALITEITSCERTIFICAAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>325</ecd>
+				<oms>PRO-FORMAFACTUUR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>380</ecd>
+				<oms>HANDELSFACTUUR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>703</ecd>
+				<oms>HOUSE VRACHTBRIEF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>704</ecd>
+				<oms>MASTER COGNOSSEMENT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>705</ecd>
+				<oms>COGNOSSEMENT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>714</ecd>
+				<oms>HOUSE COGNOSSEMENT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>720</ecd>
+				<oms>VRACHTBRIEF CIM (SPOOR)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>720A</ecd>
+				<oms>NCTS RAIL TEST AANGIFTE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>722</ecd>
+				<oms>ROAD LIST-SMGS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>730</ecd>
+				<oms>VRACHTBRIEF WEGVERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>740</ecd>
+				<oms>LUCHTVRACHTBRIEF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>741</ecd>
+				<oms>MASTER LUCHTVRACHTBRIEF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>750</ecd>
+				<oms>VERZENDINGSFORMULIER (POSTPAKKETTEN)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>760</ecd>
+				<oms>DOCUMENT VOOR MULTIMODAAL/GECOMBINEERD VERVOER (GENERIEK)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>785</ecd>
+				<oms>GOEDERENMANIFEST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>787</ecd>
+				<oms>BORDEREL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>820</ecd>
+				<oms>VERZENDINGSDOCUMENT T</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>821</ecd>
+				<oms>VERZENDINGSDOCUMENT T1</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>822</ecd>
+				<oms>VERZENDINGSDOCUMENT T2</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>823</ecd>
+				<oms>CONTROLEDOCUMENT T5</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>825</ecd>
+				<oms>VERZENDINGSDOCUMENT T2L</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>830</ecd>
+				<oms>AANGIFTE TEN UITVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>851</ecd>
+				<oms>PLANTENGEZONDHEIDSCERTIFICAAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>852</ecd>
+				<oms>GEZONDHEIDSCERTIFICAAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>853</ecd>
+				<oms>DIERGENEESKUNDIG CERTIFICAAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>861</ecd>
+				<oms>CERTIFICAAT VAN OORSPRONG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>862</ecd>
+				<oms>VERKLARING VAN OORSPRONG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>864</ecd>
+				<oms>CERTIFICAAT VAN PREFERENTIELE OORSPRONG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>865</ecd>
+				<oms>CERTIFICAAT VAN OORSPRONG SAP</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>911</ecd>
+				<oms>INVOERVERGUNNING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>933</ecd>
+				<oms>VRACHTLIJST (AANKOMST)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>941</ecd>
+				<oms>VERGUNNING ONDER EMBARGO GEPLAATSTE GOEDEREN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>951</ecd>
+				<oms>TIF-FORMULIER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>952</ecd>
+				<oms>TIR-CARNET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>954</ecd>
+				<oms>CERTIFICAAT VAN OORSPRONG EUR1</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>955</ecd>
+				<oms>ATA-CARNET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>014</tnr>
+			<tnm>VOORAFGAAND DOC</tnm>
+			<elm>
+				<ecd>CLE</ecd>
+				<oms>KENMERK/DATUM INSCHRIJVING GOED. IN ADMINISTRATIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CO</ecd>
+				<oms>AANGIFTE UNIEGOEDEREN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EU</ecd>
+				<oms>AANGIFTE HANDELSVERKEER MET EVA-LANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EX</ecd>
+				<oms>AANGIFTE TEN UITVOER BUITEN HET DOUANEGEBIED V/D UNIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IF3</ecd>
+				<oms>INLICHTINGENBLAD INF3</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IF8</ecd>
+				<oms>INLICHTINGENBLAD INF8</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IM</ecd>
+				<oms>AANGIFTE TOT PLAATSING ONDER DOUANEREG. NIET UNIEGOEDEREN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MNS</ecd>
+				<oms>SCHEEPVAARTMANIFEST-VEREENVOUDIGE PROC</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T2</ecd>
+				<oms>DOCUMENT T2</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T2ATA</ecd>
+				<oms>DOCUMENT ATA MET T2 STATUS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T2CIM</ecd>
+				<oms>CIM VRACHTBRIEF MET T2 STATUS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T2F</ecd>
+				<oms>INTERN UNIEDOUANEVERVOER FISCALE GEBIEDEN</oms>
+				<wet>Aangifte voor intern Uniedouanevervoer - artikel 188 van Gedelegeerde Verordening (EU) 2015/2446</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T2L</ecd>
+				<oms>BEWIJS VAN STATUS UNIEGOEDEREN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T2LF</ecd>
+				<oms>T2L (NIET FISC. GEBIED)</oms>
+				<wet>Document ten bewijze van de douanestatus van Uniegoederen die worden verzonden naar of vanuit een deel van het douanegebied van de Unie waar de bepalingen van Richtlijn 2006/112/EG niet van toepassing zijn</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T2SM</ecd>
+				<oms>INTERN UNIEDOUANEVERVOER SAN MARINO</oms>
+				<wet>Goederen die onder de regeling intern Uniedouanevervoer zijn geplaatst met toepassing van artikel 2 van Besluit nr. 4/92 van het Samenwerkingscomite EEG-San Marino van 22 december 1992</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T2TIR</ecd>
+				<oms>DOCUMENT TIR MET T2 STATUS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>X-MNS</ecd>
+				<oms>SCHPVRTMAN.-VEREENV.</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>X-703</ecd>
+				<oms>HOUSE WAYBILL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>X-705</ecd>
+				<oms>COGNOSSEMENT (BILL OF LADING)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>X-740</ecd>
+				<oms>LUCHTVAARTBRIEF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>X-741</ecd>
+				<oms>MASTER LUCHTVAARTBRIEF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>X-785</ecd>
+				<oms>GOEDERENMANIFEST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y-CLE</ecd>
+				<oms>KENM/DD INSCHR. ADM.</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Z-CO</ecd>
+				<oms>AANG COMM. GOEDEREN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Z-EU</ecd>
+				<oms>AANGIFTE EVA-LANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Z-EX</ecd>
+				<oms>AANGIFTE TEN UITVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Z-IM</ecd>
+				<oms>AANG NIET UNIEGOED</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Z-T2F</ecd>
+				<oms>INTERN UNIEDOUANEVERVOER FISCALE GEBIEDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Z-ZZZ</ecd>
+				<oms>ANDERE + CONVERSIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Z-720</ecd>
+				<oms>VRACHTBR CIM (SPOOR)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Z-821</ecd>
+				<oms>AANGIFTE VOOR EXTERN UNIEDOUANEVERVOER(T1)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Z-822</ecd>
+				<oms>AANGIFTE VOOR INTERN UNIEDOUANEVERVOER(T2)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Z-952</ecd>
+				<oms>TIR-CARNET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZZZ</ecd>
+				<oms>ANDERE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>235</ecd>
+				<oms>CONTAINERLIJST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>270</ecd>
+				<oms>LADINGLIJST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>271</ecd>
+				<oms>PAKLIJST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>325</ecd>
+				<oms>PRO-FORMA FACTUUR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>337</ecd>
+				<oms>SUMMIERE AANGIFTE VOOR TIJDELIJKE OPSLAG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>355</ecd>
+				<oms>SUMMIERE AANGIFTE BIJ UITGAAN/BINNENKOMST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>380</ecd>
+				<oms>HANDELSFACTUUR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>703</ecd>
+				<oms>VRACHTBRIEF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>704</ecd>
+				<oms>MASTER COGNOSSEMENT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>705</ecd>
+				<oms>COGNOSSEMENT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>720</ecd>
+				<oms>VRACHTBRIEF CIM (SPOOR)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>722</ecd>
+				<oms>ROAD LIST SMGS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>730</ecd>
+				<oms>VRACHTBRIEF WEGVERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>740</ecd>
+				<oms>LUCHTVRACHTBRIEF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>741</ecd>
+				<oms>MASTER LUCHTVRACHTBRIEF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>750</ecd>
+				<oms>VERZENDINGSFORMULIER (POSTPAKETTEN)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>760</ecd>
+				<oms>DOCUMENT MULTIMODAAL/GECOMBINEERD VERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>785</ecd>
+				<oms>GOEDERENMANIFEST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>787</ecd>
+				<oms>BORDEREL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>820</ecd>
+				<oms>AANGIFTE VOOR UNIEDOUANEVERVOER-GEMENGDE ZEND. (T)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>821</ecd>
+				<oms>AANGIFTE VOOR EXTERN UNIEDOUANEVERVOER(T1)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>822</ecd>
+				<oms>AANGIFTE VOOR INTERN UNIEDOUANEVERVOER(T2)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>952</ecd>
+				<oms>TIR-CARNET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>955</ecd>
+				<oms>ATA-CARNET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>017</tnr>
+			<tnm>VERPAKKINGSOORT</tnm>
+			<elm>
+				<ecd>AA</ecd>
+				<oms>TRANSPORTCONTAINERS VOOR BULKGOEDEREN, VAN STIJVE KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AB</ecd>
+				<oms>RECIPIENT, VAN FIBER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AC</ecd>
+				<oms>RECIPIENT VAN PAPIER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AD</ecd>
+				<oms>RECIPIENT VAN HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AE</ecd>
+				<oms>AEROSOL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AF</ecd>
+				<oms>LAADBORD, MODULAIR, OPZETRANDEN 80CMS*60CMS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AG</ecd>
+				<oms>LAADBORD, KRIMPVERPAKKING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AH</ecd>
+				<oms>LAADBORD 100CMS*110CMS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AI</ecd>
+				<oms>HALVE SCHAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AJ</ecd>
+				<oms>CONISCHE SPOEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AL</ecd>
+				<oms>Bol</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AM</ecd>
+				<oms>AMPUL, ZONDER BESCHERMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AP</ecd>
+				<oms>AMPUL, MET BESCHERMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AT</ecd>
+				<oms>VERSTUIVER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AV</ecd>
+				<oms>CAPSULE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BA</ecd>
+				<oms>VAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BB</ecd>
+				<oms>KLOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BC</ecd>
+				<oms>FLESSENKRAT, FLESSENREK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BD</ecd>
+				<oms>PLAAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BE</ecd>
+				<oms>BUNDEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BF</ecd>
+				<oms>BALLON, ZONDER BESCHERMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BG</ecd>
+				<oms>ZAK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BH</ecd>
+				<oms>BUNDEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BI</ecd>
+				<oms>BAK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BJ</ecd>
+				<oms>EMMER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BK</ecd>
+				<oms>MAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BL</ecd>
+				<oms>BAAL, SAMENGEPERST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BM</ecd>
+				<oms>SCHAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BN</ecd>
+				<oms>BAAL, NIET SAMENGEPERST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BO</ecd>
+				<oms>FLES, ZONDER BESCHERMING, CYLINDERVORMIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BP</ecd>
+				<oms>BALLON, MET BESCHERMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BQ</ecd>
+				<oms>FLES, MET BESCHERMING, CYLINDERVORMIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BR</ecd>
+				<oms>STAAF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BS</ecd>
+				<oms>FLES, ZONDER BESCHERMING, BOLVORMIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BT</ecd>
+				<oms>ROL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BU</ecd>
+				<oms>VAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BV</ecd>
+				<oms>FLES, MET BESCHERMING, BOLVORMIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BW</ecd>
+				<oms>DOOS, VOOR VLOEISTOFFEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BX</ecd>
+				<oms>DOOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BY</ecd>
+				<oms>PLATEN, GEBUNDELD OF SAMENGEVOEGD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BZ</ecd>
+				<oms>STAVEN, GEBUNDELD OF SAMENGEVOEGD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>B4</ecd>
+				<oms>Band</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CA</ecd>
+				<oms>BLIK, RECHTHOEKIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CB</ecd>
+				<oms>BIERKRAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC</ecd>
+				<oms>BUS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD</ecd>
+				<oms>BLIK, MET HANDVATEN EN TUIT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CE</ecd>
+				<oms>MAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CF</ecd>
+				<oms>KOFFER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CG</ecd>
+				<oms>KOOI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CH</ecd>
+				<oms>KIST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CI</ecd>
+				<oms>BLIK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CJ</ecd>
+				<oms>KIST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CK</ecd>
+				<oms>VAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CL</ecd>
+				<oms>HASPEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CM</ecd>
+				<oms>KAART</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CN</ecd>
+				<oms>CONTAINER, NIET OP ANDERE WIJZE OMSCHREVEN ALS TRANSP.MIDDEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CO</ecd>
+				<oms>MANDFLES, ZONDER BESCHERMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CP</ecd>
+				<oms>MANDFLES, MET BESCHERMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CQ</ecd>
+				<oms>HULS (CQ)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CR</ecd>
+				<oms>KRAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CS</ecd>
+				<oms>DOOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CT</ecd>
+				<oms>KARTONNEN DOOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CU</ecd>
+				<oms>BEKER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CV</ecd>
+				<oms>HOES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CW</ecd>
+				<oms>KOOI, ROL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CX</ecd>
+				<oms>BLIK, CYLINDERVORMIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CY</ecd>
+				<oms>CYLINDER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CZ</ecd>
+				<oms>CANVAS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DA</ecd>
+				<oms>KRAT, MEERLAAGS, VAN KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DB</ecd>
+				<oms>KRAT, MEERLAAGS, VAN HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DC</ecd>
+				<oms>KRAT, MEERLAAGS, VAN KARTON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DG</ecd>
+				<oms>KOOI, COMMONWEALTH HANDLING EQUIPMENT POOL (CHEP)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DH</ecd>
+				<oms>DOOS, COMMONWEALTH HANDLING EQUIPMENT POOL (CHEP), EUROBOX</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DI</ecd>
+				<oms>VAT, VAN STAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DJ</ecd>
+				<oms>DEMIJOHN, ZONDER BESCHERMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DK</ecd>
+				<oms>KRAT, BULK, VAN KARTON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DL</ecd>
+				<oms>KRAT, BULK, VAN KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DM</ecd>
+				<oms>KRAT, BULK, VAN HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DN</ecd>
+				<oms>DISPENSER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DP</ecd>
+				<oms>DEMIJOHN, MET BESCHERMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DR</ecd>
+				<oms>VAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DS</ecd>
+				<oms>TRAY, EEN LAAG ZONDER DEKSEL, VAN KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DT</ecd>
+				<oms>TRAY, EEN LAAG ZONDER DEKSEL, VAN HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DU</ecd>
+				<oms>TRAY, EEN LAAG ZONDER DEKSEL, VAN POLYSTYREEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DV</ecd>
+				<oms>TRAY, EEN LAAG ZONDER DEKSEL, VAN KARTON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DW</ecd>
+				<oms>TRAY, TWEE LAGEN ZONDER DEKSEL, VAN KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DX</ecd>
+				<oms>TRAY, TWEE LAGEN ZONDER DEKSEL, VAN HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DY</ecd>
+				<oms>TRAY, TWEE LAGEN ZONDER DEKSEL, VAN KARTON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EC</ecd>
+				<oms>ZAK, VAN KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ED</ecd>
+				<oms>DOOS, MET BODEMPALLET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EE</ecd>
+				<oms>DOOS, MET BODEMPALLET, VAN HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EF</ecd>
+				<oms>DOOS, MET BODEMPALLET, VAN KARTON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EG</ecd>
+				<oms>DOOS, MET BODEMPALLET, VAN KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EH</ecd>
+				<oms>DOOS, BODEMPALLET, VAN METAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EI</ecd>
+				<oms>DOOS, ISOTHERMISCH</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EN</ecd>
+				<oms>HOES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FB</ecd>
+				<oms>Flexibag</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FC</ecd>
+				<oms>FRUITKRAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FD</ecd>
+				<oms>KRAT MET KLAMPEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FE</ecd>
+				<oms>Flexitank</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FI</ecd>
+				<oms>VAATJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FL</ecd>
+				<oms>FLACON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FO</ecd>
+				<oms>FOOTLOCKER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FP</ecd>
+				<oms>FILMPAK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FR</ecd>
+				<oms>FRAME</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FT</ecd>
+				<oms>FOODTAINER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FW</ecd>
+				<oms>Kaart, dieplader (cart, flatbed)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FX</ecd>
+				<oms>ZAK, BUIGZAAM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GB</ecd>
+				<oms>GASFLES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GI</ecd>
+				<oms>BALK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GL</ecd>
+				<oms>Container, gallon</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GR</ecd>
+				<oms>RECIPIENT, VAN GLAS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GU</ecd>
+				<oms>Tray, met horizontaal gestapelde platte voorwerpen</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GY</ecd>
+				<oms>Zak, van jute</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GZ</ecd>
+				<oms>BALKEN, GEBUNDELD OF SAMENGEVOEGD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HA</ecd>
+				<oms>MAND MET HANDVAT, VAN KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HB</ecd>
+				<oms>MAND MET HANDVAT, VAN HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HC</ecd>
+				<oms>MAND MET HANDVAT, VAN KARTON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HG</ecd>
+				<oms>OKSHOOFD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HN</ecd>
+				<oms>Houder (hanger)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HR</ecd>
+				<oms>MAND MET DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IA</ecd>
+				<oms>VERPAKKING, VOOR DEMONSTRATIEDOELEINDEN, VAN HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IB</ecd>
+				<oms>VERPAKKING, VOOR DEMONSTRATIEDOELEINDEN, VAN KARTON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IC</ecd>
+				<oms>VERPAKKING, VOOR DEMONSTRATIEDOELEINDEN, VAN KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ID</ecd>
+				<oms>VERPAKKING, VOOR DEMONSTRATIEDOELEINDEN, VAN METAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IE</ecd>
+				<oms>SHOWVERPAKKING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IF</ecd>
+				<oms>VERPAKKING, FLOWPACK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IG</ecd>
+				<oms>VERPAKKING, INGEPAKT IN PAPIER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IH</ecd>
+				<oms>VAT, VAN KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IK</ecd>
+				<oms>VERPAKKING, VAN KARTON, MET GRIJPGATEN VOOR FLESSEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IL</ecd>
+				<oms>Tray, stijf, met stapelbare deksels (CEN TS 14482:2002)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IN</ecd>
+				<oms>STAAF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IZ</ecd>
+				<oms>STAVEN, GEBUNDELD OF SAMENGEVOEGD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JB</ecd>
+				<oms>Zak, jumbo</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JC</ecd>
+				<oms>JERRICAN, RECHTHOEKIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JG</ecd>
+				<oms>KRUIK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JR</ecd>
+				<oms>POT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JT</ecd>
+				<oms>JUTEZAK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>JY</ecd>
+				<oms>JERRICAN, CYLINDERVORMIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KG</ecd>
+				<oms>VAATJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>KI</ecd>
+				<oms>Gereedschapskist (kit)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LE</ecd>
+				<oms>Bagage</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LG</ecd>
+				<oms>BLOK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LT</ecd>
+				<oms>PARTIJ</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LU</ecd>
+				<oms>Houten krat (lug)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LV</ecd>
+				<oms>LIFTVAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LZ</ecd>
+				<oms>BLOKKEN, GEBUNDELD OF SAMENGEVOEGD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MA</ecd>
+				<oms>Krat, van metaal</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MB</ecd>
+				<oms>LAMINAATZAKJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MC</ecd>
+				<oms>KRAT VOOR MELKFLESSEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ME</ecd>
+				<oms>Container, metaal</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MR</ecd>
+				<oms>RECIPIENT VAN METAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MS</ecd>
+				<oms>MEERWANDIGE ZAK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MT</ecd>
+				<oms>MAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MW</ecd>
+				<oms>RECIPIENT IN PLASTIC VERPAKT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MX</ecd>
+				<oms>LUCIFERDOOSJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NA</ecd>
+				<oms>NIET BESCHIKBAAR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NE</ecd>
+				<oms>NIET VERPAKT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NF</ecd>
+				<oms>NIET VERPAKT, EEN ITEM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NG</ecd>
+				<oms>NIET VERPAKT, DIVERSE ITEMS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NS</ecd>
+				<oms>NEST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NT</ecd>
+				<oms>NET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NU</ecd>
+				<oms>NET, TUBE, VAN KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NV</ecd>
+				<oms>NET, TUBE, VAN TEXTIEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OA</ecd>
+				<oms>Laadbord, CHEP 40 cm x 60 cm</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OB</ecd>
+				<oms>Laadbord, CHEP 80 cm x 120 cm</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OC</ecd>
+				<oms>Laadbord, CHEP 100 cm x 120 cm</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OD</ecd>
+				<oms>Laadbord, AS 4068-1993(Australische Standaard)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OE</ecd>
+				<oms>Laadbord, ISO T11</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OF</ecd>
+				<oms>Platform, gewicht of dimensie ongespecificeerd</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OK</ecd>
+				<oms>Blok</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OT</ecd>
+				<oms>Octabin</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OU</ecd>
+				<oms>Container, buitenste</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PA</ecd>
+				<oms>PAKKET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PB</ecd>
+				<oms>LAADBORD, DOOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PC</ecd>
+				<oms>PAKJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PD</ecd>
+				<oms>LAADBORD, MODULAIR, OPZETRANDEN 80CMS*100CMS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PE</ecd>
+				<oms>LAADBORD, MODULAIR, OPZETRANDEN 80CMS*120CMS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PF</ecd>
+				<oms>HOK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PG</ecd>
+				<oms>PLAAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PH</ecd>
+				<oms>KRUIK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PI</ecd>
+				<oms>BUIS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PJ</ecd>
+				<oms>BAKJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PK</ecd>
+				<oms>VERPAKKING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PL</ecd>
+				<oms>EMMER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PN</ecd>
+				<oms>PLANK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PO</ecd>
+				<oms>ZAKJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PP</ecd>
+				<oms>Stuk</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PR</ecd>
+				<oms>RECIPIENT VAN KUNSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PT</ecd>
+				<oms>POT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PU</ecd>
+				<oms>TRAY/TRAYPACK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PV</ecd>
+				<oms>BUIZEN, GEBUNDELDOF SAMENGEV.(PIPES, IN BUNDLE/BUNCH/TRUSS)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PX</ecd>
+				<oms>LAADBORD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PY</ecd>
+				<oms>PLATEN, GEBUNDELD OF SAMENGEVOEGD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PZ</ecd>
+				<oms>BUIZEN/PLANKEN, GEBUNDELD OF SAMENGEVOEGD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>P2</ecd>
+				<oms>Pan</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QA</ecd>
+				<oms>VAT, VAN STAAL, NIET AFNEEMBAAR DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QB</ecd>
+				<oms>VAT, VAN STAAL, AFNEEMBAAR DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QC</ecd>
+				<oms>VAT, VAN ALUMINIUM, NIET-AFNEEMBAAR DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QD</ecd>
+				<oms>VAT, VAN ALUMINIUM, NIET-AFNEEMBAAR DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QF</ecd>
+				<oms>VAT, VAN KUNSTSTOF, NIET-AFNEEMBAAR DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QG</ecd>
+				<oms>VAT, VAN KUNSTSTOF, AFNEEMBAAR DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QH</ecd>
+				<oms>VAT, VAN HOUT, VAN HET SPONTYPE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QJ</ecd>
+				<oms>VAT, VAN HOUT, MET AFNEEMBAAR DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QK</ecd>
+				<oms>JERRYCAN, VAN STAAL, ZONDER AFNEEMBAAR DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QL</ecd>
+				<oms>JERRYCAN, VAN STAAL, AFNEEMBAAR DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QM</ecd>
+				<oms>JERRYCAN, VAN KUNSTSTOF, ZONDER AFNEEMBAAR DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QN</ecd>
+				<oms>JERRYCAN, VAN KUNSTSTOF, MET AFNEEMBAAR DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QP</ecd>
+				<oms>DOOS, VAN HOUT, ECHT HOUT, GEWOON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QQ</ecd>
+				<oms>DOOS, VAN HOUT, ECHT HOUT, MET STOFDICHTE WANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QR</ecd>
+				<oms>DOOS, GEEXPANDEERDE KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>QS</ecd>
+				<oms>DOOS, KUNSTSTOF IN VASTE VORM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RD</ecd>
+				<oms>STAAF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RG</ecd>
+				<oms>RING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RJ</ecd>
+				<oms>REK, KLEERHANGER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RK</ecd>
+				<oms>REK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RL</ecd>
+				<oms>HASPEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RO</ecd>
+				<oms>ROL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RT</ecd>
+				<oms>REDNET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RZ</ecd>
+				<oms>STAVEN, GEBUNDELD OF SAMENGEVOEGD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SA</ecd>
+				<oms>ZAK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SB</ecd>
+				<oms>PLAK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SC</ecd>
+				<oms>ONDIEPE KRAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SD</ecd>
+				<oms>KLOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SE</ecd>
+				<oms>HUTKOFFER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SH</ecd>
+				<oms>ZAKJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SI</ecd>
+				<oms>SKID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SK</ecd>
+				<oms>SKELETON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SL</ecd>
+				<oms>SLIPSHEET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SM</ecd>
+				<oms>BLADMETAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SO</ecd>
+				<oms>SPOEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SP</ecd>
+				<oms>VEL, KUNSTSTOF VERPAKKING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SS</ecd>
+				<oms>DOOS, VAN STAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ST</ecd>
+				<oms>VEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SU</ecd>
+				<oms>REISKOFFER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SV</ecd>
+				<oms>HOES, VAN STAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SW</ecd>
+				<oms>KRIMPVERPAKKING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SX</ecd>
+				<oms>SET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SY</ecd>
+				<oms>HULS (SY)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SZ</ecd>
+				<oms>VELLEN, GEBUNDELD OF SAMENGEVOEGD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TB</ecd>
+				<oms>KUIP</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TC</ecd>
+				<oms>THEEKIST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TD</ecd>
+				<oms>BUIS, SOEPEL/SOEPELE BUIS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TE</ecd>
+				<oms>Band</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TG</ecd>
+				<oms>Tankcontainer, generisch</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TI</ecd>
+				<oms>VAT (BARREL)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TK</ecd>
+				<oms>TANK, RECHTHOEKIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TL</ecd>
+				<oms>KUIP, MET DEKSEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TN</ecd>
+				<oms>BLIK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TO</ecd>
+				<oms>VAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TR</ecd>
+				<oms>KOFFER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TS</ecd>
+				<oms>BUNDEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TT</ecd>
+				<oms>Zak, ruim formaat</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TU</ecd>
+				<oms>BUIS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TV</ecd>
+				<oms>BUIS, MET SCHENKTUIT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TW</ecd>
+				<oms>Laadbord, van zwaar golfkarton (triwall)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TY</ecd>
+				<oms>TANK, CYLINDERVORMIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TZ</ecd>
+				<oms>BUIZEN, GEBUNDELD OF SAMENGEVOEGD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T1</ecd>
+				<oms>Tablet</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>UC</ecd>
+				<oms>NIET IN EEN KOOI</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>UN</ecd>
+				<oms>Eenheid</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VA</ecd>
+				<oms>KUIP</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VG</ecd>
+				<oms>BULK, GAS (1031 MBAR EN 15 C)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VI</ecd>
+				<oms>FLESJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VK</ecd>
+				<oms>VANPACK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VL</ecd>
+				<oms>BULK, VLOEISTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VN</ecd>
+				<oms>Voertuig</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VO</ecd>
+				<oms>BULK, VASTE STOF, GROVE DEELTJES ("KNOLLETJES")</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VP</ecd>
+				<oms>VACUUMVERPAKT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VQ</ecd>
+				<oms>BULK, VLOEIBAAR GAS (ABNORMALE TEMPERATUUR/DRUK)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VR</ecd>
+				<oms>BULK, VASTE STOF, GRANULAIRE DEELTJES ("KORRELS")</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VS</ecd>
+				<oms>LOS GESTORT, SCHROOT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>VY</ecd>
+				<oms>BULK, VASTE STOF, FIJNE DEELTJES ("POEDERS")</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WA</ecd>
+				<oms>TRANSPORTCONTAINERS VOOR BULKGOEDEREN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WB</ecd>
+				<oms>MANDFLES</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WC</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN STAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WD</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN ALUMINIUM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WF</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., METAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WG</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN STAAL, DRUK VAN &gt; 10 KPA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WH</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN ALUMINIUM, DRUK VAN &gt; 10 KPA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WJ</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN METAAL, MET DRUK VAN 10 KPA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WK</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN STAAL, VOOR VLOEISTOFFEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WL</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN ALUMINIUM, VOOR VLOEISTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WM</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN METAAL, VOOR VLOEISTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WN</ecd>
+				<oms>TC. VOOR BULKGDN., VAN GEW.KUNSTSTOF, ZONDER VERF/VOERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WP</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN GEWEVEN KUNSTSTOF, GEVERFD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WQ</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., GEWEVEN KUNSTSTOF, MET VOERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WR</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., GEW. KUNSTSTOF, GEVERFD*VOERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WS</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., KUNSTSTOF FILM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WT</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., TEXTIEL MET VERFLAAG/VOERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WU</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN ECHT HOUT MET BINNENVOERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WV</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN TEXTIEL, GEVERFD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WW</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN TEXTIEL, MET VOERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WX</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., TEXTIEL, GEVERFD EN MET VOERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WY</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., TRIPLEX MET BINNENVOERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>WZ</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., KUNSTHOUT MET BINNENVOERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XA</ecd>
+				<oms>ZAK, VAN GEWEVEN KUNSTSTOF, ZONDER BINNENVOERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XB</ecd>
+				<oms>ZAK, VAN GEWEVEN KUNSTSTOF, STOFDICHT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XC</ecd>
+				<oms>ZAK, VAN GEWEVEN KUNSTSTOF, WATERBESTENDIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XD</ecd>
+				<oms>ZAK, VAN KUNSTSTOFFILM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XF</ecd>
+				<oms>ZAK, VAN TEXTIEL, ZONDER BINNENVOERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XG</ecd>
+				<oms>ZAK, VAN TEXTIEL, STOFDICHT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XH</ecd>
+				<oms>ZAK, VAN TEXTIEL, WATERBESTENDIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XJ</ecd>
+				<oms>ZAK, VAN PAPIER, MEERWANDIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XK</ecd>
+				<oms>ZAK, VAN PAPIER, MEERWANDIG, WATERBESTENDIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YA</ecd>
+				<oms>SAMENGEST.VERPAKK., KUNSTSTOF HOUDER IN STALEN VAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YB</ecd>
+				<oms>SAMENGEST.VERPAKK., KUNSTSTOF HOUDER IN STALEN KRAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YC</ecd>
+				<oms>SAMENGEST.VERPAKK., KUNSTSTOF HOUDER IN ALUMINIUM VAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YD</ecd>
+				<oms>SAMENGEST.VERPAKK., KUNSTSTOF HOUDER IN ALUMINIUM KRAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YF</ecd>
+				<oms>SAMENGEST.VERPAKK., KUNSTSTOF HOUDER IN HOUTEN DOOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YG</ecd>
+				<oms>SAMENGEST.VERPAKK., KUNSTSTOF HOUDER IN TRIPLEX VAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YH</ecd>
+				<oms>SAMENGEST.VERPAKK., KUNSTSTOF HOUDER IN TRIPLEX DOOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YJ</ecd>
+				<oms>SAMENGEST.VERPAKK., KUNSTSTOF HOUDER IN FIBERVAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YK</ecd>
+				<oms>SAMENGEST.VERPAKK., KUNSTSTOF HOUDER IN KARTONNEN DOOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YL</ecd>
+				<oms>SAMENGEST.VERPAKK., KUNSTSTOF HOUDER IN KUNSTSTOFVAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YM</ecd>
+				<oms>SAMENGEST.VERPAKK., KUNSTSTOF HDR IN KUNSTSTOF BAKJE(VAST VO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YN</ecd>
+				<oms>SAMENGEST.VERPAKK., GLAZEN HOUDER IN STALEN VAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YP</ecd>
+				<oms>SAMENGEST.VERPAKK., GLAZEN HOUDER IN STALEN KRAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YQ</ecd>
+				<oms>SAMENGEST.VERPAKK., GLAZEN HOUDER IN ALUMINIUM VAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YR</ecd>
+				<oms>SAMENGEST.VERPAKK., GLAZEN HOUDER IN ALUMINIUM KRAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YS</ecd>
+				<oms>SAMENGEST.VERPAKK., GLAZEN HOUDER IN HOUTEN DOOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YT</ecd>
+				<oms>SAMENGEST.VERPAKK., GLAZEN HOUDER IN TRIPLEX VAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YV</ecd>
+				<oms>SAMENGEST.VERPAKK., GLAZEN HOUDER IN GEVLOCHTEN MAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YW</ecd>
+				<oms>SAMENGEST.VERPAKK., GLAZEN HOUDER IN FIBERVAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YX</ecd>
+				<oms>SAMENGEST.VERPAKK., GLAZEN HOUDER IN KARTONNEN DOOS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YY</ecd>
+				<oms>SAMENGEST.VERPAKK., GLAZEN HDR. IN GEEXPAND. KUNSTSTOF BAK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>YZ</ecd>
+				<oms>SAMENGEST.VERPAKK., GLAZEN HDR.IN KUNSTSTOF VERP.(VASTE VORM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZA</ecd>
+				<oms>TRANSPORTCONTAINERS VOOR BULKGDN, VAN PAPIER, MEERWAND.</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZB</ecd>
+				<oms>ZAK, GROOT FORMAAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZC</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., PAPIER,MEERWANDIG,WATERBEST.</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZD</ecd>
+				<oms>TC.,VOOR BULKGDN., STIJVE K.STF, MET BEDR.UITR.,VAST.STFN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZF</ecd>
+				<oms>TC.,VOOR BULKGDN., STIJVE K.STF, NIET INGEB.,VAST.STFN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZG</ecd>
+				<oms>TC.,VOOR BULKGDN., ST.K.STF, MET BEDR.UITR., ONDER DRUK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZH</ecd>
+				<oms>TC.,VOOR BULKGDN., ST.K.STF, NIET INGEBOUWD, ONDER DRUK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZJ</ecd>
+				<oms>TC.,VOOR BULKGDN., ST.K.STF, MET BEDR.UITR., VLOEIST.</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZK</ecd>
+				<oms>TC.,VOOR BULKGDN., ST.K.STF, NIET INGEBOUWD, VLOEIST.</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZL</ecd>
+				<oms>TC.,VOOR BULKGDN., SAMENG., VAN ST.KUNSTSTOF, VAST.STFN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZM</ecd>
+				<oms>TC.,VOOR BULKGDN., SAMENG., VAN FELX.KUNSSTSTOF, VAST.STFN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZN</ecd>
+				<oms>TC.,VOOR BULKGDN., SAMENG. VAN ST. KUNSTSTOF, ONDER DRUK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZP</ecd>
+				<oms>TC.,VOOR BULKGDN., SAMENG., VAN FLEX.KUNSTST., ONDER DRUK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZQ</ecd>
+				<oms>TC.,VOOR BULKGDN., SAMENG., VAN ST.KUNSTSTOF, VLOEIST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZR</ecd>
+				<oms>TC.,VOOR BULKGDN., SAMENG., VAN FLEX.KUNSTSTOF, VLOEIST.</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZS</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., SAMENGESTELD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZT</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN KARTON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZU</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., FLEXIBEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZV</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN ANDERE METALEN DAN STAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZW</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., VAN ECHT HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZX</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., TRIPLEX</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZY</ecd>
+				<oms>TRANSP.CONT. VOOR BULKGDN., KUNSTHOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ZZ</ecd>
+				<oms>IN OVERLEG GEDEFINEERD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1A</ecd>
+				<oms>VAT, STAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1B</ecd>
+				<oms>VAT, VAN ALUMINIUM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1D</ecd>
+				<oms>VAT, TRIPLEX</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1F</ecd>
+				<oms>Container, flexibel</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1G</ecd>
+				<oms>VAT, FIBER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1W</ecd>
+				<oms>VAT, VAN HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2C</ecd>
+				<oms>TON, VAN HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3A</ecd>
+				<oms>JERRYCAN, VAN STAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3H</ecd>
+				<oms>JERRYCAN, KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4A</ecd>
+				<oms>DOOS, VAN STAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4B</ecd>
+				<oms>DOOS, ALUMINIUM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4C</ecd>
+				<oms>DOOS, ECHT HOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4D</ecd>
+				<oms>DOOS, TRIPLEX</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4F</ecd>
+				<oms>DOOS, VAN KUNSTHOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4G</ecd>
+				<oms>DOOS, VEZELPLAAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4H</ecd>
+				<oms>DOOS, KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>43</ecd>
+				<oms>ZAK, EXTRA GROOT FORMAAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>44</ecd>
+				<oms>Zak, polyzak</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>5H</ecd>
+				<oms>ZAK, VAN GEWEVEN KUNSTSTOF</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>5L</ecd>
+				<oms>ZAK, VAN TEXTIEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>5M</ecd>
+				<oms>ZAK, VAN PAPIER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>6H</ecd>
+				<oms>SAMENGESTELDE VERPAKKING, KUNSTSTOF HOUDER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>6P</ecd>
+				<oms>SAMENGESTELDE VERPAKKING, GLAZEN HOUDER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>7A</ecd>
+				<oms>Doos, auto (case, car)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>7B</ecd>
+				<oms>Doos van hout</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>8A</ecd>
+				<oms>Laadbord, van hout</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>8B</ecd>
+				<oms>Krat, van hout</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>8C</ecd>
+				<oms>Bundel, van hout</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>018</tnr>
+			<tnm>VERVOERSWIJZE</tnm>
+			<elm>
+				<ecd>1</ecd>
+				<oms>VERVOER OVER ZEE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2</ecd>
+				<oms>VERVOER PER SPOOR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3</ecd>
+				<oms>WEGVERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4</ecd>
+				<oms>LUCHTVERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>5</ecd>
+				<oms>POSTZENDINGEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>7</ecd>
+				<oms>VASTE TRANSPORTINRICHTINGEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>8</ecd>
+				<oms>VERVOER OVER BINNENWATEREN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>9</ecd>
+				<oms>EIGEN KRACHT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>025</tnr>
+			<tnm>ADRESTYPE</tnm>
+			<elm>
+				<ecd>L</ecd>
+				<oms>LOKAAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>S</ecd>
+				<oms>SERVICE ADRES IN ANDERE LIDSTATEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>031</tnr>
+			<tnm>AANG-TYPE VV.PR</tnm>
+			<elm>
+				<ecd>T-</ecd>
+				<oms>GEMENGDE ZENDINGEN T1-T2</oms>
+				<wet>Gemengde zendingen die zowel onder de regeling extern Uniedouanevervoer als onder de regeling intern Uniedouanevervoer te plaatsen goederen bevatten, overeenkomstig artikel 294 van de Uitvoeringsverordening (EU) 2015/2447</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TIR</ecd>
+				<oms>TIR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T1</ecd>
+				<oms>REGELING EXTERN UNIEDOUANEVERVOER</oms>
+				<wet>Goederen die onder de regeling extern Uniedouanevervoer dienen te worden vervoerd</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T2</ecd>
+				<oms>REGELING INTERN UNIEDOUANEVERVOER</oms>
+				<wet>Goederen die onder de regeling intern Uniedouanevervoer zijn geplaatst in overeenstemming met artikel 227 van het wetboek, tenzij artikel 293, lid 2 van de Uitvoeringsverordening (EU) 2015/2447 van toepassing is</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T2F</ecd>
+				<oms>INTERN UNIEDOUANEVERVOER FISCALE GEBIEDEN</oms>
+				<wet>Goederen die onder de regeling intern Uniedouanevervoer dienen te worden vervoerd in overeenstemming met artikel 188 van Gedelegeerde Verordening (EU) 2015/2446</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>T2SM</ecd>
+				<oms>INTERN UNIEDOUANEVERVOER SAN MARINO</oms>
+				<wet>Goederen die onder de regeling intern Uniedouanevervoer zijn geplaatst met toepassing van artikel 2 van Besluit nr. 4/92 van het Samenwerkingscomite EEG-San Marino van 22 december 1992</wet>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>039</tnr>
+			<tnm>BIJZ.VERMELDING</tnm>
+			<elm>
+				<ecd>CAL</ecd>
+				<oms>BEREKEND BEDRAG LATENTE DOUANESCHULD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DG0</ecd>
+				<oms>EXPORT ONDERWORPEN AAN BEPERKINGEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DG1</ecd>
+				<oms>EXPORT ONDERWORPEN AAN RECHTEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DG2</ecd>
+				<oms>EXPORT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>10600</ecd>
+				<oms>VERHANDELBAAR COGNOSSEMENT AAN ORDER BLANCO GEENDOSEERD</oms>
+				<wet>Situatie van verhandelbare cognossementen aan order blanco geendosseerd, in het geval van een summiere aangiften bij binnenkomst, waarin de gegevens van de geadresseerde onbekend zijn</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>30300</ecd>
+				<oms>UITVOER VAN LANDBOUWPRODUCTEN MET EEN BIJZONDERE BESTEMMING</oms>
+				<wet>Artikel 254, lid 4, onder b, van het wetboek Bijzondere bestemming Voor uitvoer bestemde goederen landbouwrestituties niet van toepassing</wet>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>041</tnr>
+			<tnm>CONTR.INDIC.ART</tnm>
+			<elm>
+				<ecd>DI</ecd>
+				<oms>VERSCHILLEN (KENMERK ONJUIST)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NE</ecd>
+				<oms>NIEUW ELEMENT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NP</ecd>
+				<oms>DOC/CERTI NIET VOORGELEGD ORIGINEEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OR</ecd>
+				<oms>ORIGINEEL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OT</ecd>
+				<oms>ANDERE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>042</tnr>
+			<tnm>CONTR.INDICATOR</tnm>
+			<elm>
+				<ecd>DI</ecd>
+				<oms>VERSCHILLEN (KENMERK ONJUIST)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>OT</ecd>
+				<oms>OVERIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>043</tnr>
+			<tnm>AFWIJSREDEN AAR</tnm>
+			<elm>
+				<ecd>1</ecd>
+				<oms>ZENDING AANGEKOMEN OP BESTEMMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2</ecd>
+				<oms>BUITENWERKING GESTELD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3</ecd>
+				<oms>MRN ONBEKEND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4</ecd>
+				<oms>ANDERE REDENEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>044</tnr>
+			<tnm>AFWIJSREDEN ATR</tnm>
+			<elm>
+				<ecd>1</ecd>
+				<oms>ZENDING AANGEKOMEN OP BESTEMMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2</ecd>
+				<oms>ZENDING BINNENGEKOMEN MAAR NOG NIET DOORGEVOERD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3</ecd>
+				<oms>ZENDING DOORGEVOERD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4</ecd>
+				<oms>ANDERE REDENEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>5</ecd>
+				<oms>MRN ONBEKEND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>6</ecd>
+				<oms>BUITENWERKING GESTELD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>7</ecd>
+				<oms>NIET VAN TOEPASSING (NCTS/TIR, AD, SM)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>047</tnr>
+			<tnm>CONTR.RESULTAAT</tnm>
+			<elm>
+				<ecd>A1</ecd>
+				<oms>CONFORM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>A2</ecd>
+				<oms>GEACHT CONFORM TE ZIJN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>A3</ecd>
+				<oms>VEREENVOUDIGDE PROCEDURE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>A5</ecd>
+				<oms>VERSCHILLEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>B1</ecd>
+				<oms>NIET CONFORM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>048</tnr>
+			<tnm>MUNTSOORT</tnm>
+			<elm>
+				<ecd>BGN</ecd>
+				<oms>BULGARIJE - LEV</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CHF</ecd>
+				<oms>ZWITSERLAND - FRANC</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CZK</ecd>
+				<oms>TJECHIE - KORUNA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DKK</ecd>
+				<oms>DENEMARKEN - KROON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EUR</ecd>
+				<oms>EURO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GBP</ecd>
+				<oms>VERENIGD KONINKRIJK - POND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HRK</ecd>
+				<oms>KROATIE KUNA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HUF</ecd>
+				<oms>HONGAARSE FLORINT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ISK</ecd>
+				<oms>IJSLAND - KROON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MKD</ecd>
+				<oms>MACEDONIE DENARS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NOK</ecd>
+				<oms>NOORWEGEN - KROON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PLN</ecd>
+				<oms>POLEN - ZLOTY</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RON</ecd>
+				<oms>ROEMENIE - LEU</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RSD</ecd>
+				<oms>SERVIE DINAR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SEK</ecd>
+				<oms>ZWEDEN - KROON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TRY</ecd>
+				<oms>TURKIJE LIRA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>049</tnr>
+			<tnm>FUNCT. FOUTCODE</tnm>
+			<elm>
+				<ecd>01</ecd>
+				<oms>VERWIJZING NIET GEVONDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>02</ecd>
+				<oms>ONVOLDOENDE SALDO VOOR AFSCHRIJVEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>03</ecd>
+				<oms>MEERDERE VERWIJZINGEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>12</ecd>
+				<oms>ONJUISTE (CODE)WAARDE</oms>
+				<wet>De waarde van een element in een bericht komt niet voor in de toepasselijke codelijst.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>13</ecd>
+				<oms>ONTBREEKT</oms>
+				<wet>Een verplicht/vereist element komt niet voor binnen de ontvangen data (vb. een vereist element zoals het MRN binnen een aankomstmelding (C_ARR_ADV) is niet aanwezig).</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>14</ecd>
+				<oms>WAARDE NIET ONDERSTEUND IN DEZE POSITIE (WAARDE BEPERKING)</oms>
+				<wet>Kennisgeving dat de ontvanger het gebruik van een specifieke waarde van een element in de positie waar het zich bevindt, niet ondersteunt. Dit fouttype refereert naar het gebruik van ongepaste code waarden voor een specifiek element.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>15</ecd>
+				<oms>NIET ONDERSTEUND IN DEZE POSITIE</oms>
+				<wet>Het aanwezige element is niet toegelaten omwille van de twee volgende redenen:(a) het aanwezige element is niet toegelaten in overeenstemming met de FMS bericht specificatie; (b) het aanwezige element is niet toegelaten, tengevolge van bepaalde bijkomende voorwaarden</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>19</ecd>
+				<oms>ONGELDIGE DECIMALE NOTERING</oms>
+				<wet>De decimale notering is niet in overeenstemming met de decimale formattering standaarden UCI, UCM en UCD.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>26</ecd>
+				<oms>ZELFDE INTERCHANGE ONTVANGEN/MAX AANVR SALDO ZEKERH BEREIKT</oms>
+				<wet>Dezelfde interchange is terug ontvangen. Het duplicaat is ontdekt bij ontvangst van een reeds ontvangen 'interchange' referentie.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>35</ecd>
+				<oms>TEVEEL HERHALINGEN</oms>
+				<wet>Teveel herhalingen van een segment of entiteit.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>37</ecd>
+				<oms>ONGELDIG KARAKTERTYPE (DATA TYPE VERSCHILLEN)</oms>
+				<wet>Kennisgeving dat een of meer numerieke karakters zijn gebruikt in een alfabetisch element of dat een of meer alfabetische karakters zijn gebruikt in een numeriek element.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>38</ecd>
+				<oms>GEEN CIJFER VOOR EEN DECIMAAL TEKEN</oms>
+				<wet>Kennisgeving dat een decimaal teken niet is voorafgegaan door een of meerdere cijfers.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>39</ecd>
+				<oms>ELEMENT TE LANG (LENGTEBEPERKING)</oms>
+				<wet>Kennisgeving dat de lengte van een ontvangen element de maximum lengte overschrijdt.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>40</ecd>
+				<oms>ELEMENT TE KORT (LENGTEBEPERKING)</oms>
+				<wet>Kennisgeving dat de lengte van een ontvangen element korter is dan de minimum gedefinieerde lengte.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>90</ecd>
+				<oms>ONBEKENDE MRN</oms>
+				<wet>Het MRN van de ontvangen FMS is niet gekend, terwijl een gekende MRN werd verwacht. Dit fouttype kan niet voorkomen in een AAR (C_AAR_SND).</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>91</ecd>
+				<oms>DUBBELE MRN</oms>
+				<wet>Het MRN van de ontvangen FMS is reeds bekend, en is bijgevolg niet zoals voorzien in de specifieke voorschriften.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>92</ecd>
+				<oms>HET BERICHT IS BUITEN 'SEQUENTIE'</oms>
+				<wet>Het bericht kan niet worden verwerkt, omdat de ontvanger zich niet in een ontvangstpositie bevindt.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>93</ecd>
+				<oms>ONGELDIGE MRN</oms>
+				<wet>De structuur van het MRN is niet conform met de specificaties van de FTSS 4.00.</wet>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>050</tnr>
+			<tnm>MONITOR ZEHERH.</tnm>
+			<elm>
+				<ecd>1</ecd>
+				<oms>TYPE MONITORING 1: MRN, DATUM</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2</ecd>
+				<oms>TYPE MONITORING 2: MRN, DATUM, BEDRAG ZEKERHEID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3</ecd>
+				<oms>TYPE MONITORING 3: MRN, DATUM, BEDRAG EN BIJWERKEN ZEKERHEID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>051</tnr>
+			<tnm>TYPE ZEKERHEID</tnm>
+			<elm>
+				<ecd>A</ecd>
+				<oms>ONTHEFFING VOLGENS AFSPRAAK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>B</ecd>
+				<oms>TIR ZEKERHEID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>0</ecd>
+				<oms>ONTHEFFING ZEKERHEIDSTELLING</oms>
+				<wet>Artikel 94, lid 4 CDW</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1</ecd>
+				<oms>DOORLOPENDE ZEKERHEIDSTELLING</oms>
+				<wet>Artikel 372, lid 1, letter a TVo. CDW</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2</ecd>
+				<oms>ZEKERHEIDSTELLING PER AANGIFTE</oms>
+				<wet>Artikel 345 TVo. CDW/bijlage 49 TVo. CDW</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3</ecd>
+				<oms>ZEKERHEIDSTELLING PER AANGIFTE IN GELD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4</ecd>
+				<oms>BEWIJZEN VAN ZEKERHEIDSTELLINGT.C.32</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>5</ecd>
+				<oms>ONTHEFFING BIJ BEDRAG ZEKERHEID NIET HOGER DAN 500 EURO</oms>
+				<wet>Artikel 189, lid 5 CDW</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>6</ecd>
+				<oms>ONTHEFFING VAN ZEKERHEIDSTELLING</oms>
+				<wet>Artikel 95 CDW/artikel 380, lid 3 TVo. CDW</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>7</ecd>
+				<oms>NIET VEREIST TUSSEN KVV EN KVD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>8</ecd>
+				<oms>ONTHEFFING VAN ZEKERHEIDSTELLING VOOR BEPAALDE ORGANEN</oms>
+				<wet>Artikel 189, lid 4 TVo. CDW</wet>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>052</tnr>
+			<tnm>ONGELDIGE ZKHD</tnm>
+			<elm>
+				<ecd>G01</ecd>
+				<oms>BESTAAT NIET</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>G02</ecd>
+				<oms>ZEKERHEID BESTAAT MAAR IS NIET MEER GELDIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>G03</ecd>
+				<oms>TOEGANGSCODE NIET GELDIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>G04</ecd>
+				<oms>HOUDER NIET GELIJK AAN AANGEVER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>G05</ecd>
+				<oms>BEWIJS VAN ZEKERHEIDSTELLING AL GEBRUIKT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>G06</ecd>
+				<oms>RESTRICTIE: GEEN UITGESLOTEN GOEDEREN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>G07</ecd>
+				<oms>RESTRICTIE: GEEN GEVOELIGE GOEDEREN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>G08</ecd>
+				<oms>NIET GELDIG VOOR LAND VAN DOORVOER/BESTEMMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>G09</ecd>
+				<oms>REFERENTIE/ZEKERHEIDS BEDRAG NIET TOEREIKEND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>G10</ecd>
+				<oms>BEWIJS VAN ZEKERHEIDSTELLING BORG AL GEBRUIKT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>G11</ecd>
+				<oms>KANTOOR VERTREK/BESTEMMING KOMT NIET OVEREEN (ZEKERH.TYPE 2)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>G13</ecd>
+				<oms>TIR ZEKERHEID NIET HERBRUIKBAAR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>054</tnr>
+			<tnm>QUERY ZEKERHEID</tnm>
+			<elm>
+				<ecd>2</ecd>
+				<oms>OPENSTAANDE ZEKERHEID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>060</tnr>
+			<tnm>BERICHTTYPE</tnm>
+			<elm>
+				<ecd>CC006A</ecd>
+				<oms>AANKOMSTMELDING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC007A</ecd>
+				<oms>BERICHT VAN AANKOMST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC008A</ecd>
+				<oms>BERICHT VAN AANKOMST AFGEWEZEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC009A</ecd>
+				<oms>BESLUIT VERZOEK BUITEN WERKING STELLEN/ONGELDIG MAKEN AANG.</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC014A</ecd>
+				<oms>VERZOEK ONGELDIG MAKEN AANGIFTE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC015B</ecd>
+				<oms>AANGIFTE VOOR DOUANEVERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC016A</ecd>
+				<oms>KENNISGEVING AANGIFTE AFGEWEZEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC017B</ecd>
+				<oms>CONTROLERESULTATEN KANTOOR VAN VERTREK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC025A</ecd>
+				<oms>KENNISGEVING VRIJGAVE GOEDEREN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC026A</ecd>
+				<oms>AANVRAAG WIJZIGING PIN-CODE ZEKERHEID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC028A</ecd>
+				<oms>KENNISGEVING AANGIFTE AANVAARD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC029B</ecd>
+				<oms>KENNISGEVING VRIJGAVE VOOR VERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC034A</ecd>
+				<oms>VERZOEK ZEKERHEIDSGEGEVENS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC037A</ecd>
+				<oms>ANTWOORD VERZOEK ZEKERHEIDSGEGEVENS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC043A</ecd>
+				<oms>TOESTEMMING TOT LOSSEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC044A</ecd>
+				<oms>OPMERKINGEN LOSSEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC045A</ecd>
+				<oms>MEDEDELING ZUIVERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC051B</ecd>
+				<oms>GEEN VRIJGAVE VOOR VERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC054A</ecd>
+				<oms>VERZOEK VRIJGAVE VOOR VERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC055A</ecd>
+				<oms>ZEKERHEID NIET GELDIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC058A</ecd>
+				<oms>OPMERKINGEN LOSSEN NIET AANVAARD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC060A</ecd>
+				<oms>KENNISGEVING CONTROLE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC060B</ecd>
+				<oms>KENNISGEVING CONTROLE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC062A</ecd>
+				<oms>VERZOEK VRIJGAVE VOOR VERVOER NIET AANVAARD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC080A</ecd>
+				<oms>Kennisgeving Goederen Aangebracht</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC140A</ecd>
+				<oms>VERZOEK TOT NASPORING BIJ AANGEVER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC141A</ecd>
+				<oms>ANTWOORD VERZOEK TOT NASPORING BIJ AANGEVER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC906A</ecd>
+				<oms>FUNCTIONEEL AFGEKEURD BERICHT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC907A</ecd>
+				<oms>TECHNISCH (EDIFACT) AFGEKEURD BERICHT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC917A</ecd>
+				<oms>XML VALIDATIE FOUT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CC928A</ecd>
+				<oms>ONTVANGSTBEVESTIGING AANGIFTE VOOR DOUANEVERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD001B</ecd>
+				<oms>VOORAFGAAND BERICHT VAN AANKOMST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD002A</ecd>
+				<oms>VERZOEK VOORAFGAAND BERICHT VAN AANKOMST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD003B</ecd>
+				<oms>ANTWOORD VERZOEK VOORAFGAAND BERICHT VAN AANKOMST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD006A</ecd>
+				<oms>AANKOMSTMELDING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD010A</ecd>
+				<oms>KENNISGEVING BUITEN WERKING STELLEN/ONGELDIG MAKEN AANGIFTE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD011A</ecd>
+				<oms>KENNISGEVING GOEDEREN MET EEN VERHOOGD FRAUDERISICO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD018A</ecd>
+				<oms>CONTROLERESULTATEN BIJ KANTOOR VAN AANKOMST</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD018B</ecd>
+				<oms>CONTROLERESULTATEN KANTOOR VAN BESTEMMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD020A</ecd>
+				<oms>KENNISGEVING VERKLARING VERSCHILLEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD024A</ecd>
+				<oms>DOORGEZONDEN AANKOMSTMELDING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD027A</ecd>
+				<oms>VERZOEK GEGEVENS VERVOERSBEWEGING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD030B</ecd>
+				<oms>UPLOAD COL (CD-&gt;NA)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD031B</ecd>
+				<oms>DOWNLOAD COL (CD-&gt;NA)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD032A</ecd>
+				<oms>DOWNLOAD CSRD (CD-&gt;NA)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD032B</ecd>
+				<oms>DOWNLOAD CSRD (CD-&gt;NA)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD033A</ecd>
+				<oms>OTS UITWIJK AANKOMSTMELDING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD034A</ecd>
+				<oms>VERZOEK ZEKERHEIDSGEGEVENS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD037A</ecd>
+				<oms>ANTWOORD VERZOEK ZEKERHEIDSGEGEVENS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD038B</ecd>
+				<oms>ANTWOORD VERZOEK GEGEVENS VERVOERSBEWEGING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD050B</ecd>
+				<oms>VOORAFGAANDE KENNISGEVING VAN DOORGANG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD059A</ecd>
+				<oms>KENNISGEVING ANNULERING NASPORING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD063A</ecd>
+				<oms>KENNISGEVING INVORDERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD114A</ecd>
+				<oms>VERZOEK VOORAFGAANDE KENNISGEVING VAN DOORGANG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD115B</ecd>
+				<oms>ANTWOORD VERZOEK VOORAFGAANDE KENNISGEVING VAN DOORGANG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD118A</ecd>
+				<oms>KENNISGEVING DOORGANG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD142A</ecd>
+				<oms>VERZOEK TOT NASPORING KANTOOR VAN BESTEMMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD143A</ecd>
+				<oms>ANTWOORD OP VERZOEK TOT NASPORING KANTOOR VAN BESTEMMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD144A</ecd>
+				<oms>INFORMATIE M.B.T. NASPORING/INVORDERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD145A</ecd>
+				<oms>VERZOEK OM INFORMATIE M.B.T. NASPORING/INVORDERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD150A</ecd>
+				<oms>VERZOEK OVERDRACHT COMPETENTIE INVORDERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD151A</ecd>
+				<oms>ANTWOORD VERZOEK OVERDRACHT COMPETENTIE INVORDERING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD152A</ecd>
+				<oms>HEFFINGEN GEIND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD200A</ecd>
+				<oms>RAADPLEGEN GEGEVENS ZEKERHEID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD201A</ecd>
+				<oms>GEGEVENS ZEKERHEID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD203A</ecd>
+				<oms>CONTROLE ZEKERHEID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD204A</ecd>
+				<oms>VRIJGEVEN ZEKERHEID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD205A</ecd>
+				<oms>RESULTAAT CONTROLE ZEKERHEID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD209A</ecd>
+				<oms>BIJWERKEN ZEKERHEID</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD411A</ecd>
+				<oms>UPLOAD STATISTIEK GEGEVENS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD901A</ecd>
+				<oms>ONTVANGSTBEVESTIGING KENNISGEVING BUITEN WERKING STELLEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD904A</ecd>
+				<oms>STATUS OPVRAGING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD905A</ecd>
+				<oms>ANTWOORD VERZOEK STATUS AANGIFTE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD906A</ecd>
+				<oms>FUNCTIONEEL AFGEKEURD BERICHT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD907A</ecd>
+				<oms>TECHNISCH (EDIFACT) AFGEKEURD BERICHT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD912A</ecd>
+				<oms>INTERNATIONALE BESCHIKBAARHEIDSMATRIX</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD913A</ecd>
+				<oms>OPHALEN GEGEVENS CS/RD VIA URL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD914A</ecd>
+				<oms>AANVRAAG COL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD916A</ecd>
+				<oms>AANVRAAG REFERENTIEDATA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD931B</ecd>
+				<oms>DOWNLOAD COL (CD-&gt;NA)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD932A</ecd>
+				<oms>DOWNLOAD CSRD (CD-&gt;NA)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CD932B</ecd>
+				<oms>DOWNLOAD CSRD (CD-&gt;NA)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IER10</ecd>
+				<oms>EORI-CHECK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IER11</ecd>
+				<oms>RESULTAAT EORI-CHECK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IE980</ecd>
+				<oms>VERZOEK RISICOSELECTIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IE981</ecd>
+				<oms>RESULTAAT RISICOSELECTIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>063</tnr>
+			<tnm>LANDCODE (GEM.)</tnm>
+			<elm>
+				<ecd>AD</ecd>
+				<oms>ANDORRA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CH</ecd>
+				<oms>ZWITSERLAND</oms>
+				<wet>Met inbegrip van het Duitse gebied Buesingen en de Italiaanse gemeente Camione d'Italia</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IS</ecd>
+				<oms>IJSLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LI</ecd>
+				<oms>LIECHTENSTEIN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MK</ecd>
+				<oms>Noord-Macedonie</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NO</ecd>
+				<oms>NOORWEGEN</oms>
+				<wet>Met inbegrip van de Svalbardarchipel en Jan Mayeneiland</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RS</ecd>
+				<oms>SERVIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SJ</ecd>
+				<oms>SVALBARD EN JAN MAYENEILAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SM</ecd>
+				<oms>SAN MARINO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TR</ecd>
+				<oms>TURKIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>070</tnr>
+			<tnm>LANDCODES(COL)</tnm>
+			<elm>
+				<ecd>AD</ecd>
+				<oms>ANDORRA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>AT</ecd>
+				<oms>OOSTENRIJK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BE</ecd>
+				<oms>BELGIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>BG</ecd>
+				<oms>BULGARIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CH</ecd>
+				<oms>ZWITSERLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CY</ecd>
+				<oms>CYPRUS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CZ</ecd>
+				<oms>TSJECHISCHE REPUBLIEK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DE</ecd>
+				<oms>DUITSLAND</oms>
+				<wet>Met inbegrip van Helgoland en met uitzondering van het gebied Busingen.</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>DK</ecd>
+				<oms>DENEMARKEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>EE</ecd>
+				<oms>ESTLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>ES</ecd>
+				<oms>SPANJE</oms>
+				<wet>Met inbegrip van de Balearen en de Canarische Eilanden en met uitzondering van Ceuta en Melila</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FI</ecd>
+				<oms>FINLAND</oms>
+				<wet>Met inbegrip van de Alandseilanden</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>FR</ecd>
+				<oms>FRANKRIJK</oms>
+				<wet>Met ingrip van Monaco en de Franse overzeese departementen (Reunion, Guadeloupe, Martinique en Frans Guyana)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GB</ecd>
+				<oms>VERENIGD KONINKRIJK</oms>
+				<wet>Groot Britannie, Noord Ierland, de kanaaleilanden en het eiland Man</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GR</ecd>
+				<oms>GRIEKENLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HR</ecd>
+				<oms>KROATIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>HU</ecd>
+				<oms>HONGARIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IE</ecd>
+				<oms>IERLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IS</ecd>
+				<oms>IJSLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IT</ecd>
+				<oms>ITALIE</oms>
+				<wet>Met inbegrip van Livigno</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LT</ecd>
+				<oms>LITOUWEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LU</ecd>
+				<oms>LUXEMBURG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LV</ecd>
+				<oms>LETLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MK</ecd>
+				<oms>Noord-Macedonie</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MT</ecd>
+				<oms>MALTA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NL</ecd>
+				<oms>NEDERLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NO</ecd>
+				<oms>NOORWEGEN</oms>
+				<wet>Met inbegrip van Svalbardachipel en Jan Mayeneiland</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PL</ecd>
+				<oms>POLEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>PT</ecd>
+				<oms>PORTUGAL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RO</ecd>
+				<oms>ROEMENIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RS</ecd>
+				<oms>SERVIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SE</ecd>
+				<oms>ZWEDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SI</ecd>
+				<oms>SLOVENIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SK</ecd>
+				<oms>SLOWAKIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SM</ecd>
+				<oms>SAN MARINO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TR</ecd>
+				<oms>TURKIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>XI</ecd>
+				<oms>Verenigd Koninkrijk (Noord-Ierland)</oms>
+				<wet>Code te gebruiken indien het Verenigd Koninkrijk (uitsluitend Noord-Ierland) apart moet worden vermeld overeenkomstig de voorwaarden in de bepalingen van de Unie ter zake.</wet>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>071</tnr>
+			<tnm>LANDCODE (ZKHD)</tnm>
+			<elm>
+				<ecd>AD</ecd>
+				<oms>ANDORRA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CH</ecd>
+				<oms>ZWITSERLAND</oms>
+				<wet>Met inbegrip van het Duitse gebied Buesingen en de Italiaanse gemeente Camione d'Italia</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IS</ecd>
+				<oms>IJSLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MK</ecd>
+				<oms>Noord-Macedonie</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NO</ecd>
+				<oms>NOORWEGEN</oms>
+				<wet>Met inbegrip van de Svalbardarchipel en Jan Mayeneiland</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RS</ecd>
+				<oms>SERVIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SM</ecd>
+				<oms>SAN MARINO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TR</ecd>
+				<oms>TURKIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>096</tnr>
+			<tnm>ANDERE BYZ OMST</tnm>
+			<elm>
+				<ecd>A</ecd>
+				<oms>POST-EN EXPRESZENDINGEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>C</ecd>
+				<oms>WEGVERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>D</ecd>
+				<oms>SPOORVERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>E</ecd>
+				<oms>AUTHORISED ECONOMIC OPERATORS</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>100</tnr>
+			<tnm>VERVOERS TYPE</tnm>
+			<elm>
+				<ecd>1</ecd>
+				<oms>BINNENVAART TANKER (CHEMIE)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>11</ecd>
+				<oms>SCHIP</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>12</ecd>
+				<oms>TANKSCHIP</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>13</ecd>
+				<oms>ZEESCHIP</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2</ecd>
+				<oms>KUSTVAARDER (CHEMIE)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>21</ecd>
+				<oms>TANKWAGON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>22</ecd>
+				<oms>SILOWAGON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>23</ecd>
+				<oms>BULKAUTO VIA SPOOR</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>24</ecd>
+				<oms>KLANT TANKWAGON</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>25</ecd>
+				<oms>EXPRESTREIN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3</ecd>
+				<oms>VRACHTAUTO (DROGE BULK)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>31</ecd>
+				<oms>VRACHTAUTO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>32</ecd>
+				<oms>TANKAUTO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>33</ecd>
+				<oms>TANKAUTO (SILO)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>35</ecd>
+				<oms>VRACHTAUTO/TRAILER MET DEKZEIL</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>36</ecd>
+				<oms>PIJPLEIDING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>37</ecd>
+				<oms>BRANDSTOFWAGON VOOR VLIEGTUIGEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>38</ecd>
+				<oms>AUTO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4</ecd>
+				<oms>OCEAANTANKER (CHEMIE)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>5</ecd>
+				<oms>GASTANKER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>6</ecd>
+				<oms>VLIEGTUIG</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>7</ecd>
+				<oms>AUTO MET CARAVAN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>9</ecd>
+				<oms>UITZONDERLIJK VERVOER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>116</tnr>
+			<tnm>BETWYZE VERVOER</tnm>
+			<elm>
+				<ecd>A</ecd>
+				<oms>CONTANTE BETALING IN GELD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>B</ecd>
+				<oms>BETALING MET CREDITKAART</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>C</ecd>
+				<oms>BETALING MET CHEQUE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>D</ecd>
+				<oms>ANDERE (BV. AUTOMATISCHE AFSCHRIJVING KASREKENING)</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>H</ecd>
+				<oms>ELEKTRONISCHE BETALING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Y</ecd>
+				<oms>REKENINGHOUDER BIJ VERVOERDER</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>Z</ecd>
+				<oms>NIET VOORAF BETAALD</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>139</tnr>
+			<tnm>TRANSIT NIET EU</tnm>
+			<elm>
+				<ecd>AD</ecd>
+				<oms>ANDORRA</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>CH</ecd>
+				<oms>ZWITSERLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>GB</ecd>
+				<oms>Groot Brittannie, Noord-Ierland, de Kanaaleilanden en Man</oms>
+				<wet>Groot Brittannie, Noord-Ierland, de Kanaaleilanden en Man</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>IS</ecd>
+				<oms>IJSLAND</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>LI</ecd>
+				<oms>LIECHTENSTEIN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>MK</ecd>
+				<oms>Noord-Macedonie</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>NO</ecd>
+				<oms>NOORWEGEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>RS</ecd>
+				<oms>SERVIE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SJ</ecd>
+				<oms>SVALBARD EN JAN MAYEN EILANDEN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>SM</ecd>
+				<oms>SAN MARINO</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>TR</ecd>
+				<oms>TURKIJE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>Z01</tnr>
+			<tnm>AANBRENGLOCATIE</tnm>
+			<elm>
+				<ecd>1019 BR</ecd>
+				<oms>Piet Heinkade 27, Amsterdam</oms>
+				<wet>NL000854</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1043 GN</ecd>
+				<oms>Kingsfordweg 1, Amsterdam</oms>
+				<wet>NL000854</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1118 DA</ecd>
+				<oms>Handelskade 3, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1118 DP</ecd>
+				<oms>Snipweg 101, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1118 DS</ecd>
+				<oms>Uiverweg 1, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1118 DT</ecd>
+				<oms>Pelikaanweg, Schiphol-zuid</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1118 EE</ecd>
+				<oms>Flamingoweg, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1118 LA</ecd>
+				<oms>Shannonweg, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1118 LB</ecd>
+				<oms>Prestwickweg, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1118 LD</ecd>
+				<oms>Anchoragelaan, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1118 LE</ecd>
+				<oms>Anchoragelaan 50, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1118 LK</ecd>
+				<oms>Reykjavikweg 2, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1118 LN</ecd>
+				<oms>Folkstoneweg, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1119 LN</ecd>
+				<oms>Capronilaan 7, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1119 NR</ecd>
+				<oms>Capronilaan 12, Schiphol</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1975 AG</ecd>
+				<oms>Sluisplein 33, IJmuiden</oms>
+				<wet>NL000854</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2132 MX</ecd>
+				<oms>Hoeksteen, Hoofddorp</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2132 NM</ecd>
+				<oms>Rijnlanderweg 766, Hoofddorp</oms>
+				<wet>NL000432</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2991 LA</ecd>
+				<oms>Ziedewij 44, Barendrecht</oms>
+				<wet>NL000511</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3045 AP</ecd>
+				<oms>Airportplein, Rotterdam</oms>
+				<wet>NL000853</wet>
+				<byz>NL000853</byz>
+			</elm>
+			<elm>
+				<ecd>3072 DB</ecd>
+				<oms>LAAN OP ZUID 391</oms>
+				<wet>NL000511</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3088 KA</ecd>
+				<oms>Reeweg 16, Rotterdam</oms>
+				<wet>NL000511</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3089 JK</ecd>
+				<oms>Zaltbommelstraat, Rotterdam</oms>
+				<wet>NL000396, NL000510, NL000511 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3089 KM</ecd>
+				<oms>Reeweg, Rotterdam</oms>
+				<wet>NL000396, NL000510, NL000511 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3165 AM</ecd>
+				<oms>Abel Tasmanstraat, Rotterdam</oms>
+				<wet>NL000396, NL000510, NL000511 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3197 LE</ecd>
+				<oms>Oliphantweg, Rotterdam</oms>
+				<wet>NL000511</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3199 KD</ecd>
+				<oms>Amoerweg, Maasvlakte Rotterdam</oms>
+				<wet>NL000396, NL000510, NL000511 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3199 LA</ecd>
+				<oms>Coloradoweg, Maasvlakte-Rt</oms>
+				<wet>NL000396, NL000510, NL000511 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3199 LC</ecd>
+				<oms>Europaweg, Maasvlakte Rotterdam</oms>
+				<wet>NL000396, NL000511 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3199 LD</ecd>
+				<oms>Europaweg, Maasvlakte-Rt</oms>
+				<wet>NL000396, NL000510, NL000511 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3199 LJ</ecd>
+				<oms>Bosporusstraat, Maasvlakte</oms>
+				<wet>NL000396, NL000510, NL000511</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3199 LN</ecd>
+				<oms>Karimatastraat, Maasvlakte</oms>
+				<wet>NL000396, NL000510, NL000511 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3199 LZ</ecd>
+				<oms>Maasvlakteweg, Maasvlakte RT</oms>
+				<wet>NL000396, NL000510, NL000511 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4389 PJ</ecd>
+				<oms>Duitslandweg 1, Ritthem</oms>
+				<wet>NL000856, NL000855 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4782 SL</ecd>
+				<oms>Plaza 5, Moerdijk</oms>
+				<wet>NL000856, NL000855 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4836 LA</ecd>
+				<oms>Hazeldonk 6019, Breda</oms>
+				<wet>NL000855</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>5616 CA</ecd>
+				<oms>Karel de Grotelaan 4, Eindhoven</oms>
+				<wet>NL000155</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>5928 LA</ecd>
+				<oms>Columbusweg 25 en 57, Venlo</oms>
+				<wet>NL000205</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>6199 AD</ecd>
+				<oms>Vliegveldweg 2, Maastricht Airport</oms>
+				<wet>NL000205</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>6445 PA</ecd>
+				<oms>Rimburgerweg 30, Brunssum</oms>
+				<wet>NL000205, NL000187 (NCTS)</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>6921 RZ</ecd>
+				<oms>Impact 2, Duiven</oms>
+				<wet>NL000850</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>7587 GA</ecd>
+				<oms>De Poppe 8, De Lutte</oms>
+				<wet>NL000851</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>7742 PT</ecd>
+				<oms>De Mars, Coevorden</oms>
+				<wet>NL000184</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>7833 HV</ecd>
+				<oms>Industrieweg 44, Nieuw Amsterdam</oms>
+				<wet>NL000184</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>8042 PT</ecd>
+				<oms>Botterweg 21, Zwolle</oms>
+				<wet>NL000184</wet>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>9645 LZ</ecd>
+				<oms>Spoorhavenweg 17-19, Veendam</oms>
+				<wet>NL000184</wet>
+				<byz/>
+			</elm>
+		</tbl>
+		<tbl>
+			<tnr>Z03</tnr>
+			<tnm>CODE-ZUIVERING</tnm>
+			<elm>
+				<ecd>0</ecd>
+				<oms>GEZUIVERD NA CORRECTE BEEINDIGING PROCEDURE</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>1</ecd>
+				<oms>GEZUIVERD NA VERLOPEN VAN TERMIJN</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>2</ecd>
+				<oms>GEZUIVERD NA NASPORING OP BESTEMMING</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>3</ecd>
+				<oms>GEZUIVERD NA NASPORING OP VERTREK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>4</ecd>
+				<oms>GEZUIVERD NA INVORDERING VERTREK</oms>
+				<wet/>
+				<byz/>
+			</elm>
+			<elm>
+				<ecd>5</ecd>
+				<oms>GEZUIVERD NA INVORDERING ANDERE LIDSTAAT</oms>
+				<wet/>
+				<byz/>
+			</elm>
+		</tbl>
+	</cbk>
+</cls>
