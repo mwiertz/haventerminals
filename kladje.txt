@@ -22,8 +22,7 @@ SEKU 440137-1
 MSCU 517820-2
 
 VERDERGAAN BIJ
-- check of terminal documenttype ondersteunt
-- xml elementen erbij zetten
+- invoer NL fiksen
 
 X-705 | COGNOSSEMENT (BILL OF LADING)
 
