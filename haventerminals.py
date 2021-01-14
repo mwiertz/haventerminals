@@ -12,6 +12,7 @@ terminal = None
 terminaltype = None
 eindpunt_transit = None
 voorafgaand_document_type = None
+voorafgaand_document_soort = None
 voorafgaand_document_referentie = None
 boekingsreferentie = None
 opvolgende_vervoerswijze = None
@@ -25,6 +26,8 @@ ter_doc = None
 berichttype = None
 containernummers = None
 equipmentnummers = None
+gevraagde_regeling = None
+soort_entrepot = None
 
 
 # == FUNCTIES
@@ -36,8 +39,32 @@ def foutmelding(melding):
         foutmeldingen = melding
 
 
-def maak_locatiecode_van_terminalcode(terminalcode, terminalnaam):
+def hulp(tekst):
+    return st.sidebar.markdown('<span style="font-size:0.8em; color:#FF5733">{}</span>'.format(tekst), unsafe_allow_html=True)
+
+
+def terminalcode_naar_locatiecode(terminalcode, terminalnaam):
     return '{} {} {} | {}'.format(terminalcode[0:4], terminalcode[4:6], terminalcode[6:9].lstrip('0'), terminalnaam)
+
+
+def ophalen_codelijst(codelijst_xml, codelijstnaam):
+    codelijsten = ut.parse(codelijst_xml)
+
+    codelijst = []
+    for tbl in codelijsten.cls.cbk.tbl:
+        if tbl.tnr == codelijstnaam:
+            for elm in tbl.elm:
+                codelijst.append('{} | {}'.format(elm.ecd.cdata, elm.oms.cdata))
+
+    return codelijst
+
+
+def ophalen_codelijst_invoer(codelijstnaam):
+    return ophalen_codelijst('onderdeel-codeboek, onderdeel aangiftebehandeling.xml', codelijstnaam)
+
+
+def ophalen_codelijst_transit(codelijstnaam):
+    return ophalen_codelijst('onderdeel-codeboek sagitta, onderdeel transit.xml', codelijstnaam)
 
 
 # == VOORBEREIDEND WERK
@@ -45,7 +72,7 @@ def maak_locatiecode_van_terminalcode(terminalcode, terminalnaam):
 # inlezen en uitbreiden lijst terminals uit csv (dump uit mcc database, tabel mda_ter_terminal)
 lijst_terminals = pd.read_csv('mda_ter_terminal.csv')
 
-lijst_terminals['ter_loc'] = lijst_terminals.apply(lambda row: maak_locatiecode_van_terminalcode(row['ter_code'], row['ter_name']), axis=1)
+lijst_terminals['ter_loc'] = lijst_terminals.apply(lambda row: terminalcode_naar_locatiecode(row['ter_code'], row['ter_name']), axis=1)
 
 # lijst deepsea terminals maken
 lijst_deepsea_terminals = lijst_terminals[lijst_terminals['ter_type'] == 1]
@@ -80,35 +107,53 @@ if aangifteregime == 'Uitvoer NL':
     containernummer_1 = st.sidebar.text_input('Containernummer 1')
     containernummer_2 = st.sidebar.text_input('Containernummer 2')
     containernummer_3 = st.sidebar.text_input('Containernummer 3')
-    st.sidebar.markdown('<span style="font-size:0.8em">Voorbeelden:<br/>MSCU517820-2<br/>SEKU440137-1<br/>TCLU275439-5</span>', unsafe_allow_html=True)
+    hulp('Voorbeelden:<br/>MSCU517820-2<br/>SEKU440137-1<br/>TCLU275439-5')
 
 # === indien Invoer NL gekozen
 if aangifteregime == 'Invoer NL':
 
-    # relevante selecties uit aangiftetypes toevoegen
-    aangiftetype = st.sidebar.selectbox('Aangiftetype', ('CO', 'EU', 'IM'), 2)
+    # lijst met regelingen samenstellen
+    codelijst_A35_regelingen = ophalen_codelijst_invoer('A35')
+
+    # lijst met soorten entrepots samenstellen
+    codelijst_A30_soorten_entrepots = ophalen_codelijst_invoer('A30')
+
+    # lijst met types voorafgaande documenten samenstellen
+    codelijst_A80_type_voorafgaand_doc = ophalen_codelijst_invoer('A80')
+
+    # lijst met soorten voorafgaande documenten samenstellen
+    codelijst_A28_soort_voorafgaand_doc = ophalen_codelijst_invoer('A28')
+
+    # gevraagde regeling toevoegen (reg 71 is id 21, reg 40 is id 10)
+    gevraagde_regeling = st.sidebar.selectbox('Gevraagde regeling', codelijst_A35_regelingen, 10)
+    hulp('71 of [Iets anders]')
+
+    # soort entrepot toevoegen
+    if gevraagde_regeling == '71 | PLAATSING ONDER DOUANEENTREPOT + AND INRICHTING DOUANETOEZ':
+        soort_entrepot = st.sidebar.selectbox('Soort entrepot', codelijst_A30_soorten_entrepots, 2)
+        hulp('S of [Iets anders]')
 
     # locaties toevoegen
     locatie = st.sidebar.selectbox('Goederenlocatie', lijst_locaties)
+
+    # voorafgaand document sectie toevoegen (soort 705 is id 20)
+    voorafgaand_document_type = st.sidebar.selectbox('Type voorafgaand document', codelijst_A80_type_voorafgaand_doc, 0)
+    voorafgaand_document_soort = st.sidebar.selectbox('Soort voorafgaand document', codelijst_A28_soort_voorafgaand_doc, 20)
+    voorafgaand_document_referentie = st.sidebar.text_input('Voorafgaand document referentie')
+    hulp('Voorbeelden:<br/>YMLUN236197722 (deepsea)<br/>DFDS534548380001 (ferry)')
 
     # containernummers toevoegen
     containernummer_1 = st.sidebar.text_input('Containernummer 1')
     containernummer_2 = st.sidebar.text_input('Containernummer 2')
     containernummer_3 = st.sidebar.text_input('Containernummer 3')
-    st.sidebar.markdown('<span style="font-size:0.8em">Voorbeelden:<br/>MSCU517820-2<br/>SEKU440137-1<br/>TCLU275439-5</span>', unsafe_allow_html=True)
+    hulp('Voorbeelden:<br/>MSCU517820-2<br/>SEKU440137-1<br/>TCLU275439-5')
 
 
 # === indien Transit vertrek NL gekozen
 if aangifteregime == 'Transit vertrek NL':
 
     # lijst met voorafgaande documenten samenstellen
-    codelijsten_transit = ut.parse('onderdeel-codeboek sagitta, onderdeel transit.xml')
-
-    codelijst_transit_014_voorafgaand_doc = []
-    for tbl in codelijsten_transit.cls.cbk.tbl:
-        if tbl.tnr == '014':
-            for elm in tbl.elm:
-                codelijst_transit_014_voorafgaand_doc.append('{} | {}'.format(elm.ecd.cdata, elm.oms.cdata))
+    codelijst_014_voorafgaand_doc = ophalen_codelijst_transit('014')
 
     # relevante selecties uit aangiftetypes toevoegen
     aangiftetype = st.sidebar.selectbox('Aangiftetype', ('T-', 'T1', 'T2', 'T2F', 'T2SM', 'TIR'), 1)
@@ -120,15 +165,15 @@ if aangifteregime == 'Transit vertrek NL':
         locatie = st.sidebar.selectbox('Toegelaten locatie goederen', lijst_locaties)
 
     # voorafgaand document sectie toevoegen
-    voorafgaand_document_type = st.sidebar.selectbox('Voorafgaand document type', codelijst_transit_014_voorafgaand_doc, 18)
+    voorafgaand_document_type = st.sidebar.selectbox('Voorafgaand document type', codelijst_014_voorafgaand_doc, 18)
     voorafgaand_document_referentie = st.sidebar.text_input('Voorafgaand document referentie')
-    st.sidebar.markdown('<span style="font-size:0.8em">Voorbeelden:<br/>YMLUN236197722 (deepsea)<br/>DFDS534548380001 (ferry)</span>', unsafe_allow_html=True)
+    hulp('Voorbeelden:<br/>YMLUN236197722 (deepsea)<br/>DFDS534548380001 (ferry)')
 
     # containernummers toevoegen
     containernummer_1 = st.sidebar.text_input('Containernummer 1')
     containernummer_2 = st.sidebar.text_input('Containernummer 2')
     containernummer_3 = st.sidebar.text_input('Containernummer 3')
-    st.sidebar.markdown('<span style="font-size:0.8em">Voorbeelden:<br/>MSCU517820-2<br/>SEKU440137-1<br/>TCLU275439-5</span>', unsafe_allow_html=True)
+    hulp('Voorbeelden:<br/>MSCU517820-2<br/>SEKU440137-1<br/>TCLU275439-5')
 
 
 # == MAIN SCREEN
@@ -149,7 +194,7 @@ else:
             eindpunt_transit = st.radio('Eindpunt transit', ('Terminal in NL', 'Elders'))
 
     # terminal
-    if (aangifteregime == 'Transit vertrek NL' and code_controleresultaat == 'A3') or aangifteregime == 'Uitvoer NL':
+    if aangifteregime == 'Uitvoer NL' or aangifteregime == 'Invoer NL' or (aangifteregime == 'Transit vertrek NL' and code_controleresultaat == 'A3'):
 
         if locatie in lijst_terminals['ter_loc'].tolist():
 
@@ -176,12 +221,14 @@ else:
                     terminaltype = 'Ferry terminal'
 
     # controle X-705
-    if (aangifteregime == 'Invoer NL' or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer')) and voorafgaand_document_type != 'X-705 | COGNOSSEMENT (BILL OF LADING)':
+    if aangifteregime == 'Invoer NL' and (voorafgaand_document_type != 'X | SUMMIERE AANGIFTE' or voorafgaand_document_soort != '705 | COGNOSSEMENT'):
+        foutmelding('Geen X-705 als type voorafgaand document!')
+    if aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer' and voorafgaand_document_type != 'X-705 | COGNOSSEMENT (BILL OF LADING)':
         foutmelding('Geen X-705 als type voorafgaand document!')
 
     # opvolgende vervoerswijze
     if aangifteregime == 'Invoer NL' or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer'):
-        opvolgende_vervoerswijze = st.selectbox('Opvolgende vervoerswijze', ('1 - Zeevoer', '2 - Spoorvervoer', '3- Wegvervoer', '8 - Binnenvaart', '9 - Onbekend'))
+        opvolgende_vervoerswijze = st.selectbox('Opvolgende vervoerswijze', ('1 - Zeevervoer', '2 - Spoorvervoer', '3- Wegvervoer', '8 - Binnenvaart', '9 - Onbekend'))
 
     # boekingsreferentie Portbase
     if aangifteregime == 'Uitvoer NL' or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Uitvoer'):
@@ -238,6 +285,17 @@ else:
     if aangifteregime == 'Uitvoer NL':
         documenttype.text('Documenttype: {}'.format(aangiftetype))
         ter_doc = aangiftetype
+    elif aangifteregime == "Invoer NL":
+        if gevraagde_regeling == '71 | PLAATSING ONDER DOUANEENTREPOT + AND INRICHTING DOUANETOEZ':
+            if soort_entrepot == 'S | PUBLIEK DOUANE-ENTREPOT TYPE II':
+                documenttype.text('Documenttype:  IM7')
+                ter_doc = 'ter_im7'
+            else:
+                documenttype.text('Documenttype:  PIE')
+                ter_doc = 'ter_pie'
+        else:
+            documenttype.text('Documenttype:  IM4')
+            ter_doc = 'ter_im4'
     elif aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer' and code_controleresultaat == 'A3':
         documenttype.text('Documenttype:  MRN')
         ter_doc = 'ter_mrn'

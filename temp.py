@@ -1,4 +1,4 @@
-# import untangle as ut
+import untangle as ut
 #
 # codelijsten_transit = ut.parse('onderdeel-codeboek sagitta, onderdeel transit.xml')
 #
@@ -13,24 +13,34 @@
 #
 # print(codelijst_transit_014_voorafgaand_doc)
 
-foutmeldingen = None
-def foutmelding(melding):
-    global foutmeldingen
-    if foutmeldingen != None:
-        foutmeldingen += '\n{}'.format(melding)
-    else:
-        foutmeldingen = melding
+# foutmeldingen = None
+# def foutmelding(melding):
+#     global foutmeldingen
+#     if foutmeldingen != None:
+#         foutmeldingen += '\n{}'.format(melding)
+#     else:
+#         foutmeldingen = melding
+#
+#
+# print('---')
+# print(foutmeldingen)
+#
+# foutmelding('aap')
+#
+# print('---')
+# print(foutmeldingen)
+#
+# foutmelding('monkey')
+#
+# print('---')
+# print(foutmeldingen)
 
+codelijsten_aangiftebehandeling = ut.parse('onderdeel-codeboek, onderdeel aangiftebehandeling.xml')
 
-print('---')
-print(foutmeldingen)
+codelijsten_aangiftebeh_A35_regelingen = []
+for tbl in codelijsten_aangiftebehandeling.cls.cbk.tbl:
+    if tbl.tnr == 'A35':
+        for elm in tbl.elm:
+            codelijsten_aangiftebeh_A35_regelingen.append('{} | {}'.format(elm.ecd.cdata, elm.oms.cdata))
 
-foutmelding('aap')
-
-print('---')
-print(foutmeldingen)
-
-foutmelding('monkey')
-
-print('---')
-print(foutmeldingen)
+print(codelijsten_aangiftebeh_A35_regelingen)
