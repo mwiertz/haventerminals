@@ -1,0 +1,17 @@
+<StandardBusinessDocument>
+	<documentContent>
+		<contentBody>
+			<exportShipment>
+				<customsDocument>
+					<documentType>{}</documentType>
+					<documentNumber>{}</documentNumber>
+				</customsDocument>
+				<equipment>
+					<equipmentNumber>{}</equipmentNumber>
+					<bookingReferenceNumber>{}</bookingReferenceNumber>
+				</equipment>
+			</exportShipment>
+		</contentBody>
+	</documentContent>
+</StandardBusinessDocument>
+

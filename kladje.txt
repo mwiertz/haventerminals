@@ -22,11 +22,9 @@ SEKU 440137-1
 MSCU 517820-2
 
 VERDERGAAN BIJ
-- invoer: boekingsreferentie ferry overnemen
-- invoer en uitvoer: controle op containernummers
-- uitvoer: containers overnemen
-- uitvoer: equipment ids laten zien bij ferry
-- invoer: controle op x-705
-- invoer: controle op voorafgaand document referentie bij ferry
-- foutmelding rood maken
+- check of terminal documenttype ondersteunt
 - xml elementen erbij zetten
+
+X-705 | COGNOSSEMENT (BILL OF LADING)
+
+return st.markdown('<span style="color:red">**{}**</span>'.format(melding), unsafe_allow_html=True)
