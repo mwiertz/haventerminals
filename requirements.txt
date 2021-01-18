@@ -1,0 +1,3 @@
+streamlit~=0.74.1
+pandas~=1.2.0
+untangle~=1.1.1
