@@ -1,0 +1,53 @@
+type,omschrijving
+126E,126E
+126L,126L
+126R,126R
+126T,126T
+126TS,126TS
+235,235: Containerlijst
+270,270: Ladingslijst
+271,271: Paklijst
+325,325: Pro forma factuur
+380,380: Handelsfactuur
+703,703: Vrachtbrief
+704,704: Master cognossement
+705,705: Cognossement
+720,720: Vrachtbrief CIM (spoor)
+722,722: Road list SMGS
+730,730: Vrachtbrief wegvervoer
+740,740: Luchtvrachtbrief
+741,741: Master luchtvrachtbrief
+750,750: Verzendingsformulier (postpakketten)
+760,760: Document voor multimodaal/gecombineerd vervoer
+785,785: Goederenmanifest
+787,787: Borderel
+820,820: Aangifte voor communautair douanevervoer - gemengde zendingen (T)
+821,821: Aangifte voor extern communautair douanevervoer (T1)
+822,822: Aangifte voor intern communautair douanevervoer (T2)
+823,823: Controle-exemplaar T5
+952,952: TIR-carnet
+955,955: ATA-carnet
+A01,AGD - Administratief Geleidedocument
+A02,VGD - Vereenvoudigd Geleidedocument
+A03,Handelsdocument
+C72,C72
+C82,C82
+CLE,CLE: Kenmerk/datum van inschrijving van de goederen in de administratie
+CO,CO
+EU,EU
+EX,EX
+I71,I71
+I81,I81
+IF3,IF3: Inlichtingenblad INF3
+IF8,IF8: Inlichtingenblad INF8
+IM,IM
+LY,LY
+MA,MA
+MNS,MNS: Scheepvaartmanifest - vereenvoudigde procedure
+T2M,T2M
+U,U
+U71,U71
+U72,U72
+U81,U81
+U82,U82
+ZZZ,ZZZ: Andere

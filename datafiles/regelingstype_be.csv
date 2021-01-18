@@ -1,0 +1,12 @@
+type,omschrijving
+A,Uitvoer/verzending
+B,Plaatsing onder de regeling voorfinanciering-entrepot
+C,Wederuitvoer na plaatsing onder een economische douaneregeling andere dan het stelsel van douane
+D,Wederuitvoer na opslag in douane-entrepot
+E,Passieve veredeling
+F,Douanevervoer
+G,Communautair karakter van de goederen
+H,In het vrije verkeer brengen
+I,Plaatsing onder een economische douaneregeling andere dan passieve veredeling en douane-entrepot
+J,"Opslag in douane-entrepot van het type A, B, C, E of F"
+K,Opslag in douane-entrepot van het type D

@@ -1,0 +1,49 @@
+ter_id,ter_name,ter_tms_id,ter_country,ter_code,ter_type,ter_mid_status_support,ter_im4,ter_im7,ter_pie,ter_mrn,ter_nt1,ter_ex,ter_co,ter_eu,ter_rt1,ter_rt2,ter_tt1,ter_tt2
+1,Terminal 118 (Antwerpen),,BE,Terminal 118 (Antwerpen),0,false,false,false,false,false,false,false,false,false,false,false,false,false
+2,Terminal 364 (Antwerpen),,BE,Terminal 364 (Antwerpen),0,false,false,false,false,false,false,false,false,false,false,false,false,false
+3,Terminal 476 (Antwerpen),3,BE,Terminal 476 (Antwerpen),0,false,false,false,false,false,false,false,false,false,false,false,false,false
+4,Terminal 869 (Antwerpen),3,BE,Terminal 869 (Antwerpen),0,false,false,false,false,false,false,false,false,false,false,false,false,false
+5,Terminal 913 (Antwerpen),,BE,Terminal 913 (Antwerpen),0,false,false,false,false,false,false,false,false,false,false,false,false,false
+6,Terminal 1333 (Antwerpen),,BE,Terminal 1333 (Antwerpen),0,false,false,false,false,false,false,false,false,false,false,false,false,false
+7,Terminal 1700 (Antwerpen),4,BE,Terminal 1700 (Antwerpen),0,false,false,false,false,false,false,false,false,false,false,false,false,false
+8,Terminal 1718-1742 (Antwerpen),3,BE,Terminal 1718-1742 (Antwerpen),0,false,false,false,false,false,false,false,false,false,false,false,false,false
+9,Overige containerterminals (Antwerpen),,BE,Overige containerterminals (Antwerpen),0,false,false,false,false,false,false,false,false,false,false,false,false,false
+10,Overige containerterminals (Zeebrugge),,BE,Overige containerterminals (Zeebrugge),0,false,false,false,false,false,false,false,false,false,false,false,false,false
+11,Overig (Niet nader genoemd),,BE,Overig (Niet nader genoemd),0,false,false,false,false,false,false,false,false,false,false,false,false,false
+12,APM Terminals Maasvlakte II B.V.,1,NL,3199LC910,1,false,true,true,true,true,false,true,true,true,true,true,true,true
+13,APM Terminals Rotterdam B.V.,1,NL,3199LA050,1,false,true,true,true,true,false,true,true,true,true,true,true,true
+14,Barge Center Waalhaven B.V.,1,NL,3089KR062,1,true,true,false,false,true,true,false,false,false,false,false,false,false
+15,Broekman Distripoort,1,NL,3197LR003,1,false,true,true,true,true,true,false,true,true,true,true,true,true
+16,CCT Moerdijk,1,NL,4782PM035,1,true,true,false,true,false,true,false,true,true,true,true,true,true
+17,Hutchison Ports ECT Delta,1,NL,3199LD875,1,false,true,true,true,true,true,false,true,true,true,true,true,true
+18,Hutchison Ports ECT Euromax,1,NL,3199LD951,1,false,true,true,true,true,true,false,true,true,true,true,true,true
+19,Kramer City Rotterdam,1,NL,3089KM025,1,false,true,false,false,true,true,false,false,false,false,false,false,false
+20,KCL,1,NL,3199LB030,1,false,true,false,false,true,true,false,false,false,false,false,false,false
+21,Kloosterboer Vlissingen,1,NL,4455TE010,1,true,true,true,true,true,false,true,true,true,true,true,true,true
+22,Matrans Rotterdam Terminal,1,NL,3195KN015,1,true,true,true,true,true,false,true,true,true,true,true,true,true
+23,RCT,1,NL,3199LB017,1,false,true,false,false,true,true,false,false,false,false,false,false,false
+24,Rotterdam Shortsea Terminals,1,NL,3089KM035,1,true,true,true,true,true,false,true,true,true,true,true,true,true
+25,Rotterdam World Gateway (RWG),1,NL,3199KD050,1,false,true,true,true,true,false,true,true,true,true,true,true,true
+26,TMA Amsterdam,1,NL,1047HM100,1,true,true,true,true,true,true,true,true,true,true,true,true,true
+27,Verbrugge Vlissingen,1,NL,4389PC012,1,true,true,false,false,true,false,false,false,false,false,false,false,false
+28,Zoomweg Zeeland Coldstore,1,NL,4416PK004,1,true,true,true,true,false,false,true,true,true,true,true,true,true
+29,C.RO Ports Rotterdam,1,NL,3197KG070,2,true,true,true,true,true,true,true,true,true,true,true,true,true
+30,C.RO Ports Vlissingen,1,NL,4389PA497,2,true,true,true,true,true,true,true,true,true,true,true,true,true
+31,P&O North Sea Ferries Terminal,1,NL,3198LG002,2,true,true,true,true,true,true,true,true,true,true,true,true,true
+32,DFDS Seaways Rotterdam B.V.,1,NL,3134KL020,2,true,true,true,true,true,false,true,true,true,true,true,true,true
+33,KVSA (DFDS) IJmuiden,1,NL,1975AG033,2,true,true,true,true,true,false,true,true,true,true,true,true,true
+34,Stena Line Hoek van Holland,1,NL,3151XN013,2,true,true,true,true,true,false,true,true,true,true,true,true,true
+35,Stena Line Rotterdam,1,NL,3198LC091,2,true,true,true,true,true,false,true,true,true,true,true,true,true
+110,Hutchison Ports ECT Euromax,1,NL,3199LZ951,1,false,true,true,true,true,true,false,true,true,true,true,true,true
+111,Rhenus Maasvlakte,1,NL,3199KA199,1,false,false,false,false,true,true,true,true,true,true,true,true,true
+112,Rhenus Waalhaven,1,NL,3087BB021,1,false,false,false,false,true,true,true,true,true,true,true,true,true
+113,ICO Bastenaken Terminal,5,BE,BEZEE0750200505,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+114,ICO Hanze Terminal,5,BE,BEZEE0750200521,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+115,ICO Noordelijk Insteek Terminal,5,BE,BEZEE0750200405,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+116,ICO Vrasene Terminal (K1241,5,BE,BEANR0900501241,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+117,Antwerp Euroterminal (AET K1333),5,BE,BEANR0900601333,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+118,Wallenius Wilhelmsen Logistics,5,BE,BEZEE0750200530,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+119,C.RO Canadakaai,5,BE,BEZEE0750200529,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+120,C.RO Zweedse kaai,5,BE,BEZEE0750300702,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+121,C.RO Brittanniadok,5,BE,BEZEE0750300612,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+122,P&O Ferries Terminal,5,BE,BEZEE0750300107,0,false,false,false,false,false,false,false,false,false,false,false,false,false

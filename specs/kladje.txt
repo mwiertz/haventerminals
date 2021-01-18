@@ -1,0 +1,165 @@
+# inlezen en uitbreiden lijst terminals uit csv (dump uit mcc database, tabel mda_ter_terminal)
+lijst_terminals = pd.read_csv('mda_ter_terminal.csv')
+lijst_terminals['ter_desc'] = lijst_terminals['ter_name'] + ' | ' + lijst_terminals['ter_code']
+
+gekozen_terminal = st.selectbox('Kies terminal', lijst_terminals['ter_desc'])
+
+# ondersteund terminal mrn
+#documenttype_ondersteund = True
+mrn = lijst_terminals.loc[lijst_terminals['ter_desc'] == gekozen_terminal, 'ter_mrn'].iloc[0]
+
+'gekozen:',  gekozen_terminal
+'mrn:', mrn
+
+#lijst_terminals
+
+X-705 ferry DFDS534548380001
+
+X-705 deepsea YMLUN236197722
+
+TCLU 275439-5
+SEKU 440137-1
+MSCU 517820-2
+
+VERDERGAAN BIJ
+- invoer NL fiksen
+
+X-705 | COGNOSSEMENT (BILL OF LADING)
+
+return st.markdown('<span style="color:red">**{}**</span>'.format(melding), unsafe_allow_html=True)
+
+
+PLDA Import
+
+Toevoeging van een selectievak ‘Shortsea & Ferryverkeer’ in het samenvattingsscherm
+
+Bij aanvinken van het selectievak ‘Shortsea & Ferryverkeer’ opent zich een pop-up scherm met volgende bijkomende verplichte velden:
+     - Boekingsreferentie: Vrij tekstveld
+     - Identificatie transportmiddel (indien er geen containernummer werd ingegeven in de importaangifte): Vrij tekstveld
+     - Terminal: keuzelijst - nog te voorzien
+
+Alle overige gegevens voor melding in RX Seaport kunnen vanuit de importaangifte worden ingevuld als volgt (via eenmalige configuratie in de database):
+- MRN nummer: Gekend binnen MCC na aanvaarding van de aangifte door de Belgische douane
+- Aangiftetype: Over te nemen vanuit de header ‘PLDA Algemeen’ onder de velden ‘Aangiftesymbool’, ‘Aangiftetype’ + het ‘Regelingstype’ vanuit ‘PLDA Douaneprocedure’ onder item
+- Douanestatus: Standaard instelling op ‘Vrijgegeven’, aangezien de melding aan RX Seaport wordt volbracht nadat het vrijgavebericht vanuit de Belgische douane werd bekomen
+
+
+Opvolgende vervoerswijze
+Berichttype:			C-Point IMPDEC
+Documenttype:			MRN
+Terminal:				Keuzelijst
+Douaneprocedure:		Over te nemen vanuit de header ‘PLDA Algemeen’ onder de velden ‘Aangiftesymbool’, ‘Aangiftetype’ + het ‘Regelingstype’ vanuit ‘PLDA Douaneprocedure’ onder item
+Douanestatus:			RELEASED of BLOCKED
+
+Vrachttype:				RORO of FRRY
+
+Als RORO dan
+Cargos
+	CargoNumber	-> Identificatie vervoersmiddel (n)
+
+Als FRRY dan
+Units
+	UnitType	-> Boekingsreferenties (n)
+
+Attachement		->
+
+
+Doorgaan met:
+
+IMPDEC
+
+- codelijsten (douaneregelingen)
+	v - aangiftesymbool -> CodeTableDeclarationTypePartOne-Import
+	v - aangiftetype -> CodeTableDeclarationTypePartTwo-import
+	v - regelingstype -> CodeTableProcedureType
+
+v - lijst met ondersteunde douaneregelingen
+
+- codelijsten (voorafgaand document)
+	v - soort voorafgaande document -> CodeTablePreviousDocumentTypeOfDocument
+	v - categorie voorafgaande document -> CodeTablePreviousDocumentCategory
+	v - type voorafgaande document -> CodeTablePreviousDocumentType
+
+v - lijst met terminals - uit PDF halen
+v - check wat terminals ondersteunen? -> NVT
+    v - aangiftetype in ('A', 'B', 'C', 'D', 'E', 'F', 'Z')
+    v - regelingstype in ('H', 'I', 'J')
+
+
+code, naam
+BEZEE0750200505, ICO Bastenaken Terminal BEZEE 07502 00505
+BEZEE0750200521, ICO Hanze Terminal BEZEE 07502 00521
+BEZEE0750200405, ICO Noordelijk Insteek Terminal BEZEE 07502 00405
+BEANR0900501241, ICO Vrasene Terminal (K1241) BEANR 09005 01241
+BEANR0900601333, Antwerp Euroterminal (AET K1333) BEANR 09006 01333
+BEZEE0750200530, Wallenius Wilhelmsen Logistics BEZEE 07502 00530
+BEZEE0750200529, C.RO Canadakaai BEZEE 07502 00529
+BEZEE0750300702, C.RO Zweedse kaai BEZEE 07503 00702
+BEZEE0750300612, C.RO Brittanniadok BEZEE 07503 00612
+BEZEE0750300107, P&O Ferries Terminal BEZEE 07503 00107
+
+
+customs, omschrijving, supported
+IMAH, IMAH, Yes
+IMAI, IMAI, Yes
+IMAJ, IMAJ, Yes
+IMBH, IMBH, Yes
+IMBI, IMBI, Yes
+IMBJ, IMBJ, Yes
+IMCH, IMCH, Yes
+IMCI, IMCI, Yes
+IMCJ, IMCJ, Yes
+IMDH, IMDH, Yes
+IMDI, IMDI, Yes
+IMDJ, IMDJ, Yes
+IMEH, IMEH, Yes
+IMEI, IMEI, Yes
+IMEJ, IMEJ, Yes
+IMFH, IMFH, Yes
+IMFI, IMFI, Yes
+IMFJ, IMFJ, Yes
+IMZH, IMZH, Yes
+IMZI, IMZI, Yes
+IMZJ, IMZJ, Yes
+EUAH, EUAH, Yes
+EUAI, EUAI, Yes
+EUAJ, EUAJ, Yes
+EUBH, EUBH, Yes
+EUBI, EUBI, Yes
+EUBJ, EUBJ, Yes
+EUCH, EUCH, Yes
+EUCI, EUCI, Yes
+EUCJ, EUCJ, Yes
+EUDH, EUDH, Yes
+EUDI, EUDI, Yes
+EUDJ, EUDJ, Yes
+EUEH, EUEH, Yes
+EUEI, EUEI, Yes
+EUEJ, EUEJ, Yes
+EUFH, EUFH, Yes
+EUFI, EUFI, Yes
+EUFJ, EUFJ, Yes
+EUZH, EUZH, Yes
+EUZI, EUZI, Yes
+EUZJ, EUZJ, Yes
+COAH, COAH, Yes
+COAI, COAI, Yes
+COAJ, COAJ, Yes
+COBH, COBH, Yes
+COBI, COBI, Yes
+COBJ, COBJ, Yes
+COCH, COCH, Yes
+COCI, COCI, Yes
+COCJ, COCJ, Yes
+CODH, CODH, Yes
+CODI, CODI, Yes
+CODJ, CODJ, Yes
+COEH, COEH, Yes
+COEI, COEI, Yes
+COEJ, COEJ, Yes
+COFH, COFH, Yes
+COFI, COFI, Yes
+COFJ, COFJ, Yes
+COZH, COZH, Yes
+COZI, COZI, Yes
+COZJ, COZJ, Yes

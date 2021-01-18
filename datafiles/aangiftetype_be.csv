@@ -1,0 +1,10 @@
+type,omschrijving
+A,Gewone aangifte
+B,Onvolledige aangifte
+C,Vereenvoudige aangifte
+D,Gewone aangifte (voor aanbrengen goederen)
+E,Onvolledige aangifte (voor aanbrengen goederen)
+F,Vereenvoudige aangifte (voor aanbrengen goederen)
+X,Aanvullende aangifte (code B)
+Y,Aanvullende aangifte (code C)
+Z,Aanvullende aangifte

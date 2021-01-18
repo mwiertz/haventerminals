@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.orf/ws/2004/03/addressing" xmlns:ebi="http://www.myvan.descartes.com/ebi/2004/r1">
+	...
+	<S:Body>
+		...
+		<IMPDEC xmlns:xsi="http://www.w3.org/2001/XMLSSchema-instance" xmlns="urn:EBAIMP" VersionMajor="1" VersionMinor="0">
+			...
+			<Body>
+				...
+				<Document type="{}">
+					<Terminal>{}</Terminal>
+					<Number>[MRN AANGIFTE]</Number>
+					<CustomsProcedure>{}</CustomsProcedure>
+					<CustomsStatus>{}</CustomsStatus>
+				</Document>
+				<Cargos type="{}">
+					<Cargo>{}</Cargo>
+				</Cargos>
+				<Units type="{}">
+					<bookingsReference>{}</bookingsReference>
+				</Units>
+				<Attachment>
+					<AttachmentName>[MRN AANGIFTE].pdf</AttachmentName>
+					<ValidityDate>[VRIJGAVEDATUM AANGIFTE - YYYY-MM-DD]</ValidityDate>
+					<BinaryAttachmentData>[Base64 encoded PDF van ED AANGIFTE]</BinaryAttachmentData>
+				</Attachment>
+			</Body>
+		</IMPDEC>
+	</S:Body>
+</S:Envelope>
+
+<S:Envelope ...>
+	...
+	<S:Body>
+		...
+		<IMPDEC ...>
+			...
+			<Body>
+				...
+				<Document type="{}">
+					<Terminal>{}</Terminal>
+					<Number>[MRN AANGIFTE]</Number>
+					<CustomsProcedure>{}</CustomsProcedure>
+					<CustomsStatus>{}</CustomsStatus>
+				</Document>
+				<Cargos type="{}">
+					<Cargo>{}</Cargo>
+				</Cargos>
+				<Units type="{}">
+					<bookingsReference>{}</bookingsReference>
+				</Units>
+				<Attachment>
+					<AttachmentName>[MRN AANGIFTE].pdf</AttachmentName>
+					<ValidityDate>[VRIJGAVEDATUM AANGIFTE - YYYY-MM-DD]</ValidityDate>
+					<BinaryAttachmentData>[Base64 encoded PDF van ED AANGIFTE]</BinaryAttachmentData>
+				</Attachment>
+			</Body>
+		</IMPDEC>
+	</S:Body>
+</S:Envelope>
