@@ -56,8 +56,11 @@ def hulp(tekst):
     return st.sidebar.markdown('<span style="font-size:0.8em; color:#0066CC">{}</span>'.format(tekst), unsafe_allow_html=True)
 
 
-def terminalcode_naar_locatiecode(terminalcode, terminalnaam):
-    return '{} {} {} | {}'.format(terminalcode[0:4], terminalcode[4:6], terminalcode[6:9].lstrip('0'), terminalnaam)
+def terminalcode_naar_locatiecode(terminalcode, terminalnaam, terminalland):
+    if terminalland == 'NL':
+        return '{} {} {} | {}'.format(terminalcode[0:4], terminalcode[4:6], terminalcode[6:9].lstrip('0'), terminalnaam)
+    elif terminalland == 'BE':
+        return '{} {} {} | {}'.format(terminalcode[0:5], terminalcode[5:10], terminalcode[10:15], terminalnaam)
 
 
 def ophalen_codelijst(codelijst_xml, codelijstnaam):
@@ -93,7 +96,7 @@ def type_omschrijving_codelijst_samenvoegen(codelijst):
 # inlezen en uitbreiden lijst terminals uit csv (dump uit mcc database, tabel mda_ter_terminal)
 lijst_terminals = pd.read_csv('datafiles/mda_ter_terminal.csv')
 
-lijst_terminals['ter_loc'] = lijst_terminals.apply(lambda row: terminalcode_naar_locatiecode(row['ter_code'], row['ter_name']), axis=1)
+lijst_terminals['ter_loc'] = lijst_terminals.apply(lambda row: terminalcode_naar_locatiecode(row['ter_code'], row['ter_name'], row['ter_country']), axis=1)
 
 # lijst terminals NL maken
 lijst_terminals_NL = lijst_terminals[lijst_terminals['ter_country'] == 'NL']
@@ -541,7 +544,7 @@ Portbase MID - M2400 xml (relevante elementen)\n
                 <importDocument>
                     <number>{}</number>
                     <type>{}</type>
-                    <transportMode>{}</transportMode>'''.format(terminal[:11].replace(' ', ''), '[MRN AANGIFTE]', ter_doc[-3:].upper(), opvolgende_vervoerswijze[:1])
+                    <transportMode>{}</transportMode>'''.format(terminal[:7].replace(' ', '') + terminal[7:11].replace(' ', '').replace('|','').zfill(3), '[MRN AANGIFTE]', ter_doc[-3:].upper(), opvolgende_vervoerswijze[:1])
 
         # second part of xml deepsea
         if terminaltype == 'Deepsea terminal':
@@ -628,7 +631,7 @@ C-Point IMPDEC xml (relevante elementen)\n
                         <CustomsProcedure>{}</CustomsProcedure>
                         <CustomsStatus>{}</CustomsStatus>
                     </Document>
-                    <Cargos type="RORO">'''.format(ter_doc, terminal[:11].replace(' ', ''), douaneprocedure, douanestatus)
+                    <Cargos type="RORO">'''.format(ter_doc, terminal[:17].replace(' ', ''), douaneprocedure, douanestatus)
 
         # second part of xml
         if containers is not None:
@@ -689,7 +692,7 @@ C-Point EBADEC xml (relevante elementen)\n
                         <BookingsReference />
                         <Terminal>{}</Terminal>
                         <CarrierType>{}</CarrierType>
-                    </Container>'''.format(equipmentnummer, ter_doc, douaneprocedure, douanekantoor_van_uitgang[:8], terminal[:11].replace(' ', ''), opvolgende_vervoerswijze[:2])
+                    </Container>'''.format(equipmentnummer, ter_doc, douaneprocedure, douanekantoor_van_uitgang[:8], terminal[:17].replace(' ', ''), opvolgende_vervoerswijze[:2])
 
         elif vrachttype[:4] in ('RORO', 'FRRY'):
 
@@ -711,7 +714,7 @@ C-Point EBADEC xml (relevante elementen)\n
                     xml += '''
                         <Terminal>{}</Terminal>
                         <CarrierType>{}</CarrierType>
-                    </Vehicle>'''.format(terminal[:11].replace(' ', ''), opvolgende_vervoerswijze[:2])
+                    </Vehicle>'''.format(terminal[:17].replace(' ', ''), opvolgende_vervoerswijze[:2])
 
         # third part of xml
         xml += '''
