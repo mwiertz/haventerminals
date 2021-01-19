@@ -16,6 +16,7 @@ eindpunt_transit = None
 voorafgaand_document_type = None
 voorafgaand_document_soort = None
 voorafgaand_document_referentie = None
+voorafgaand_document_categorie = None
 boekingsreferentie = None
 opvolgende_vervoerswijze = None
 containernummer_1 = None
@@ -196,8 +197,6 @@ if aangifteregime == 'Invoer NL' or aangifteregime == 'Transit vertrek NL':
     hulp('Voorbeelden:<br/>YMLUN236197722 (deepsea)<br/>DFDS534548380001 (ferry)')
 
 if aangifteregime == 'Invoer BE':
-    # soort
-    voorafgaand_document_soort = st.sidebar.selectbox('Voorafgaand document soort', type_omschrijving_codelijst_samenvoegen('datafiles/soort_voorafgaand_doc_be.csv'), 5)
 
     # categorie
     voorafgaand_document_categorie = st.sidebar.selectbox('Voorafgaand document categorie', type_omschrijving_codelijst_samenvoegen('datafiles/categorie_voorafgaand_doc_be.csv'), 0)
@@ -285,9 +284,11 @@ if aangifteregime == 'Invoer BE' and shortsea_ferry:
     terminal = st.selectbox('Terminal', lijst_impdec_terminals_BE['ter_loc'].tolist())
 
 # controle X-705
-if aangifteregime == 'Invoer NL' and (voorafgaand_document_type != 'X | SUMMIERE AANGIFTE' or voorafgaand_document_soort != '705 | COGNOSSEMENT'):
+if aangifteregime == 'Invoer NL' and (voorafgaand_document_type[:1] != 'X' or voorafgaand_document_soort[:3] != '705'):
     foutmelding('Geen X-705 als type voorafgaand document!')
-if aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer' and voorafgaand_document_type != 'X-705 | COGNOSSEMENT (BILL OF LADING)':
+elif aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer' and voorafgaand_document_type[:5] != 'X-705':
+    foutmelding('Geen X-705 als type voorafgaand document!')
+elif aangifteregime == 'Invoer BE' and (voorafgaand_document_categorie[:1] != 'X' or voorafgaand_document_type[:3] != '705'):
     foutmelding('Geen X-705 als type voorafgaand document!')
 
 # opvolgende vervoerswijze
