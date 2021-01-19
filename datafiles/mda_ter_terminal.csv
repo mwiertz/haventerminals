@@ -37,13 +37,35 @@ ter_id,ter_name,ter_tms_id,ter_country,ter_code,ter_type,ter_mid_status_support,
 110,Hutchison Ports ECT Euromax,1,NL,3199LZ951,1,false,true,true,true,true,true,false,true,true,true,true,true,true
 111,Rhenus Maasvlakte,1,NL,3199KA199,1,false,false,false,false,true,true,true,true,true,true,true,true,true
 112,Rhenus Waalhaven,1,NL,3087BB021,1,false,false,false,false,true,true,true,true,true,true,true,true,true
-113,ICO Bastenaken Terminal,5,BE,BEZEE0750200505,0,false,false,false,false,false,false,false,false,false,false,false,false,false
-114,ICO Hanze Terminal,5,BE,BEZEE0750200521,0,false,false,false,false,false,false,false,false,false,false,false,false,false
-115,ICO Noordelijk Insteek Terminal,5,BE,BEZEE0750200405,0,false,false,false,false,false,false,false,false,false,false,false,false,false
-116,ICO Vrasene Terminal (K1241,5,BE,BEANR0900501241,0,false,false,false,false,false,false,false,false,false,false,false,false,false
-117,Antwerp Euroterminal (AET K1333),5,BE,BEANR0900601333,0,false,false,false,false,false,false,false,false,false,false,false,false,false
-118,Wallenius Wilhelmsen Logistics,5,BE,BEZEE0750200530,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+113,ICO Bastenaken Terminal - IM,5,BE,BEZEE0750200505,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+114,ICO Hanze Terminal - IM,5,BE,BEZEE0750200521,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+115,ICO Noordelijk Insteek Terminal - IM,5,BE,BEZEE0750200405,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+116,ICO Vrasene Terminal (K1241) - IM,5,BE,BEANR0900501241,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+117,Antwerp Euroterminal (AET K1333) - IM,5,BE,BEANR0900601333,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+118,Wallenius Wilhelmsen Logistics - IM,5,BE,BEZEE0750200530,0,false,false,false,false,false,false,false,false,false,false,false,false,false
 119,C.RO Canadakaai,5,BE,BEZEE0750200529,0,false,false,false,false,false,false,false,false,false,false,false,false,false
 120,C.RO Zweedse kaai,5,BE,BEZEE0750300702,0,false,false,false,false,false,false,false,false,false,false,false,false,false
 121,C.RO Brittanniadok,5,BE,BEZEE0750300612,0,false,false,false,false,false,false,false,false,false,false,false,false,false
 122,P&O Ferries Terminal,5,BE,BEZEE0750300107,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+123,PSA EUROPA TERMINAL (K869),6,BE,BEANR01160S869,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+124,PSA NOORDZEE TERMINAL (K913),6,BE,BEANR01170S913,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+125,ZUIDNATIE (K118),6,BE,BEANR017120118,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+126,BELGIAN NEW FRUIT WHARF (BNFW K220),6,BE,BEANR0171900220,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+127,ATO (K364),6,BE,BEANR0172300364,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+128,NOVA NATIE TERMINALS (K420),6,BE,BEANR0172500420,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+129,EUROPORTS (K524),6,BE,BEANR0172700524,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+130,ANTWERP CONTAINER TERMINAL (K730),6,BE,BEANR0172900730,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+131,ZUIDNATIE (K734),6,BE,BEANR0172900734,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+132,EUROPORTS LEFTBANK (K1207),6,BE,BEANR0900501207,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+133,ICO Vrasene Terminal (K1241) - EX,6,BE,BEANR0900501241,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+134,Antwerp Euroterminal (AET K1333) - EX,6,BE,BEANR0900601333,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+135,DP WORLD ANTWERP GATEWAY (K1700),6,BE,BEANR0910101700,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+136,MSC PSA EUROPEAN TERMINAL (K1742),6,BE,BEANR0910101742,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+137,BELGIAN NEW FRUIT WHARF ZEEBRUGGE (BNFW K404),6,BE,BEZEE0750200404,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+138,ICO Noordelijk Insteek Terminal - EX,6,BE,BEZEE0750200405,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+139,ICO Bastenaken Terminal - EX,6,BE,BEZEE0750200505,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+140,ICO Hanze Terminal - EX,6,BE,BEZEE0750200521,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+141,Wallenius Wilhelmsen Logistics - EX,6,BE,BEZEE0750200530,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+142,CPS ZEEBRUGGE TERMINAL,6,BE,BEZEE070300120,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+143,ZEEBRUGGE INTERNATIONAL PORT,6,BE,BEZEE070300129,0,false,false,false,false,false,false,false,false,false,false,false,false,false
+144,CONTAINER HANDLING ZEEBRUGGE,6,BE,BEZEE070300206,0,false,false,false,false,false,false,false,false,false,false,false,false,false

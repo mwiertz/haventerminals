@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<S:Envelope xmlns:S=”http://www.w3.org/2003/05/soap-envelope” xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing" xmlns:ebi="http://www.myvan.descartes.com/ebi/2004/r1">
+	<S:Header>
+		<wsa:From>
+			<wsa:Address>urn:duns:371031225</wsa:Address>
+		</wsa:From>
+		<wsa:To>urn:duns:370859360</wsa:To>
+		<wsa:Action>urn:myvan:IFTMCA</wsa:Action>
+		<ebi:Sequence>
+			<ebi:MessageNumber>4</ebi:MessageNumber>
+		</ebi:Sequence>
+		<ebi:Created>2011-06-27 18:20:02</ebi:Created>
+		<ebi:TestIndicator>T3</ebi:TestIndicator>
+	</S:Header>
+	<S:Body type="FRRY">
+		<EBADEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:EBA" xsi:schemaLocation="urn:EBA EBADEC.xsd" VersionMajor="1" VersionMinor="0">
+			<Header>
+				<Sender codeType="EORI">BE0429672881</Sender>
+				<Receiver codeType="APCS">APCS</Receiver>
+				<MessageNo>BE0429672881004</MessageNo>
+				<PreviousMessageNo/>
+				<DateTimeStamp>2011-05-18T13:31:20</DateTimeStamp>
+			</Header>
+			<Body>
+				<TransactionCode>CREATE</TransactionCode>
+				<Vehicle number="1BRM839">
+					<Document type="MRN" code="EX" office="BE101000">19BEE0000098765432</Document>
+					<BookingsReference>BOEKREFTEST123</BookingsReference>
+					<Terminal>BEANR</Terminal>
+					<CarrierType>TR</CarrierType>
+				</Vehicle>
+			</Body>
+		</EBADEC>
+	</S:Body>
+</S:Envelope>
+
+
+
+<S:Envelope ...>
+	...
+	<S:Body type="FRRY">
+		<EBADEC ...>
+			...
+			<Body>
+				...
+				<Vehicle number="1BRM839">
+					<Document type="MRN" code="EX" office="BE101000">19BEE0000098765432</Document>
+					<BookingsReference>BOEKREFTEST123</BookingsReference>
+					<Terminal>BEANR</Terminal>
+					<CarrierType>TR</CarrierType>
+				</Vehicle>
+			</Body>
+		</EBADEC>
+	</S:Body>
+</S:Envelope>
+
+
+<S:Envelope ...>
+	...
+	<S:Body type="RORO">
+		<EBADEC ...>
+			...
+			<Body>
+				...
+				<Vehicle number="5GZCZ43D13S812715">
+					<Document type="MRN" code="EX" office="BE101000">13BEE0000098765432</Document>
+					<BookingsReference/>
+					<Terminal>BEANR</Terminal>
+					<CarrierType>TR</CarrierType>
+				</Vehicle>
+			</Body>
+		</EBADEC>
+	</S:Body>
+</S:Envelope>
+
+
+<S:Envelope ...>
+	...
+	<S:Body type="CONT">
+		<EBADEC ...>
+			...
+			<Body>
+				...
+				<Container number="XXXU1234567">
+					<Document type="MRN" code="EX" office="BE101000">13BEE0000098765432</Document>
+					<BookingsReference/>
+					<Terminal>BEANR</Terminal>
+					<CarrierType>TR</CarrierType>
+				</Container>
+			</Body>
+		</EBADEC>
+	</S:Body>
+</S:Envelope>

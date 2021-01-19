@@ -24,3 +24,16 @@ Volgende gegevens voor melding in RX Seaport kunnen vanuit de transitaangifte wo
 Uit aangifte:
 - Aangiftetype
 - Vervoersmiddel (uitvoer)??
+
+--> Uitvoer
+
+v - Vervoerstype
+v - Terminal
+v - opvolgende vervoerswijze
+v - Vrachttype - RORO/FRRY/CONT
+v - Boekingsreferentie ferry
+v - Identificatie vervoersmiddel
+v - Douanekantoor van uitgang
+
+
+

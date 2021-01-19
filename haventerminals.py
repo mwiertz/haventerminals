@@ -39,6 +39,7 @@ regelingstype = None
 douaneprocedure = None
 douanestatus = None
 vervoerstype = None
+douanekantoor_van_uitgang = None
 
 # ======================================================================================================================
 
@@ -107,6 +108,9 @@ lijst_ferry_terminals_NL = lijst_terminals[(lijst_terminals['ter_country'] == 'N
 
 # lijst IMPDEC terminals BE maken
 lijst_impdec_terminals_BE = lijst_terminals[(lijst_terminals['ter_country'] == 'BE') & (lijst_terminals['ter_tms_id'] == 5)]
+
+# lijst EBADEC terminals BE maken
+lijst_ebadec_terminals_BE = lijst_terminals[(lijst_terminals['ter_country'] == 'BE') & (lijst_terminals['ter_tms_id'] == 6)]
 
 # lijst met toegelaten locaties samenstellen
 lijst_locaties_NL = lijst_terminals_NL['ter_loc'].tolist()
@@ -233,18 +237,19 @@ if aangifteregime == 'Uitvoer NL' or aangifteregime == 'Invoer NL' or aangiftere
 st.header('Douanedocument voormelden')
 st.write('\n')
 
+# foutmelding en stoppen als aangiftetype TIR is gekozen
 if aangifteregime == 'Transit vertrek NL' or aangifteregime == 'Transit vertrek BE':
-
-    # foutmelding en stoppen als aangiftetype TIR is gekozen
     if aangiftetype == 'TIR':
         foutmelding('Voormelden douanedocumenten niet mogelijk voor aangiftetype {}!'.format(aangiftetype))
         st.error(foutmeldingen)
         st.stop()
 
-    # soort aangifte
+# soort aangifte
+if aangifteregime == 'Transit vertrek NL' or aangifteregime == 'Transit vertrek BE':
     soort_aangifte = st.radio('Soort aangifte', ('Invoer', 'Uitvoer'))
 
-    # eindpunt transit
+# eindpunt transit
+if aangifteregime == 'Transit vertrek NL':
     if soort_aangifte == 'Uitvoer':
         eindpunt_transit = st.radio('Eindpunt transit', ('Terminal in NL', 'Elders'))
 
@@ -295,6 +300,10 @@ if aangifteregime == 'Uitvoer NL' or aangifteregime == 'Invoer NL' or aangiftere
 if (aangifteregime == 'Invoer BE' and shortsea_ferry) or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer'):
     terminal = st.selectbox('Terminal', lijst_impdec_terminals_BE['ter_loc'].tolist())
 
+if aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer':
+    terminal = st.selectbox('Terminal', lijst_ebadec_terminals_BE['ter_loc'].tolist())
+
+
 # controle X-705
 if aangifteregime == 'Invoer NL' and (voorafgaand_document_type[:1] != 'X' or voorafgaand_document_soort[:3] != '705'):
     foutmelding('Geen X-705 als type voorafgaand document!')
@@ -303,9 +312,14 @@ elif aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer' and v
 elif aangifteregime == 'Invoer BE' and (voorafgaand_document_categorie[:1] != 'X' or voorafgaand_document_type[:3] != '705'):
     foutmelding('Geen X-705 als type voorafgaand document!')
 
+
 # opvolgende vervoerswijze
 if aangifteregime == 'Invoer NL' or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer'):
-    opvolgende_vervoerswijze = st.selectbox('Opvolgende vervoerswijze', ('1 - Zeevervoer', '2 - Spoorvervoer', '3- Wegvervoer', '8 - Binnenvaart', '9 - Onbekend'))
+    opvolgende_vervoerswijze = st.selectbox('Opvolgende vervoerswijze', ('1 - Zeevervoer', '2 - Spoorvervoer', '3 - Wegvervoer', '8 - Binnenvaart', '9 - Onbekend'), 2)
+
+if aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer':
+    opvolgende_vervoerswijze = st.selectbox('Opvolgende vervoerswijze', ('BG - Barge', 'RL - Rail', 'TR - Truck', 'VS - Vessel'), 2)
+
 
 # boekingsreferentie Portbase
 if aangifteregime == 'Uitvoer NL' or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Uitvoer'):
@@ -315,7 +329,7 @@ if aangifteregime == 'Uitvoer NL' or (aangifteregime == 'Transit vertrek NL' and
         foutmelding('Boekingsreferentie Portbase niet ingevuld!')
 
 # containernummers
-if terminaltype == 'Deepsea terminal' or aangifteregime == 'Invoer BE' or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer'):
+if terminaltype == 'Deepsea terminal' or aangifteregime == 'Invoer BE' or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer') or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer'):
 
     containers = None
     containernummers = (containernummer_1, containernummer_2, containernummer_3)
@@ -335,6 +349,18 @@ if terminaltype == 'Deepsea terminal' or aangifteregime == 'Invoer BE' or (aangi
 if (aangifteregime == 'Invoer BE' and shortsea_ferry) or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer'):
     vrachttype = st.selectbox('Vrachttype', ('RORO - Roll-on/roll-off', 'FRRY - Ferry'))
 
+if aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer':
+
+    if containers is not None:
+        vrachttype = 'CONT'
+        st.text('Vrachttype:  {}'.format(vrachttype))
+
+    else:
+        vrachttype = st.selectbox('Vrachttype', ('RORO - Roll-on/roll-off', 'FRRY - Ferry', 'CONT - Container'))
+        if vrachttype[:4] == 'CONT' and containers is None:
+            foutmelding('Geen containernummers in aangifte!')
+
+
 # boekingsreferentie ferry MID
 if (aangifteregime == 'Invoer NL' or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer')) and terminaltype == 'Ferry terminal':
     if voorafgaand_document_referentie == '':
@@ -343,7 +369,8 @@ if (aangifteregime == 'Invoer NL' or (aangifteregime == 'Transit vertrek NL' and
         boekingsreferentie = voorafgaand_document_referentie
         st.text('Boekingsreferentie ferry:  {}'.format(boekingsreferentie))
 
-# boekingsreferentie ferry IMPDEC
+
+# boekingsreferentie ferry IMPDEC/EBADEC
 if (aangifteregime == 'Invoer BE' and shortsea_ferry) and vrachttype[:4] == 'FRRY':
     if voorafgaand_document_referentie == '':
         foutmelding('Geen B/L of AWB ingevuld!')
@@ -351,7 +378,7 @@ if (aangifteregime == 'Invoer BE' and shortsea_ferry) and vrachttype[:4] == 'FRR
         boekingsreferentie = voorafgaand_document_referentie
         st.text('Boekingsreferentie ferry:  {}'.format(boekingsreferentie))
 
-elif (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer') and vrachttype[:4] == 'FRRY':
+elif (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer') or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer') and vrachttype[:4] == 'FRRY':
     boekingsreferentie = st.text_input('Boekingsreferentie ferry')
 
     if boekingsreferentie == '':
@@ -359,13 +386,18 @@ elif (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and 
 
 
 # equipment ids ferry of FRRY/RORO
-if (aangifteregime == 'Uitvoer NL' and terminaltype == 'Ferry terminal') or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Uitvoer' and terminaltype == 'Ferry terminal') or (aangifteregime == 'Invoer BE' and containers is None) or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer' and containers is None):
+if (aangifteregime == 'Uitvoer NL' and terminaltype == 'Ferry terminal') or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Uitvoer' and terminaltype == 'Ferry terminal') or (aangifteregime == 'Invoer BE' and containers is None) or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer' and containers is None) or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer' and (vrachttype[:4] == 'FRRY' or vrachttype[:4] == 'RORO')):
     identificatie_vervoersmiddel_1 = st.text_input('Identificatie vervoersmiddel 1')
     identificatie_vervoersmiddel_2 = st.text_input('Identificatie vervoersmiddel 2')
     identificatie_vervoersmiddel_3 = st.text_input('Identificatie vervoersmiddel 3')
 
     if identificatie_vervoersmiddel_1 == '' and identificatie_vervoersmiddel_2 == '' and identificatie_vervoersmiddel_3 == '':
         foutmelding('Geen identificatie vervoersmiddel(en) ingevuld!')
+
+
+# douanekantoor van uitgang
+if aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer':
+    douanekantoor_van_uitgang = st.selectbox('Douanekantoor van uitgang', ('BE101000', 'BE343000'))
 
 # berichttype
 if aangifteregime == 'Invoer NL' or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer'):
@@ -374,9 +406,13 @@ elif aangifteregime == 'Uitvoer NL' or (aangifteregime == 'Transit vertrek NL' a
     berichttype = 'Portbase MED'
 elif aangifteregime == 'Invoer BE' or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer'):
     berichttype = 'C-Point IMPDEC'
+elif aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer':
+    berichttype = 'C-Point EBADEC'
+
 
 # berichttype
 st.text('Berichttype:  {}'.format(berichttype))
+
 
 # documenttype
 documenttype = st.empty()
@@ -414,7 +450,7 @@ elif aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Uitvoer' and 
     elif eindpunt_transit == 'Elders':
         documenttype.text('Documenttype:  TT1')
         ter_doc = 'ter_tt1'
-elif aangifteregime == 'Invoer BE' or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer'):
+elif aangifteregime == 'Invoer BE' or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer') or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer'):
     documenttype.text('Documenttype:  MRN')
     ter_doc = 'MRN'
 
@@ -434,12 +470,14 @@ if locatie not in lijst_terminals['ter_loc'].tolist():
 if terminaltype is not None:
     st.text('Terminaltype:  {}'.format(terminaltype))
 
+
 # ondersteunt terminal documenttype?
 if aangifteregime == 'Uitvoer NL' or aangifteregime == 'Invoer NL' or aangifteregime == 'Transit vertrek NL':
     if terminal is not None and not lijst_terminals.loc[lijst_terminals['ter_loc'] == terminal, ter_doc].iloc[0]:
         foutmelding('Terminal {} ondersteunt documenttype {} niet!'.format(terminal[:11], ter_doc[-3:].upper()))
 
-# douaneprocedure (IMPDEC)
+
+# douaneprocedure IMPDEC
 if aangifteregime == 'Invoer BE':
 
     douaneprocedure = '{}{}{}'.format(aangiftesymbool, aangiftetype[:1], regelingstype[:1])
@@ -460,6 +498,11 @@ if aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and ver
     if aangiftetype not in ('T-', 'T1', 'T2', 'T2L'):
         foutmelding('Douaneprocedure {} niet ondersteund; aangiftetype {} niet ondersteund!'.format(douaneprocedure, aangiftetype))
 
+    st.text('Douaneprocedure:  {}'.format(douaneprocedure))
+
+# douaneprocedure EBADEC
+if aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer':
+    douaneprocedure = 'T'
     st.text('Douaneprocedure:  {}'.format(douaneprocedure))
 
 
@@ -617,6 +660,64 @@ C-Point IMPDEC xml (relevante elementen)\n
                 </Body>
            </IMPDEC>
        </S:Body>
+    </S:Envelope>'''
+
+    # EBADEC xml
+    elif berichttype == 'C-Point EBADEC':
+
+        # first part of xml
+        xml = '''
+C-Point EBADEC xml (relevante elementen)\n
+    <S:Envelope ...>
+        ...
+        <S:Body type="{}">
+            <EBADEC ...>
+                ...
+                <Body>
+                    ...'''.format(vrachttype[:4])
+
+        # second part of xml
+        if vrachttype[:4] == 'CONT':
+
+            equipmentnummers = containernummers
+
+            for equipmentnummer in equipmentnummers:
+                if equipmentnummer != '':
+                    xml += '''
+                    <Container number="{}">
+                        <Document type="{}" code="{}" office="{}">[MRN AANGIFTE]</Document>
+                        <BookingsReference />
+                        <Terminal>{}</Terminal>
+                        <CarrierType>{}</CarrierType>
+                    </Container>'''.format(equipmentnummer, ter_doc, douaneprocedure, douanekantoor_van_uitgang[:8], terminal[:11].replace(' ', ''), opvolgende_vervoerswijze[:2])
+
+        elif vrachttype[:4] in ('RORO', 'FRRY'):
+
+            equipmentnummers = (identificatie_vervoersmiddel_1, identificatie_vervoersmiddel_2, identificatie_vervoersmiddel_3)
+
+            for equipmentnummer in equipmentnummers:
+                if equipmentnummer != '':
+                    xml += '''
+                    <Vehicle number="{}">
+                        <Document type="{}" code="{}" office="{}">[MRN AANGIFTE]</Document>'''.format(equipmentnummer, ter_doc, douaneprocedure, douanekantoor_van_uitgang[:8])
+
+                    if vrachttype[:4] == 'RORO':
+                        xml += '''
+                        <BookingsReference />'''
+                    elif vrachttype[:4] == 'FRRY':
+                        xml += '''
+                        <BookingsReference>{}</BookingsReference>'''.format(boekingsreferentie)
+
+                    xml += '''
+                        <Terminal>{}</Terminal>
+                        <CarrierType>{}</CarrierType>
+                    </Vehicle>'''.format(terminal[:11].replace(' ', ''), opvolgende_vervoerswijze[:2])
+
+        # third part of xml
+        xml += '''
+                </Body>
+            </EBADEC>
+        </S:Body>
     </S:Envelope>'''
 
     st.success(xml)
