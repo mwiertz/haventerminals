@@ -400,7 +400,7 @@ if (aangifteregime == 'Uitvoer NL' and terminaltype == 'Ferry terminal') or (aan
 
 # douanekantoor van uitgang
 if aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer':
-    douanekantoor_van_uitgang = st.selectbox('Douanekantoor van uitgang', ('BE101000', 'BE343000'))
+    douanekantoor_van_uitgang = st.selectbox('Douanekantoor van uitgang', type_omschrijving_codelijst_samenvoegen('datafiles/kantoren_van_uitgang_be.csv'))
 
 # berichttype
 if aangifteregime == 'Invoer NL' or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer'):
