@@ -126,7 +126,7 @@ lijst_locaties_NL.append('6089 NB 2 | De Bergjes Heibloem')
 # == SIDEBAR
 
 # selectie voor aangifte regime
-aangifteregime = st.sidebar.selectbox('Aangifteregime', ('Uitvoer NL', 'Invoer NL', 'Transit vertrek NL', 'Invoer BE', 'Transit vertrek BE'), 4)
+aangifteregime = st.sidebar.selectbox('Aangifteregime', ('Uitvoer NL', 'Invoer NL', 'Transit vertrek NL', 'Invoer BE', 'Transit vertrek BE'), 0)
 st.sidebar.text('\n')
 st.sidebar.text('\n')
 
