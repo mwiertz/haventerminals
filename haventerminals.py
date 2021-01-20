@@ -56,11 +56,18 @@ def hulp(tekst):
     return st.sidebar.markdown('<span style="font-size:0.8em; color:#0066CC">{}</span>'.format(tekst), unsafe_allow_html=True)
 
 
-def terminalcode_naar_locatiecode(terminalcode, terminalnaam, terminalland):
+def terminalcode_naar_locatiecode(terminalcode, terminalnaam, terminalland, tms_id):
     if terminalland == 'NL':
         return '{} {} {} | {}'.format(terminalcode[0:4], terminalcode[4:6], terminalcode[6:9].lstrip('0'), terminalnaam)
-    elif terminalland == 'BE':
+    elif terminalland == 'BE' and terminalcode.startswith('BE'):
         return '{} {} {} | {}'.format(terminalcode[0:5], terminalcode[5:10], terminalcode[10:15], terminalnaam)
+    elif terminalland == 'BE' and not terminalcode.startswith('BE'):
+        if tms_id == 3:
+            return '{} | {}'.format(terminalcode, 'PSA')
+        elif tms_id == 4:
+            return '{} | {}'.format(terminalcode, 'DP World')
+        else:
+            return '{}'.format(terminalcode)
 
 
 def ophalen_codelijst(codelijst_xml, codelijstnaam):
@@ -96,7 +103,7 @@ def type_omschrijving_codelijst_samenvoegen(codelijst):
 # inlezen en uitbreiden lijst terminals uit csv (dump uit mcc database, tabel mda_ter_terminal)
 lijst_terminals = pd.read_csv('datafiles/mda_ter_terminal.csv')
 
-lijst_terminals['ter_loc'] = lijst_terminals.apply(lambda row: terminalcode_naar_locatiecode(row['ter_code'], row['ter_name'], row['ter_country']), axis=1)
+lijst_terminals['ter_loc'] = lijst_terminals.apply(lambda row: terminalcode_naar_locatiecode(row['ter_code'], row['ter_name'], row['ter_country'], row['ter_tms_id']), axis=1)
 
 # lijst terminals NL maken
 lijst_terminals_NL = lijst_terminals[lijst_terminals['ter_country'] == 'NL']
@@ -109,11 +116,19 @@ lijst_deepsea_terminals_NL = lijst_terminals[(lijst_terminals['ter_country'] == 
 # lijst ferry terminals NL maken
 lijst_ferry_terminals_NL = lijst_terminals[(lijst_terminals['ter_country'] == 'NL') & (lijst_terminals['ter_type'] == 2)]
 
+# lijst terminals BE maken
+lijst_terminals_BE = lijst_terminals[(lijst_terminals['ter_country'] == 'BE')]
+lijst_terminals_BE.set_index(['ter_id'], inplace=True)
+lijst_terminals_BE.reset_index(level=['ter_id'], inplace=True)
+
 # lijst IMPDEC terminals BE maken
 lijst_impdec_terminals_BE = lijst_terminals[(lijst_terminals['ter_country'] == 'BE') & (lijst_terminals['ter_tms_id'] == 5)]
 
 # lijst EBADEC terminals BE maken
 lijst_ebadec_terminals_BE = lijst_terminals[(lijst_terminals['ter_country'] == 'BE') & (lijst_terminals['ter_tms_id'] == 6)]
+
+# lijst TUL terminals BE maken
+lijst_tul_terminals_BE = lijst_terminals[(lijst_terminals['ter_country'] == 'BE') & ((lijst_terminals['ter_tms_id'] == 3) | (lijst_terminals['ter_tms_id'] == 4))]
 
 # lijst met toegelaten locaties samenstellen
 lijst_locaties_NL = lijst_terminals_NL['ter_loc'].tolist()
@@ -137,7 +152,6 @@ if aangifteregime == 'Uitvoer NL':
     # relevante selecties uit aangiftesymbolen toevoegen
     aangiftesymbool = st.sidebar.selectbox('Aangiftesymbool', ('CO', 'EU', 'EX'), 2)
 
-# Invoer NL
 if aangifteregime == 'Invoer NL':
 
     # lijst met regelingen samenstellen
@@ -224,6 +238,9 @@ if aangifteregime == 'Invoer BE':
 if aangifteregime == 'Uitvoer NL' or aangifteregime == 'Invoer NL':
     locatie = st.sidebar.selectbox('Goederenlocatie', lijst_locaties_NL)
 
+if aangifteregime == 'Transit vertrek BE':
+    locatie = st.sidebar.selectbox('Vertrekterminal', lijst_terminals_BE['ter_loc'])
+
 
 # containernummers toevoegen
 if aangifteregime == 'Uitvoer NL' or aangifteregime == 'Invoer NL' or aangifteregime == 'Transit vertrek NL' or aangifteregime == 'Invoer BE' or aangifteregime == 'Transit vertrek BE':
@@ -298,13 +315,43 @@ if aangifteregime == 'Uitvoer NL' or aangifteregime == 'Invoer NL' or aangiftere
                 terminaltype = 'Ferry terminal'
 
         elif aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer' and code_controleresultaat == 'A3':
-            foutmelding('Toegelaten locatie goederen ({}) is geen (ondersteunde) terminal!'. format(locatie[:10]))
+            foutmelding('Toegelaten locatie goederen ({}) is geen (ondersteunde) terminal!'.format(locatie[:10]))
 
-if (aangifteregime == 'Invoer BE' and shortsea_ferry) or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer'):
+if aangifteregime == 'Invoer BE' and shortsea_ferry:
     terminal = st.selectbox('Terminal', lijst_impdec_terminals_BE['ter_loc'].tolist())
 
+if aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer':
+
+    if locatie.startswith('BE'):
+        _locatie = locatie[:locatie.find('|')].replace(' ', '')
+    else:
+        _locatie = locatie[:locatie.find('(')]
+
+    if vervoerstype == 'Shortsea- en ferryverkeer':
+        if locatie in lijst_impdec_terminals_BE['ter_loc'].tolist():
+            terminal = locatie
+        else:
+            foutmelding('Gekozen vertrekterminal ({}) ondersteunt geen C-Point IMPDEC melding!'.format(_locatie))
+
+    if vervoerstype == 'Deepsea via PSA of DP World':
+        if locatie in lijst_tul_terminals_BE['ter_loc'].tolist():
+
+            if locatie.endswith('PSA'):
+                terminaltype = 'PSA'
+            elif locatie.endswith('DP World'):
+                terminaltype = 'DP World'
+
+            terminal = locatie
+
+        else:
+            foutmelding('Gekozen vertrekterminal ({}) is geen PSA of DP World en ondersteunt geen TUL!'.format(_locatie))
+
 if aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer':
-    terminal = st.selectbox('Terminal', lijst_ebadec_terminals_BE['ter_loc'].tolist())
+
+    if locatie in lijst_ebadec_terminals_BE['ter_loc'].tolist():
+        terminal = locatie
+    else:
+        terminal = st.selectbox('Terminal', lijst_ebadec_terminals_BE['ter_loc'].tolist())
 
 
 # controle X-705
@@ -320,7 +367,7 @@ elif aangifteregime == 'Invoer BE' and (voorafgaand_document_categorie[:1] != 'X
 if aangifteregime == 'Invoer NL' or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer'):
     opvolgende_vervoerswijze = st.selectbox('Opvolgende vervoerswijze', ('1 - Zeevervoer', '2 - Spoorvervoer', '3 - Wegvervoer', '8 - Binnenvaart', '9 - Onbekend'), 2)
 
-if aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer':
+if aangifteregime == 'Transit vertrek BE' and (soort_aangifte == 'Uitvoer' or (soort_aangifte == 'Invoer' and vervoerstype == 'Deepsea via PSA of DP World')):
     opvolgende_vervoerswijze = st.selectbox('Opvolgende vervoerswijze', ('BG - Barge', 'RL - Rail', 'TR - Truck', 'VS - Vessel'), 2)
 
 
@@ -331,8 +378,9 @@ if aangifteregime == 'Uitvoer NL' or (aangifteregime == 'Transit vertrek NL' and
     if boekingsreferentie == '':
         foutmelding('Boekingsreferentie Portbase niet ingevuld!')
 
+
 # containernummers
-if terminaltype == 'Deepsea terminal' or aangifteregime == 'Invoer BE' or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer') or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer'):
+if terminaltype == 'Deepsea terminal' or aangifteregime == 'Invoer BE' or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer') or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer'):
 
     containers = None
     containernummers = (containernummer_1, containernummer_2, containernummer_3)
@@ -345,8 +393,10 @@ if terminaltype == 'Deepsea terminal' or aangifteregime == 'Invoer BE' or (aangi
 
     if containers is not None:
         st.text('Containernummer(s):  {}'.format(containers))
-    elif terminaltype == 'Deepsea terminal':
-        foutmelding('Geen containernummers in aangifte!')
+    elif terminaltype is not None:
+        if terminaltype == 'Deepsea terminal' or terminaltype.startswith('TUL'):
+            foutmelding('Geen containernummers in aangifte!')
+
 
 # vrachttype
 if (aangifteregime == 'Invoer BE' and shortsea_ferry) or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer'):
@@ -402,6 +452,7 @@ if (aangifteregime == 'Uitvoer NL' and terminaltype == 'Ferry terminal') or (aan
 if aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer':
     douanekantoor_van_uitgang = st.selectbox('Douanekantoor van uitgang', type_omschrijving_codelijst_samenvoegen('datafiles/kantoren_van_uitgang_be.csv'))
 
+
 # berichttype
 if aangifteregime == 'Invoer NL' or (aangifteregime == 'Transit vertrek NL' and soort_aangifte == 'Invoer'):
     berichttype = 'Portbase MID'
@@ -409,6 +460,8 @@ elif aangifteregime == 'Uitvoer NL' or (aangifteregime == 'Transit vertrek NL' a
     berichttype = 'Portbase MED'
 elif aangifteregime == 'Invoer BE' or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Shortsea- en ferryverkeer'):
     berichttype = 'C-Point IMPDEC'
+elif aangifteregime == 'Invoer BE' or (aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Invoer' and vervoerstype == 'Deepsea via PSA of DP World'):
+    berichttype = 'TUL'
 elif aangifteregime == 'Transit vertrek BE' and soort_aangifte == 'Uitvoer':
     berichttype = 'C-Point EBADEC'
 
@@ -722,5 +775,33 @@ C-Point EBADEC xml (relevante elementen)\n
             </EBADEC>
         </S:Body>
     </S:Envelope>'''
+
+    # TUL xml
+    elif berichttype == 'TUL':
+
+        # first part of xml
+        xml = '''
+TUL xml (relevante elementen) - {}\n
+    <CustomsEnvelope ...>
+	    ...'''.format(terminaltype)
+
+        # second part of xml
+        for containernummer in containernummers:
+            if containernummer != '':
+                xml += '''
+        <ContainerID>{}</ContainerID>'''.format(containernummer)
+
+        # third part of xml
+        xml += '''
+        <ModeOfTransport>{}</ModeOfTransport>
+        ...
+        <DocumentInfo>
+            <MRN>[MRN AANGIFTE]</MRN>
+            <DocumentType>AccompanyingLetter</DocumentType>
+            <ValidityDate>[VRIJGAVEDATUM AANGIFTE - YYYY-MM-DD]</ValidityDate>
+            <AttachmentName>[MRN AANGIFTE].pdf</AttachmentName>
+            <BinaryAttachmentData>[Base64 encoded PDF AANGIFTE]</BinaryAttachmentData>
+        </DocumentInfo>
+    </CustomsEnvelope>'''.format(opvolgende_vervoerswijze[:2])
 
     st.success(xml)

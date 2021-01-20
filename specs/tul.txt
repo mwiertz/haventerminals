@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomsEnvelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SenderID>324</SenderID>
+	<XMLReferenceNumber>1616025-20210115153446</XMLReferenceNumber>
+	<ContainerID>PONU1780360</ContainerID>
+	<ModeOfTransport>TR</ModeOfTransport>
+	<TransactionStatus>Original</TransactionStatus>
+	<DocumentInfo>
+		<MRN>21BE10100044292508</MRN>
+		<DocumentType>AccompanyingLetter</DocumentType>
+		<ValidityDate>20210205</ValidityDate>
+		<AttachmentName>1616025.pdf</AttachmentName>
+		<BinaryAttachmentData>
+        </BinaryAttachmentData>
+    </DocumentInfo>
+</CustomsEnvelope>
+
+<CustomsEnvelope ...>
+	...
+	<ContainerID>PONU1780360</ContainerID>
+	<ModeOfTransport>TR</ModeOfTransport>
+	...
+	<DocumentInfo>
+		<MRN>21BE10100044292508</MRN>
+		<DocumentType>AccompanyingLetter</DocumentType>
+		<ValidityDate>20210205</ValidityDate>
+		<AttachmentName>1616025.pdf</AttachmentName>
+		<BinaryAttachmentData></BinaryAttachmentData>
+    </DocumentInfo>
+</CustomsEnvelope>
