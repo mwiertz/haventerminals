@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing" xmlns:ebi="http://www.myvan.descartes.com/ebi/2004/r1">
+	<S:Header>
+		<wsa:From>
+			<wsa:Address> urn:duns:370859360</wsa:Address>
+		</wsa:From>
+		<wsa:To>urn:duns:371031225</wsa:To>
+		<wsa:Action>urn:myvan:APERAK </wsa:Action>
+		<ebi:Sequence>
+			<ebi:MessageNumber>5</ebi:MessageNumber>
+		</ebi:Sequence>
+<ebi:Created>2011-06-27 18:25:04</ebi:Created>
+ <ebi:TestIndicator>T</ebi:TestIndicator>
+	</S:Header>
+	<S:Body>
+             <APERAK xmlns="urn:PCM" xmlns:ns2="urn:EBA" VersionMinor="0" VersionMajor="1">
+	<MessageHeader>
+		<MessageIdentifier>
+			<MessageTypeIdentifier>APERAK</MessageTypeIdentifier>
+			<MessageTypeVersionNumber>D</MessageTypeVersionNumber>
+			<MessageTypeReleaseNumber>03A</MessageTypeReleaseNumber>
+			<ControllingAgency>UN</ControllingAgency>
+			<AssociationAssignedCode>EBL</AssociationAssignedCode>
+		</MessageIdentifier>
+	</MessageHeader>
+	<BeginningOfMessage>
+		<DocumentMessageName>
+			<DocumentNameCode>294</DocumentNameCode>
+		</DocumentMessageName>
+		<DocumentMessageIdentification>
+			<DocumentIdentifier>EBL000000000000001044</DocumentIdentifier>
+		</DocumentMessageIdentification>
+		<MessageFunctionCode>9</MessageFunctionCode>
+		<ResponseTypeCode>RE</ResponseTypeCode>
+	</BeginningOfMessage>
+	<DateTimePeriod>
+		<DateTimeFunctionQualifier>137</DateTimeFunctionQualifier>
+		<DateOrTimeOrPeriodText>2011-05-31T05:20:49.527Z</DateOrTimeOrPeriodText>
+	</DateTimePeriod>
+	<GroupDocumentMessageDetails>
+		<DocumentMessageName>
+			<DocumentNameCode>7</DocumentNameCode>
+		</DocumentMessageName>
+		<DocumentMessageDetails>
+			<DocumentIdentifier>BE0429672881004</DocumentIdentifier>
+		</DocumentMessageDetails>
+	</GroupDocumentMessageDetails>
+	<GroupNameAndAddress>
+		<NameAndAddress>
+			<PartyFunctionCodeQualifier>MS</PartyFunctionCodeQualifier>
+			<PartyIdentificationDetails>
+				<PartyIdentifier>EORI:GHA</PartyIdentifier>
+			</PartyIdentificationDetails>
+		</NameAndAddress>
+	</GroupNameAndAddress>
+	<GroupNameAndAddress>
+		<NameAndAddress>
+			<PartyFunctionCodeQualifier>MR</PartyFunctionCodeQualifier>
+			<PartyIdentificationDetails>
+				<PartyIdentifier>EORI:BE0429672881</PartyIdentifier>
+			</PartyIdentificationDetails>
+		</NameAndAddress>
+	</GroupNameAndAddress>
+	<GroupApplicationErrorInformation>
+		<ApplicationErrorInformation>
+			<ApplicationErrorDetail>
+				<ApplicationErrorCode>999</ApplicationErrorCode>
+				<CodeListIdentificationCode>REJ</CodeListIdentificationCode>
+				<CodeListResponsibleAgencyCode>APA</CodeListResponsibleAgencyCode>
+			</ApplicationErrorDetail>
+		</ApplicationErrorInformation>
+		<FreeText>
+			<TextSubjectCodeQualifier>AAO</TextSubjectCodeQualifier>
+			<TextLiteral>
+				<FreeText>validation.fault</FreeText>
+			</TextLiteral>
+		</FreeText>
+	</GroupApplicationErrorInformation>
+            </APERAK>
+</S:Body>
+</S:Envelope>

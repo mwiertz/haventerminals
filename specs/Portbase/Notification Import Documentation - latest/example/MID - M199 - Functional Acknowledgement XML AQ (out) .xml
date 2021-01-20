@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcsDocument xmlns="http://www.portbase.com/schema">
+<PcsDocumentHeader>
+<headerVersion>1.0</headerVersion>
+<senderIdentifier>NLRTMPCS</senderIdentifier>
+<receiverIdentifier>EORINR KLANT</receiverIdentifier>
+<documentIdentification>
+<instanceIdentifier>124485555P</instanceIdentifier>
+<creationDateTime>2012-12-11T13:21:23</creationDateTime>
+</documentIdentification>
+<numberOfDocumentContents>1</numberOfDocumentContents>
+</PcsDocumentHeader>
+<PcsDocumentContent>
+<contentHeader>
+<contentType>midFunctAck</contentType>
+<contentVersion>1.0</contentVersion>
+<contentStandard>midFunctAck.xsd</contentStandard>
+<contentReference>124489355P</contentReference>
+<contentAction>original</contentAction>
+<previousContentReference>00001</previousContentReference>
+</contentHeader>
+<contentBody>
+<functionalResponse>
+	<responseTypeCode>AQ</responseTypeCode>
+	<acknowledgeResponseReason>
+		<acknowledgementCode>ACQ</acknowledgementCode>
+		<acknowledgementDescription>Sending of MID to terminal acknowledged by PCS.</acknowledgementDescription>
+	</acknowledgeResponseReason>
+</functionalResponse>
+</contentBody>
+</PcsDocumentContent>
+</PcsDocument>

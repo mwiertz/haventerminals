@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with Liquid XML Studio - FREE Community Edition 7.0.2.746 (http://www.liquid-technologies.com)-->
+<xs:schema xmlns:tns="urn:PCM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" elementFormDefault="qualified" targetNamespace="urn:PCM" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Common.xsd" />
+  <xs:element name="APERAK" type="tns:MTypeAperak" />
+  <xs:complexType name="MTypeAperak">
+    <xs:sequence>
+      <xs:element name="MessageHeader" type="tns:STypeMessageHeader" />
+      <xs:element name="BeginningOfMessage" type="tns:STypeBeginningOfMessage" />
+      <xs:element name="DateTimePeriod" type="tns:STypeDateTimePeriod" />
+      <xs:element minOccurs="0" name="FreeText" type="tns:STypeFreeText" />
+      <xs:element name="GroupDocumentMessageDetails" type="tns:STypeDocumentMessageDetails" />
+      <xs:element minOccurs="0" maxOccurs="7" name="GroupReference">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Reference" type="tns:STypeReference" />
+            <xs:element minOccurs="0" name="DateTimePeriod" type="tns:STypeDateTimePeriodRFF" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="2" maxOccurs="2" name="GroupNameAndAddress">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="NameAndAddress" type="tns:STypeNameAndAddress" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="999" name="GroupApplicationErrorInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ApplicationErrorInformation" type="tns:STypeApplicationErrorInformation" />
+            <xs:element minOccurs="0" name="FreeText" type="tns:STypeFreeTextERC" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute fixed="1" name="VersionMajor" type="xs:integer" use="required" />
+    <xs:attribute fixed="0" name="VersionMinor" type="xs:integer" use="required" />
+    <xs:attribute name="TestIndicator">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+          <xs:enumeration value="1" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcsDocument xmlns="http://www.portbase.com/schema">
+	<PcsDocumentHeader>
+		<headerVersion>1.0</headerVersion>
+		<senderIdentifier>NLRTMPCS</senderIdentifier>
+		<receiverIdentifier>EORI NUMMER</receiverIdentifier>
+		<documentIdentification>
+			<instanceIdentifier>47812154X</instanceIdentifier>
+			<creationDateTime>2013-01-10T11:16:30</creationDateTime>
+		</documentIdentification>
+		<numberOfDocumentContents>1</numberOfDocumentContents>
+	</PcsDocumentHeader>
+	<PcsDocumentContent>
+		<contentHeader>
+			<contentType>midFunctAck</contentType>
+			<contentVersion>1.0</contentVersion>
+			<contentStandard>midFunctAck.xsd</contentStandard>
+			<contentReference>47812154X</contentReference>
+			<contentAction>original</contentAction>
+			<previousContentReference>123456GHJ7</previousContentReference>
+		</contentHeader>
+		<contentBody>
+			<functionalResponse>
+				<responseTypeCode>RP</responseTypeCode>
+				<rejectionResponseReason>
+					<rejectionCode>D11</rejectionCode>
+					<rejectionDescription>Proceduretype NOR is niet geldig voor documenttype MRN.</rejectionDescription>
+				</rejectionResponseReason>
+			</functionalResponse>
+		</contentBody>
+	</PcsDocumentContent>
+</PcsDocument>

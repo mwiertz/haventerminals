@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+****************************************************************************
+Ident: Portbase port community system
+Copyright: (c) 2012 Portbase bv All Rights Reserved.
+****************************************************************************
+Portbase bv              *  No part of this file may be reproduced or
+                         *  transmitted in any form or by any means,
+Seattleweg 7             *  electronic or mechanical, or otherwise,
+3195 ND Rotterdam        *  without prior written permission of the
+The Netherlands          *  copyright holder.
+****************************************************************************
+Author: R. van Veen
+Email: r.van.veen@portbase.com
+$Id$ 
+-->
+<!--
+Date		Version		Author				Changelog
+01-01-2015	1.0			r.van.veen			Initial version
+24-08-2016	1.1			g.duijm				Added new doctype,s ENL, NAR and PIE in nctsmsg/nctsdoc/doctype
+09-05-2019	1.2			p.van.trigt			Length mrnnumber and docnumber of nctsdoc changed from 27 to 35 characters
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:annotation>
+		<xs:documentation>Description: Document structure for the M198 Notification import documentation</xs:documentation>
+		<xs:documentation>Important: In case of not used conditional or optional tags empty tags must be left out.</xs:documentation>
+		<xs:documentation>Remarks: In many cases, optionality for elements is governed / specified by the default value: if not specified, minOccurs="1" is assumed (which is the default) The same is true for attributes: if they are not required, no "use=required" is specified, so it is optional by default.</xs:documentation>
+	</xs:annotation>
+	<xs:element name="nctsmsg">
+		<xs:annotation>
+			<xs:documentation>Description: Start of Notification import documentation.</xs:documentation>
+			<xs:documentation>Remarks: Reports error D00 when the sender is not allowed to submit any Notification import documentation to any terminal.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="sender">
+					<xs:annotation>
+						<xs:documentation>Description: Information to identify the sending party that has created this Notification import documentation.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="main" type="LabelType">
+								<xs:annotation>
+									<xs:documentation>Description: Customs number (= EORI number) or EAN number.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="sub" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Description: Sublocation.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="15"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="type">
+								<xs:annotation>
+									<xs:documentation>Description: Type of procedure.</xs:documentation>
+									<xs:documentation>Allowed value(s): 1. IF doctype equals 'NT1', 'IM4', 'DIN', 'DEN', 'FWV', 'IM7', 'PIE', 'NAR' or 'ENL' THEN 'NOR'.</xs:documentation>
+									<xs:documentation>Allowed value(s): 2. IF doctype equals 'MRN' THEN 'TATG'.</xs:documentation>
+									<xs:documentation>Remarks: Reports error D11 when the type of procedure is not allowed for the doctype specified.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="NonEmptyStringType">
+										<xs:maxLength value="4"/>
+										<xs:enumeration value="NOR">
+											<xs:annotation>
+												<xs:documentation>Normaal</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="TATG">
+											<xs:annotation>
+												<xs:documentation>Toegelaten afzender</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="recipient">
+					<xs:annotation>
+						<xs:documentation>Description: Information to identify the addressee of this Notification import documentation.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="main">
+								<xs:annotation>
+									<xs:documentation>Description: Terminal.</xs:documentation>
+									<xs:documentation>Allowed value(s): The identifying Fenex location code of the party.</xs:documentation>
+									<xs:documentation>Remarks: Reports error D02 when the sender is not authorised to submit a notification of the document type specified to the terminal .</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="NonEmptyStringType">
+										<xs:maxLength value="15"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="sub" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Description: Sub location.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="NonEmptyStringType">
+										<xs:maxLength value="15"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="msgref" type="LabelType">
+					<xs:annotation>
+						<xs:documentation>Contains information which uniquely identifies this instance of the Notification import documentation between the sender and the receiver. To be assigned by the document sender.</xs:documentation>
+						<xs:documentation>Remarks: Reports error 112 when a duplicate message reference has been sent.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="msgtype">
+					<xs:annotation>
+						<xs:documentation>Description: Message type</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="NonEmptyStringType">
+							<xs:maxLength value="3"/>
+							<xs:enumeration value="1">
+								<xs:annotation>
+									<xs:documentation>New message from agent to terminal</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="nctsdoc" maxOccurs="99">
+					<xs:annotation>
+						<xs:documentation>Description: Information to identify the sending party that has created this Notification import documentation.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:choice>
+								<xs:annotation>
+									<xs:documentation>Description: Licence number of the warehouse.</xs:documentation>
+									<xs:documentation>Remarks: Reports error D05 when the length of the mrn or docnumber is invalid.</xs:documentation>
+									<xs:documentation>Remarks: Reports error D06 when the format of the mrn or docnumber is invalid.</xs:documentation>
+									<xs:documentation>Remarks: Reports error D07 when the number's checkdigit of the document of type 'MRN' is invalid.</xs:documentation>
+								</xs:annotation>
+								<xs:element name="mrnnumber">
+									<xs:simpleType>
+										<xs:restriction base="NonEmptyStringType">
+											<xs:maxLength value="35"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="docnumber">
+									<xs:simpleType>
+										<xs:restriction base="NonEmptyStringType">
+											<xs:maxLength value="35"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:choice>
+							<xs:element name="container">
+								<xs:annotation>
+									<xs:documentation>Description: Container number.</xs:documentation>
+									<xs:documentation>Remarks: Reports error D04 when the container number is missing.</xs:documentation>
+									<xs:documentation>Remarks: Reports error D10 when a duplicate container number is mentioned on the same document.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="NonEmptyStringType">
+										<xs:maxLength value="11"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="modality">
+								<xs:annotation>
+									<xs:documentation>Description: Continued modality.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="NumberType">
+										<xs:totalDigits value="1"/>
+										<xs:enumeration value="1">
+											<xs:annotation>
+												<xs:documentation>Sea ship</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="2">
+											<xs:annotation>
+												<xs:documentation>Rail</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="3">
+											<xs:annotation>
+												<xs:documentation>Road</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="8">
+											<xs:annotation>
+												<xs:documentation>Barge</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="9">
+											<xs:annotation>
+												<xs:documentation>Unknown</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="doctype">
+								<xs:annotation>
+									<xs:documentation>Description: Document type of the indicated document number.</xs:documentation>
+									<xs:documentation>Allowed value(s): Only 1 document type per 'M198 Notification import documentation' is allowed.</xs:documentation>
+									<xs:documentation>Remarks: Reports error D03 when the M198 contains more than one document type</xs:documentation>
+									<xs:documentation>Remarks: Reports error D02 when the sender is not authorised to submit a notification of the document type specified to the terminal .</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="NonEmptyStringType">
+										<xs:maxLength value="3"/>
+										<xs:enumeration value="NT1">
+											<xs:annotation>
+												<xs:documentation>Used for NCTS</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="MRN">
+											<xs:annotation>
+												<xs:documentation>Used for NCTS</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="IM4">
+											<xs:annotation>
+												<xs:documentation>Used for DSI</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="DIN">
+											<xs:annotation>
+												<xs:documentation>Used for DomProc</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="DEN">
+											<xs:annotation>
+												<xs:documentation>Used for DomProc</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="ICT">
+											<xs:annotation>
+												<xs:documentation>Used for Intra-Community Transaction</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="FWV">
+											<xs:annotation>
+												<xs:documentation>Used for Fiat wegvoering</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="IM7">
+											<xs:annotation>
+												<xs:documentation>Used for storage longer than 45 days at terminal</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="PIE">
+											<xs:annotation>
+												<xs:documentation>Used for IMA regeling 71.00 voor vervoer</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="NAR">
+											<xs:annotation>
+												<xs:documentation>Used for Militaire zendingen</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="ENL">
+											<xs:annotation>
+												<xs:documentation>Used for ETT transport</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="NonEmptyStringType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LabelType">
+		<xs:restriction base="NonEmptyStringType">
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NumberType">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:fractionDigits value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

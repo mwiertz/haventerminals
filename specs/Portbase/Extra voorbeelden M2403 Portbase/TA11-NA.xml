@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcsDocument xmlns="http://www.portbase.com/schema">
+	<PcsDocumentHeader>
+		<headerVersion>1.0</headerVersion>
+		<senderIdentifier>NLRTMPCS</senderIdentifier>
+		<receiverIdentifier>700000001</receiverIdentifier>
+		<documentIdentification>
+			<instanceIdentifier>84515P</instanceIdentifier>
+			<creationDateTime>2020-11-04T10:12:40</creationDateTime>
+		</documentIdentification>
+		<numberOfDocumentContents>1</numberOfDocumentContents>
+	</PcsDocumentHeader>
+	<PcsDocumentContent>
+		<contentHeader>
+			<contentType>Technical Acknowledgement</contentType>
+			<contentVersion>1.0</contentVersion>
+			<contentStandard>technicalacknowledgement.xsd</contentStandard>
+			<contentReference>84515P</contentReference>
+			<contentAction>response</contentAction>
+			<previousContentReference>202011041011</previousContentReference>
+		</contentHeader>
+		<contentBody>
+			<technicalResponse>
+				<responseTypeCode>NA</responseTypeCode>
+				<responseTypeReason>IMPORTDOCUMENT/TYPE LENGTH OF ELEMENT MAY NOT EXCEED 3. CURRENT LENGTH 4</responseTypeReason>
+			</technicalResponse>
+		</contentBody>
+	</PcsDocumentContent>
+</PcsDocument>

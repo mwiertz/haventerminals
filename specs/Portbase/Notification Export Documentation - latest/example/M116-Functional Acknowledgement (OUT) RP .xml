@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardBusinessDocument>
+   <StandardBusinessDocumentHeader>
+      <HeaderVersion>2.2</HeaderVersion>
+      <Sender>
+         <Identifier Authority="Portbase">NLRTMPCS</Identifier>
+         <ContactInformation>
+            <Contact>Service Desk</Contact>
+            <EmailAddress>servicedesk@portbase.com</EmailAddress>
+            <FaxNumber>+31-88-6252502</FaxNumber>
+            <TelephoneNumber>+31-88-6252525</TelephoneNumber>
+         </ContactInformation>
+      </Sender>
+      <Receiver>
+         <Identifier Authority="Portbase">#RECEIVER ID#</Identifier>
+      </Receiver>
+      <DocumentIdentification>
+         <Standard>standardBusinessDocument.xsd</Standard>
+         <TypeVersion>1.0</TypeVersion>
+         <InstanceIdentifier>#PCS MESS. REF.#</InstanceIdentifier>
+         <Type>Functional acknowledgement notification export shipment (out)</Type>
+         <CreationDateAndTime>2016-01-18T09:02:36.896+01:00</CreationDateAndTime>
+      </DocumentIdentification>
+   </StandardBusinessDocumentHeader>
+   <documentContent totalNumberOfContentBodies="1">
+      <contentHeader>
+         <contentType>Funct. ack ECS notification</contentType>
+         <contentVersion>1.0</contentVersion>
+         <contentStandard>ECS_functionalacknowledgement.xsd</contentStandard>
+         <contentReference>#CLIENT MESS. REF.#</contentReference>
+         <contentAction>original</contentAction>
+         <previousContentReference>#PREV.MESS.REF.CLIENT#</previousContentReference>
+      </contentHeader>
+      <contentBody>
+<functionalResponse>
+	<responseTypeCode>RP</responseTypeCode>
+	<errorInformation>
+		<errorCode>C21</errorCode>
+		<errorDescription>Export shipment #CONT. NR# already exists, reported by terminal</errorDescription>
+	</errorInformation>
+</functionalResponse>
+      </contentBody>
+   </documentContent>
+</StandardBusinessDocument>

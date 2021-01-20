@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nctsmsg>
+  <sender>
+    <main>SENDERID</main>
+    <type>NOR</type>
+  </sender>
+  <recipient>
+    <main>3199LD875</main>
+  </recipient>
+  <msgref>57663558Y</msgref>
+  <msgtype>1</msgtype>
+  <nctsdoc>
+    <mrnnumber>13NL563341109B6D22</mrnnumber>
+    <container>HJCU6003000</container>
+    <modality>9</modality>
+    <doctype>DEN</doctype>
+  </nctsdoc>
+  <nctsdoc>
+    <mrnnumber>13NL563341109B6D33</mrnnumber>
+    <container>HJCU6900001</container>
+    <modality>9</modality>
+    <doctype>DEN</doctype>
+  </nctsdoc>
+</nctsmsg>

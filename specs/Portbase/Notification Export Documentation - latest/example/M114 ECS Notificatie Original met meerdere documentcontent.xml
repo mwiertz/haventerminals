@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<StandardBusinessDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\StandardBusinessDocument.xsd">
+  <StandardBusinessDocumentHeader>
+    <HeaderVersion>2.2</HeaderVersion>
+    <Sender>
+      <Identifier Authority="Portbase">SENDERID</Identifier>
+      <ContactInformation>
+        <Contact>1300</Contact>
+        <ContactTypeIdentifier>SENDERID</ContactTypeIdentifier>
+      </ContactInformation>
+    </Sender>
+    <Receiver>
+      <Identifier Authority="Portbase">NLRTMPCS</Identifier>
+    </Receiver>
+    <DocumentIdentification>
+      <Standard>standardBusinessDocument.xsd</Standard>
+      <TypeVersion>1.0</TypeVersion>
+      <InstanceIdentifier>HUKL8889</InstanceIdentifier>
+      <Type>Export shipment notification XML (in)</Type>
+      <CreationDateAndTime>2012-10-02T09:28:48-01:00</CreationDateAndTime>
+    </DocumentIdentification>
+    <BusinessScope>
+      <Scope>
+        <Type>test</Type>
+      </Scope>
+    </BusinessScope>
+  </StandardBusinessDocumentHeader>
+  <documentContent totalNumberOfContentBodies="1">
+    <contentHeader>
+      <contentType>Export shipment notification</contentType>
+      <contentVersion>1.0</contentVersion>
+      <contentStandard>ECS_notificationexportshipment.xsd</contentStandard>
+      <contentReference>HKJL66661</contentReference>
+      <contentAction>original</contentAction>
+    </contentHeader>
+    <contentBody>
+      <exportShipment>
+        <customsDocument>
+          <documentType>EX</documentType>
+          <documentNumber>12NL190ABD247666E7</documentNumber>
+        </customsDocument>
+        <shipmentGrossWeight>25000</shipmentGrossWeight>
+        <weightUnit>KGM</weightUnit>
+        <equipment>
+          <equipmentNumber>PONU0355551</equipmentNumber>
+          <bookingReferenceNumber>KLOPTEST456</bookingReferenceNumber>
+          <equipmentGrossWeight>25000</equipmentGrossWeight>
+          <weightUnit>KGM</weightUnit>
+        </equipment>
+      </exportShipment>
+    </contentBody>
+   </documentContent>
+  <documentContent totalNumberOfContentBodies="1">
+    <contentHeader>
+      <contentType>Export shipment notification</contentType>
+      <contentVersion>1.0</contentVersion>
+      <contentStandard>ECS_notificationexportshipment.xsd</contentStandard>
+      <contentReference>YIUJH6666</contentReference>
+      <contentAction>original</contentAction>
+    </contentHeader>
+    <contentBody>
+      <exportShipment>
+        <customsDocument>
+          <documentType>EX</documentType>
+          <documentNumber>12NL190ABD247666E6</documentNumber>
+        </customsDocument>
+        <shipmentGrossWeight>25000</shipmentGrossWeight>
+        <weightUnit>KGM</weightUnit>
+        <equipment>
+          <equipmentNumber>PONU0358551</equipmentNumber>
+          <bookingReferenceNumber>RTFGTEST45556</bookingReferenceNumber>
+          <equipmentGrossWeight>25000</equipmentGrossWeight>
+          <weightUnit>KGM</weightUnit>
+        </equipment>
+      </exportShipment>
+    </contentBody>
+   </documentContent>   
+</StandardBusinessDocument>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcsDocument xmlns="http://www.portbase.com/schema">
+	<PcsDocumentHeader>
+		<headerVersion>1.0</headerVersion>
+		<senderIdentifier>MIDTERM1</senderIdentifier>
+		<receiverIdentifier>700000001</receiverIdentifier>
+		<documentIdentification>
+			<instanceIdentifier>84532</instanceIdentifier>
+			<creationDateTime>2020-11-04T10:29:06</creationDateTime>
+		</documentIdentification>
+		<numberOfDocumentContents>1</numberOfDocumentContents>
+	</PcsDocumentHeader>
+	<PcsDocumentContent>
+		<contentHeader>
+			<contentType>Import Document FA - XML (out)</contentType>
+			<contentVersion>1.0</contentVersion>
+			<contentStandard>importDocument_functional_acknowledgement_OUT_M2403.xsd</contentStandard>
+			<contentReference>84532</contentReference>
+			<contentAction>response</contentAction>
+			<previousContentReference>202011041028</previousContentReference>
+		</contentHeader>
+		<contentBody>
+			<importDocumentAcknowledgement>
+				<responseTypeCode>RP</responseTypeCode>
+				<responseTypeReason>
+					<code>D13</code>
+					<description>De terminal Terminal 1 ondersteunt geen shipment.</description>
+				</responseTypeReason>
+			</importDocumentAcknowledgement>
+		</contentBody>
+	</PcsDocumentContent>
+</PcsDocument>

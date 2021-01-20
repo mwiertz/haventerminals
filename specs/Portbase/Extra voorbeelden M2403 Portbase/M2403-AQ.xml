@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcsDocument xmlns="http://www.portbase.com/schema">
+	<PcsDocumentHeader>
+		<headerVersion>1.0</headerVersion>
+		<senderIdentifier>MIDTERM1</senderIdentifier>
+		<receiverIdentifier>700000001</receiverIdentifier>
+		<documentIdentification>
+			<instanceIdentifier>84518</instanceIdentifier>
+			<creationDateTime>2020-11-04T10:18:25</creationDateTime>
+		</documentIdentification>
+		<numberOfDocumentContents>1</numberOfDocumentContents>
+	</PcsDocumentHeader>
+	<PcsDocumentContent>
+		<contentHeader>
+			<contentType>Import Document FA - XML (out)</contentType>
+			<contentVersion>1.0</contentVersion>
+			<contentStandard>importDocument_functional_acknowledgement_OUT_M2403.xsd</contentStandard>
+			<contentReference>84518</contentReference>
+			<contentAction>response</contentAction>
+			<previousContentReference>202011041018</previousContentReference>
+		</contentHeader>
+		<contentBody>
+			<importDocumentAcknowledgement>
+				<responseTypeCode>AQ</responseTypeCode>
+			</importDocumentAcknowledgement>
+		</contentBody>
+	</PcsDocumentContent>
+</PcsDocument>

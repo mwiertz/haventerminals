@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardBusinessDocument>
+   <StandardBusinessDocumentHeader>
+      <HeaderVersion>2.2</HeaderVersion>
+      <Sender>
+         <Identifier Authority="Portbase">LEHNKLOG</Identifier>
+         <ContactInformation>
+            <Contact>Export department</Contact>
+            <EmailAddress>Export@lehnkering.nl</EmailAddress>
+            <Telephonenumber>01042883301</Telephonenumber>
+         </ContactInformation>
+      </Sender>
+      <Receiver>
+         <Identifier Authority="Portbase">NLRTMPCS</Identifier>
+      </Receiver>
+      <DocumentIdentification>
+         <Standard>standardBusinessDocument.xsd</Standard>
+         <TypeVersion>1.0</TypeVersion>
+         <InstanceIdentifier>TESTLEHKLOG1</InstanceIdentifier>
+         <Type>Export shipment notification XML (in)</Type>
+         <CreationDateAndTime>2012-01-18T09:33:40</CreationDateAndTime>
+      </DocumentIdentification>
+   </StandardBusinessDocumentHeader>
+   <documentContent totalNumberOfContentBodies="1">
+      <contentHeader>
+         <contentType>Export shipment notification</contentType>
+         <contentVersion>1.0</contentVersion>
+         <contentStandard>ECS_notificationexportshipment.xsd</contentStandard>
+         <contentReference>TESTLEHKLOG1</contentReference>
+         <contentAction>original</contentAction>
+      </contentHeader>
+      <contentBody>
+         <exportShipment>
+            <customsDocument>
+               <documentType>EX</documentType>
+               <documentNumber>APDE66545021315GUY</documentNumber>
+            </customsDocument>
+            <equipment>
+               <equipmentNumber>CBHU4444444</equipmentNumber>
+               <bookingReferenceNumber>XXXX4444444</bookingReferenceNumber>
+            </equipment>
+         </exportShipment>
+      </contentBody>
+   </documentContent>
+</StandardBusinessDocument>

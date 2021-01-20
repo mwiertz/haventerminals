@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<nctsmsg>
+  <sender>
+    <main>SENDERID</main>
+    <type>NOR</type>
+  </sender>
+  <recipient>
+    <main>3199LA050</main>
+  </recipient>
+  <msgref>MESREF</msgref>
+  <msgtype>1</msgtype>
+  <nctsdoc>
+    <mrnnumber>13NL56334110938991</mrnnumber>
+    <container>HJCU6960033</container>
+    <modality>3</modality>
+    <doctype>NT1</doctype>
+  </nctsdoc>
+</nctsmsg>

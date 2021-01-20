@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardBusinessDocument>
+   <StandardBusinessDocumentHeader>
+      <HeaderVersion>2.2</HeaderVersion>
+      <Sender>
+         <Identifier Authority="Portbase">NLRTMPCS</Identifier>
+         <ContactInformation>
+            <Contact>Service Desk</Contact>
+            <EmailAddress>servicedesk@portbase.com</EmailAddress>
+            <FaxNumber>+31-10-2522250</FaxNumber>
+            <TelephoneNumber>+31-10-2522222</TelephoneNumber>
+         </ContactInformation>
+      </Sender>
+      <Receiver>
+         <Identifier Authority="Portbase">RECEIVER ID</Identifier>
+      </Receiver>
+      <DocumentIdentification>
+         <Standard>standardBusinessDocument.xsd</Standard>
+         <TypeVersion>1.0</TypeVersion>
+         <InstanceIdentifier>MES REF 01</InstanceIdentifier>
+         <Type>Export shipment status message (out)</Type>
+         <CreationDateAndTime>2012-07-02T11:09:05.717+02:00</CreationDateAndTime>
+      </DocumentIdentification>
+   </StandardBusinessDocumentHeader>
+   <documentContent totalNumberOfContentBodies="1">
+      <contentHeader>
+         <contentType>Export shipment status</contentType>
+         <contentVersion>1.0</contentVersion>
+         <contentStandard>ECS_exportshipmentstatus.xsd</contentStandard>
+         <contentReference>MES REF 01</contentReference>
+         <contentAction>original</contentAction>
+      </contentHeader>
+      <contentBody>
+<exportShipment>
+	<customsDocument>
+		<documentType>EX</documentType>
+		<documentNumber>12NL120710_001TESTMRN0</documentNumber>
+	</customsDocument>
+	<equipment>
+		<equipmentNumber>CONT1234567</equipmentNumber>
+		<bookingReferenceNumber>BOOKINGNR002</bookingReferenceNumber>
+		<groupageIndicator>false</groupageIndicator>
+	</equipment>
+	<customsStatus>
+		<statusCode>2</statusCode>
+		<statusDescription>Status description</statusDescription>
+		<dateTime>2012-07-02T11:09:05.640+02:00</dateTime>
+	</customsStatus>
+</exportShipment>
+      </contentBody>
+   </documentContent>
+</StandardBusinessDocument>

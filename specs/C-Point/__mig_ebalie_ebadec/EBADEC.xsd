@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="urn:EBA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:EBA" elementFormDefault="qualified">
+	<xs:include schemaLocation="EbaCommon.xsd"/>
+	<xs:element name="EBADEC">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Header">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Sender" type="tns:SComPartner"/>
+							<xs:element name="Receiver" type="tns:SComPartner"/>
+							<xs:element name="MessageNo" type="tns:SMessageNo"/>
+							<xs:element name="PreviousMessageNo" type="tns:SPreviousMessageNo" minOccurs="0" maxOccurs="1"/>
+							<xs:element name="DateTimeStamp" type="xs:dateTime" minOccurs="1" maxOccurs="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Body">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TransactionCode" type="tns:STransactionCode"/>
+							<xs:element name="Container" minOccurs="0" maxOccurs="500">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Document" type="tns:SDocument" minOccurs="1" maxOccurs="255"/>
+										<xs:element name="BookingsReference" type="tns:SBookingsReference" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="Terminal" type="tns:STerminal" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="CarrierType" type="tns:SCarrierType" minOccurs="0" maxOccurs="1"/>
+									</xs:sequence>
+									<xs:attribute name="number" type="tns:SContainerNumber" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Vehicle" minOccurs="0" maxOccurs="255">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Document" type="tns:SDocument" minOccurs="1" maxOccurs="255"/>
+										<xs:element name="BookingsReference" type="tns:SBookingsReference" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="Terminal" type="tns:STerminal" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="CarrierType" type="tns:SCarrierType" minOccurs="0" maxOccurs="1"/>
+									</xs:sequence>
+									<xs:attribute name="number" type="tns:SVehicleNumber" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="type" type="tns:SBodyType" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="VersionMajor" type="xs:unsignedByte" use="required" fixed="1"/>
+			<xs:attribute name="VersionMinor" type="xs:unsignedByte" use="required" fixed="0"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

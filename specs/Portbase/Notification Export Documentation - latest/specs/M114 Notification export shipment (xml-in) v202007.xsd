@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<!--
+****************************************************************************
+Ident: Portbase port community system
+Copyright: (c) Portbase bv All Rights Reserved.
+****************************************************************************
+Portbase bv              *  No part of this file may be reproduced or
+                         *  transmitted in any form or by any means,
+Seattleweg 7             *  electronic or mechanical, or otherwise,
+3195 ND Rotterdam        *  without prior written permission of the
+The Netherlands          *  copyright holder.
+****************************************************************************
+Author: R. van der Hoeven
+Email: r.vander.hoeven@portbase.com
+$Id$ 
+-->
+<!--
+Date		Version		Author				Changelog
+05-01-2015	1.0			r.vander.hoeven		Initial version
+26-02-2015	1.1			r.vander.hoeven		Documentation in fields StandardBusinessDocument/StandardBusinessDocumentHeader/Sender/Identifier and Receiver/Identifier were reversed.
+07-01-2019	201901		t.de.groot			Message updated for non-container equipments for ferry transport (equipment number max. 17 characters)	
+03-02-2020	202002		r.webbers			Added destinationTerminal for use with ETT documentTypes. Only relevant for Terminals with external terminal transport
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation>Description: Document structure for the M114 Notification export shipment (xml-in)</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="StandardBusinessDocument">
+		<xsd:annotation>
+			<xsd:documentation>interchange wrapper</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="StandardBusinessDocumentHeader"/>
+				<xsd:element ref="documentContent" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="exportShipment">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="customsDocument" minOccurs="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="documentType">
+								<xsd:annotation>
+									<xsd:documentation>The customs document type, coded.</xsd:documentation>
+									<xsd:documentation>Causes error B39 in Functional acknowledgment (M116) when document type is invalid.</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="5"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="documentNumber">
+								<xsd:annotation>
+									<xsd:documentation>The unique customs document number.</xsd:documentation>
+									<xsd:documentation>Causes error C39 in Functional acknowledgment (M116) when an invalid document number (MRN) is used.</xsd:documentation>
+									<xsd:documentation>Causes error D09 in Functional acknowledgment when an invalid MRN in combination with the Document Type is used (Country specific MRN /Doctype validation)</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="27"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="notifyPartyEmail" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>The e-mail address of the notify party of the export shipment.</xsd:documentation>
+						<xsd:documentation>Causes error C04 in Functional acknowledgment (M116) when e-mail address format is invalid.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:maxLength value="50"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="shipmentGrossWeight" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>The gross weight of the total export shipment.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:decimal">
+							<xsd:totalDigits value="7"/>
+							<xsd:minExclusive value="0"/>
+							<xsd:fractionDigits value="3"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="weightUnit" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>The weight unit, coded.</xsd:documentation>
+						<xsd:documentation>In case ‘shipment gross weight’ is filled, required.</xsd:documentation>
+						<xsd:documentation>Causes error C08 in Functional acknowledgment (M116) when weight unit is invalid.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="KGM"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="destinationTerminal" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>The terminal that receives the equipments on the shipment in case of ETT, coded. Only to be used by terminals.</xsd:documentation>
+						<xsd:documentation>Causes error C09 in Functional acknowledgement (M116) when destination terminal is invalid</xsd:documentation>
+					</xsd:annotation>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:maxLength value="100"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="equipment" minOccurs="0" maxOccurs="300">
+					<xsd:annotation>
+						<xsd:documentation>The transport equipment that carries – a part of – the export shipment.</xsd:documentation>
+						<xsd:documentation>In case of an ‘original’ or ‘replace’ message at least one transport equipment is mandatory; in case of an ‘deletion’ message no transport equipment is mandatory.</xsd:documentation>
+						<xsd:documentation>In case of a ‘replace’ message all the transport equipments of the shipment have to be mentioned again.</xsd:documentation>
+						<xsd:documentation>Causes error C05 in Functional acknowledgment (M116) when equipment not available.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="equipmentNumber">
+								<xsd:annotation>
+									<xsd:documentation>Unique number of the transport equipment of the export shipment.</xsd:documentation>
+									<xsd:documentation>Causes error C22 in Functional acknowledgment (M116) when equipment number exists more than one time for an export shipment.</xsd:documentation>
+									<xsd:documentation>Causes error C91 in Functional acknowledgment (M116) when values are dashes, spaces, non-alphabetical capital letters or non-numerical,</xsd:documentation>
+									<xsd:documentation>Causes error C91 in Functional acknowledgment (M116) when values coupled to 'non-ferry bookingnumbers' exceeds the maximum number of characters allowed (11 characters)</xsd:documentation>
+									<xsd:documentation>Note: Only numbers and alphabetical capital letters, without any spaces and dashes, are allowed.</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="17"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="bookingReferenceNumber">
+								<xsd:annotation>
+									<xsd:documentation>The booking reference number of the transport equipment for the export shipment.</xsd:documentation>
+									<xsd:documentation>Note: in case of being not available an error will already occur in the mapping validation and Technical acknowledgment (TA07) will be sent because of missing mandatory information.</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="35"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="equipmentGrossWeight" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>The gross weight of the goods in the transport equipment for the export shipment.</xsd:documentation>
+									<xsd:documentation>Note: 8 numbers including 3 decimals are allowed. The decimals are not for use and are cut-off within processing.</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:decimal">
+										<xsd:totalDigits value="11"/>
+										<xsd:fractionDigits value="3"/>
+										<xsd:minExclusive value="0"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="weightUnit" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>The weight unit, coded.</xsd:documentation>
+									<xsd:documentation>In case 'equipment gross weight' is filled, required.</xsd:documentation>
+									<xsd:documentation>Causes error C07 in Functional acknowledgment (M116) when weight unit is invalid.</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:enumeration value="KGM"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="StandardBusinessDocumentHeader" type="StandardBusinessDocumentHeader">
+		<xsd:annotation>
+			<xsd:documentation>start header information</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="StandardBusinessDocumentHeader">
+		<xsd:sequence>
+			<xsd:element name="HeaderVersion" fixed="2.2">
+				<xsd:annotation>
+					<xsd:documentation>Header Version 2.2</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Sender" type="Partner">
+				<xsd:annotation>
+					<xsd:documentation>ID given by Portbase to identify the company</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Receiver" type="Partner">
+				<xsd:annotation>
+					<xsd:documentation>identifier is fixed value = NLRTMPCS</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="DocumentIdentification" type="DocumentIdentification"/>
+			<xsd:element name="Manifest" type="Manifest" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>For future use</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="BusinessScope" type="BusinessScope" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>used for test</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Partner">
+		<xsd:sequence>
+			<xsd:element name="Identifier" type="PartnerIdentification">
+				<xsd:annotation>
+					<xsd:documentation>Descriptor with information to identify the sending party.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="ContactInformation" type="ContactInformation" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Information about the contact for this document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="PartnerIdentification">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="Authority" use="required" fixed="Portbase">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:maxLength value="35"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="ContactInformation" abstract="false">
+		<xsd:sequence>
+			<xsd:element name="Contact" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>standard value is Service Desk</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="35"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="EmailAddress" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Standaard e-mail address form our Portbase Servicedesk</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="50"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="FaxNumber" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Standard fax number from our ServiceDesk</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="35"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="TelephoneNumber" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Standard phone number from our ServiceDesk</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="35"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="ContactTypeIdentifier" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Role of the contact in this business process</xsd:documentation>
+					<xsd:documentation>Not Used</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="35"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="DocumentIdentification">
+		<xsd:sequence>
+			<xsd:element name="Standard" type="xsd:string" fixed="standardBusinessDocument.xsd"/>
+			<xsd:element name="TypeVersion" default="1.0">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="35"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="InstanceIdentifier">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="40"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="Type" type="xsd:string" fixed="Export shipment notification XML (in)"/>
+			<xsd:element name="MultipleType" type="xsd:boolean" default="0" minOccurs="0"/>
+			<xsd:element name="CreationDateAndTime" type="xsd:dateTime">
+				<xsd:annotation>
+					<xsd:documentation>Descriptor which contains date and time of SBDH/document creation.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Manifest">
+		<xsd:sequence>
+			<xsd:element name="NumberOfItems" type="xsd:integer"/>
+			<xsd:element name="ManifestItem" type="ManifestItem" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ManifestItem">
+		<xsd:sequence>
+			<xsd:element name="MimeTypeQualifierCode" type="MimeTypeQualifier"/>
+			<xsd:element name="UniformResourceIdentifier" type="xsd:anyURI"/>
+			<xsd:element name="Description" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="LanguageCode" type="Language" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="MimeTypeQualifier">
+		<xsd:annotation>
+			<xsd:documentation>The MIME type as defined by IANA. Please refer to http://www.iana.org/assignments/media-types/ for a list of types.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="Language">
+		<xsd:annotation>
+			<xsd:documentation>ISO 639-2; 1998 representation of Language name. Refer to http://www.loc.gov/standards/iso639-2/iso639jac.html to get the latest version of the standard.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:complexType name="BusinessScope">
+		<xsd:sequence>
+			<xsd:element name="Scope" type="Scope" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Scope">
+		<xsd:sequence>
+			<xsd:group ref="ScopeAttributes"/>
+			<xsd:element ref="ScopeInformation" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:group name="ScopeAttributes">
+		<xsd:sequence>
+			<xsd:element name="Type">
+				<xsd:annotation>
+					<xsd:documentation>test indicator</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="test"/>
+						<xsd:enumeration value="production"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="InstanceIdentifier" type="xsd:string"/>
+			<xsd:element name="Identifier" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:element name="ScopeInformation" type="xs:anyType" abstract="true"/>
+	<xsd:element name="CorrelationInformation" type="CorrelationInformation" substitutionGroup="ScopeInformation"/>
+	<xsd:complexType name="CorrelationInformation">
+		<xsd:sequence>
+			<xsd:element name="RequestingDocumentCreationDateTime" type="xsd:dateTime" minOccurs="0"/>
+			<xsd:element name="RequestingDocumentInstanceIdentifier" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ExpectedResponseDateTime" type="xsd:dateTime" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="BusinessService" type="BusinessService" substitutionGroup="ScopeInformation"/>
+	<xsd:complexType name="BusinessService">
+		<xsd:sequence>
+			<xsd:element name="BusinessServiceName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ServiceTransaction" type="ServiceTransaction" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ServiceTransaction">
+		<xsd:attribute name="TypeOf" type="TypeOfServiceTransaction" use="optional"/>
+		<xsd:attribute name="IsNonRepudiationRequired" type="xsd:string"/>
+		<xsd:attribute name="IsAuthenticationRequired" type="xsd:string"/>
+		<xsd:attribute name="TimeToPerform" type="xsd:string"/>
+		<xsd:attribute name="TimeToAcknowldedgeReceipt" type="xsd:string"/>
+		<xsd:attribute name="TimeToAcknowldedgeAcceptance" type="xsd:string"/>
+	</xsd:complexType>
+	<xsd:simpleType name="TypeOfServiceTransaction">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="RequestingServiceTransaction"/>
+			<xsd:enumeration value="RespondingServiceTransaction"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="documentContent" type="documentContent"/>
+	<xsd:complexType name="documentContent">
+		<xsd:sequence>
+			<xsd:element name="contentHeader" type="contentHeader"/>
+			<xsd:element name="contentBody">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element ref="exportShipment">
+							<xsd:annotation>
+								<xsd:documentation>Start of the Customs document.</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="totalNumberOfContentBodies" type="xsd:integer" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="contentHeader">
+		<xsd:sequence>
+			<xsd:element name="contentType" type="xsd:string" fixed="Export shipment notification"/>
+			<xsd:element name="contentVersion" type="xsd:string"/>
+			<xsd:element name="contentStandard" type="xsd:string" fixed="ECS_notificationexportshipment.xsd">
+				<xsd:annotation>
+					<xsd:documentation>link to the XSD scheme of the content on the Port infolink site.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="contentReference" type="xsd:string"/>
+			<xsd:element name="contentAction" fixed="original">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="original"/>
+						<xsd:enumeration value="replace"/>
+						<xsd:enumeration value="deletion"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="previousContentReference" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>only used when action not equal to original</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

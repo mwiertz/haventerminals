@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Monique (Port Infolink B.V.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portbase.com/schema" targetNamespace="http://www.portbase.com/schema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="PcsDocument">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PcsDocumentHeader"/>
+				<xs:element ref="PcsDocumentContent"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PcsDocumentHeader">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="headerVersion" type="xs:decimal" fixed="1.0">
+					<xs:annotation>
+						<xs:documentation>Version number of the PcsDocumentHeader (not the same as the contentVersion of the PcsDocumentContent).</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="senderIdentifier" fixed="NLRTMPCS">
+					<xs:annotation>
+						<xs:documentation>Information to identify the sending party that has created this PcsDocument.</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string"/>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="receiverIdentifier">
+					<xs:annotation>
+						<xs:documentation>Information to identify the receiving party that receives this PcsDocument.
+
+The 'short name' of the party as defined on the PCS.</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="25"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="documentIdentification">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="instanceIdentifier">
+								<xs:annotation>
+									<xs:documentation>Contains information which uniquely identifies this instance of the PcsDocument between the sender and the receiver.
+
+To be assigned by the document sender.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="35"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="creationDateTime">
+								<xs:annotation>
+									<xs:documentation>Contains date and time of PcsDocument creation.
+
+To be set by document sender.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:dateTime"/>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="numberOfDocumentContents" type="xs:positiveInteger" fixed="1">
+					<xs:annotation>
+						<xs:documentation>Indicates the number of PcsDocumentContents sent in the PcsDocument.
+
+The number of document contents is always “1”.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PcsDocumentContent">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="contentHeader">
+					<xs:annotation>
+						<xs:documentation>Start of the header information for the body.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="contentType" type="xs:string" fixed="Technical Acknowledgement">
+								<xs:annotation>
+									<xs:documentation>Identification of the content type.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="contentVersion" type="xs:decimal" fixed="1.0">
+								<xs:annotation>
+									<xs:documentation>Contains version number of the document content.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="contentStandard" type="xs:string" fixed="technicalacknowledgement.xsd">
+								<xs:annotation>
+									<xs:documentation>Reference to the XSD describing the document structure.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="contentReference">
+								<xs:annotation>
+									<xs:documentation>Reference uniquely identifying the document content.
+
+To be assigned by the document sender.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="35"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="contentAction" type="xs:string" fixed="response">
+								<xs:annotation>
+									<xs:documentation>Function of the PcsDocumentContent.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="previousContentReference">
+								<xs:annotation>
+									<xs:documentation>Reference identifying the document (content) that is being acknowledged.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="35"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="contentBody">
+					<xs:annotation>
+						<xs:documentation>Start of the content.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="technicalResponse">
+								<xs:annotation>
+									<xs:documentation>With this message the receipt of an XML message is acknowledged by the PCS.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="responseTypeCode">
+											<xs:annotation>
+												<xs:documentation>The type of acknowledgement, coded.
+
+'AK' Acknowledged
+'NA' Not acknowledged</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="AK"/>
+													<xs:enumeration value="NA"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="responseTypeReason" maxOccurs="99" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>The reason of the (not) acknowledgement.</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="200"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

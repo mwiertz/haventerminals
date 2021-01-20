@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+****************************************************************************
+Ident: Portbase port community system
+Copyright: (c) 2019 Portbase bv All Rights Reserved.
+****************************************************************************
+Portbase bv              *  No part of this file may be reproduced or
+                         *  transmitted in any form or by any means,
+Blaak 16                 *  electronic or mechanical, or otherwise,
+3011 TA Rotterdam        *  without prior written permission of the
+The Netherlands          *  copyright holder.
+****************************************************************************
+Author: Interface specialisten
+Email: interface.specialist@portbase.com
+$Id: importDocument_Functional_Acknowledgement_Out_M2403.xsd 202059 2019-01-02 12:00:00Z $ 
+-->
+<!--
+Date		Version		Author			Changelog
+02-01-2019	1.0			p.van.trigt			Initial version
+14-01-2019	1.1			p.van.trigt			code '000' added for responseTypeReason/code in case responseTypeCode = 'RE'
+21-01-2019	1.2			p.van.trigt			Additional documentation elements added to clarify senderIdentifier and receiverIdentifier
+-->
+<xs:schema targetNamespace="http://www.portbase.com/schema" xmlns:pb="http://www.portbase.com/schema" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0" xmlns:xsd="undefined">
+	<xs:annotation>
+		<xs:documentation>Description: Document structure for the Import Document Functional Acknowledgement M2403</xs:documentation>
+		<xs:documentation>Important: In case of not used conditional or optional tags empty tags must be omitted.</xs:documentation>
+		<xs:documentation>Remarks: In many cases, optionality for elements is governed / specified by the default value: if not specified, minOccurs="1" and maxOccurs="1" is assumed (which is the default).</xs:documentation>
+		<xs:documentation>The same is true for attributes: if they are not required, no "use=required" is specified, so it is optional by default.</xs:documentation>
+	</xs:annotation>
+	<xs:element name="pcsDocument">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pcsDocumentHeader">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="headerVersion" type="xs:decimal" fixed="1.0">
+								<xs:annotation>
+									<xs:documentation>Version number of the pcsDocumentHeader (not the same as the contentVersion of the pcsDocumentContent).</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="senderIdentifier">
+								<xs:annotation>
+									<xs:documentation>Information to identify the (functional) sending party that has created this PcsDocument.</xs:documentation>
+									<xs:documentation>Description: Receiving party mentioned in “Import Document - XML (in)”.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string"/>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="receiverIdentifier">
+								<xs:annotation>
+									<xs:documentation>Information to identify the (functional) receiving party that receives this PcsDocument.</xs:documentation>
+									<xs:documentation>Description: Sending party mentioned in “Import Document - XML (in)”.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+										<xs:maxLength value="25"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="documentIdentification">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="instanceIdentifier" type="pb:LabelType">
+											<xs:annotation>
+												<xs:documentation>Contains information which uniquely identifies this instance of the pcsDocument between the sender and the receiver. To be assigned by the document sender.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="creationDateTime">
+											<xs:annotation>
+												<xs:documentation>Contains date and time of pcsDocument creation. To be set by document sender.</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:dateTime"/>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="numberOfDocumentContents" type="xs:positiveInteger" fixed="1">
+								<xs:annotation>
+									<xs:documentation>Indicates the number of pcsDocumentContents sent in the pcsDocument. The number of document contents is always “1”.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="pcsDocumentContent">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="contentHeader">
+								<xs:annotation>
+									<xs:documentation>Start of the header information for the body.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="contentType" type="xs:string" fixed="Import Document FA - XML (out)">
+											<xs:annotation>
+												<xs:documentation>Identification of the content type.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="contentVersion" type="xs:decimal" fixed="1.0">
+											<xs:annotation>
+												<xs:documentation>Contains version number of the document content.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="contentStandard" type="xs:string" fixed="importDocument_functional_acknowledgement_OUT_M2403.xsd">
+											<xs:annotation>
+												<xs:documentation>Reference to the xsd describing the document structure.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="contentReference" type="pb:LabelType">
+											<xs:annotation>
+												<xs:documentation>Reference uniquely identifying the document content. To be assigned by the document sender.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="contentAction">
+											<xs:annotation>
+												<xs:documentation>Description: Function of the pcsDocumentContent.</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="response"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="previousContentReference" type="pb:LabelType">
+											<xs:annotation>
+												<xs:documentation>Content reference number of the message to which this message is referring to.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="contentBody">
+								<xs:annotation>
+									<xs:documentation>Description: Start of the content.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="pb:importDocumentAcknowledgement"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="importDocumentAcknowledgement">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="responseTypeCode">
+					<xs:simpleType>
+						<xs:annotation>
+							<xs:documentation>Description: Coded indication of the acknowledgement</xs:documentation>
+						</xs:annotation>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="AQ">
+								<xs:annotation>
+									<xs:documentation>Description: Accepted for processing</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="RP">
+								<xs:annotation>
+									<xs:documentation>Description: Rejected before processing</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="AP">
+								<xs:annotation>
+									<xs:documentation>Description: Approved by terminal</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="RE">
+								<xs:annotation>
+									<xs:documentation>Description: Rejected by terminal</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="responseTypeReason" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Description: The reason of the rejection.</xs:documentation>
+						<xs:documentation>Only used in case the responseTypeCode = RP, RE</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="code">
+								<xs:annotation>
+									<xs:documentation>Description: Coded indication of the rejection</xs:documentation>
+									<xs:documentation>Remarks: The list of possible values for “code” can be changed in the future. Make sure to be prepared for this.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="pb:NonEmptyStringType">
+										<xs:enumeration value="D02">
+											<xs:annotation>
+												<xs:documentation>Description: U niet bent geautoriseerd voor het indienen van een Melding import documentatie van het type [%documentType] bij [%Terminal].</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="D05">
+											<xs:annotation>
+												<xs:documentation>Description: De lengte van het documentnummer [%documentNumber] is niet correct.</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="D06">
+											<xs:annotation>
+												<xs:documentation>Description: De opbouw van het documentnummer [%documentNumber] is niet correct.</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="D07">
+											<xs:annotation>
+												<xs:documentation>Description: Documentnummer [%documentNumber] bevat een foutief controlecijfer.</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="D10">
+											<xs:annotation>
+												<xs:documentation>Description: Containernummer [%containerNumber] mag hooguit één keer voorkomen op documentnummer [%documentNumber].</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="D12">
+											<xs:annotation>
+												<xs:documentation>Description: Het aangeven van minimaal één containernummer of een zendingsnummer op documentnummer [%documentNumber] is verplicht.</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="D13">
+											<xs:annotation>
+												<xs:documentation>Description: De terminal [%Terminal] ondersteunt geen [%equipments/shipments]</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="D97">
+											<xs:annotation>
+												<xs:documentation>Description: Documentnummer [%documentNumber] is niet correct in combinatie met documenttype [%documentType].</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="E00">
+											<xs:annotation>
+												<xs:documentation>Description: Jaartal in Documentnummer [%documentNumber] is niet correct.</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+										<xs:enumeration value="000">
+											<xs:annotation>
+												<xs:documentation>Description: responseTypeReason/description from M2402 is used</xs:documentation>
+												<xs:documentation>Remarks: code “000” is a generic code in case the terminal rejects a notification. Please use “description” to determine the reject reason.</xs:documentation>
+											</xs:annotation>
+										</xs:enumeration>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="description">
+								<xs:annotation>
+									<xs:documentation>Description: Description specifying the rejection.</xs:documentation>
+									<xs:documentation>Remarks: The text as annotated in the related rejectionCode with the placeholder '[%code]' substituted with the reference to the invalidated code.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+										<xs:maxLength value="255"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="NonEmptyStringType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LabelType">
+		<xs:restriction base="pb:NonEmptyStringType">
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcsDocument xmlns="http://www.portbase.com/schema">
+	<PcsDocumentHeader>
+		<headerVersion>1.0</headerVersion>
+		<senderIdentifier>MIDTERM1</senderIdentifier>
+		<receiverIdentifier>700000001</receiverIdentifier>
+		<documentIdentification>
+			<instanceIdentifier>84530</instanceIdentifier>
+			<creationDateTime>2020-11-04T10:27:10</creationDateTime>
+		</documentIdentification>
+		<numberOfDocumentContents>1</numberOfDocumentContents>
+	</PcsDocumentHeader>
+	<PcsDocumentContent>
+		<contentHeader>
+			<contentType>Import Document FA - XML (out)</contentType>
+			<contentVersion>1.0</contentVersion>
+			<contentStandard>importDocument_functional_acknowledgement_OUT_M2403.xsd</contentStandard>
+			<contentReference>84530</contentReference>
+			<contentAction>response</contentAction>
+			<previousContentReference>202011041026</previousContentReference>
+		</contentHeader>
+		<contentBody>
+			<importDocumentAcknowledgement>
+				<responseTypeCode>RP</responseTypeCode>
+				<responseTypeReason>
+					<code>E00</code>
+					<description>Jaartal in documentnummer 18NL10000000002492 is niet correct.</description>
+				</responseTypeReason>
+			</importDocumentAcknowledgement>
+		</contentBody>
+	</PcsDocumentContent>
+</PcsDocument>

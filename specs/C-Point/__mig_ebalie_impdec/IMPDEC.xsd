@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="urn:EBAIMP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:EBAIMP" elementFormDefault="qualified">
+    <xs:include schemaLocation="EbaImpCommon.xsd"/>
+    <xs:element name="IMPDEC">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Header">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Sender" type="tns:SComPartner" />
+                            <xs:element name="Receiver" type="tns:SComPartner" />
+                            <xs:element name="MessageNo" type="tns:SMessageNo" />
+                            <xs:element minOccurs="0" maxOccurs="1" name="PreviousMessageNo" type="tns:SPreviousMessageNo" />
+                            <xs:element minOccurs="1" maxOccurs="1" name="DateTimeStamp" type="xs:dateTime" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Body">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TransactionCode" type="tns:STransactionCode" />
+                            <xs:element minOccurs="0" maxOccurs="1" name="Document">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" maxOccurs="1" name="Terminal" type="tns:STerminal" />
+                                        <xs:element minOccurs="1" maxOccurs="1" name="Number" type="tns:SDocumentNumber" />
+                                        <xs:element minOccurs="1" maxOccurs="1" name="CustomsProcedure" type="tns:SCustomsProcedure" />
+                                        <xs:element minOccurs="1" maxOccurs="1" name="CustomsStatus" type="tns:SCustomsStatus" />
+                                    </xs:sequence>
+                                    <xs:attribute name="type" type="tns:SDocumentType" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="Cargos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" maxOccurs="unbounded" name="Cargo" type="tns:SCargoNumber" />
+                                    </xs:sequence>
+                                    <xs:attribute name="type" type="tns:SCargoType" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="Units">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" maxOccurs="unbounded" name="Unit" type="tns:SUnitType" />
+                                    </xs:sequence>
+                                    <xs:attribute name="type" type="tns:SUnitTypeQualifier" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="Attachment">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" maxOccurs="1" name="Name" type="tns:SAttachmentName" />
+                                        <xs:element minOccurs="0" maxOccurs="1" name="ValidityDate" type="xs:date" />
+                                        <xs:element minOccurs="1" maxOccurs="1" name="BinaryAttachmentData" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="1" name="VersionMajor" type="xs:unsignedByte" use="required" />
+            <xs:attribute fixed="0" name="VersionMinor" type="xs:unsignedByte" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

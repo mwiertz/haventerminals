@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pcsDocument xmlns="http://www.portbase.com/schema">
+	<pcsDocumentHeader>
+		<headerVersion>1.0</headerVersion>
+		<senderIdentifier>Sender ID</senderIdentifier>
+		<receiverIdentifier>TERM1LADING</receiverIdentifier>
+		<documentIdentification>
+			<instanceIdentifier>343643646466</instanceIdentifier>
+			<creationDateTime>2019-01-28T11:02:08</creationDateTime>
+		</documentIdentification>
+		<numberOfDocumentContents>1</numberOfDocumentContents>
+	</pcsDocumentHeader>
+	<pcsDocumentContent>
+		<contentHeader>
+			<contentType>Import Document - XML (in)</contentType>
+			<contentVersion>1.0</contentVersion>
+			<contentStandard>importDocument_In_M2400.xsd</contentStandard>
+			<contentReference>343643646466</contentReference>
+			<contentAction>original</contentAction>
+		</contentHeader>
+		<contentBody>
+			<importDocument>
+				<number>RE132</number>
+				<type>FWV</type>
+				<transportMode>1</transportMode>
+				<equipmentList>
+					<equipment>
+						<id>12345678933</id>
+						<type>CN</type>
+					</equipment>
+					<equipment>
+						<id>12345678944</id>
+						<type>CN</type>
+					</equipment>
+				</equipmentList>
+			</importDocument>
+		</contentBody>
+	</pcsDocumentContent>
+</pcsDocument>

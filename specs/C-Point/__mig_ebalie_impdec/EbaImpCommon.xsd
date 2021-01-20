@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="urn:EBAIMP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:EBAIMP" elementFormDefault="qualified">
+    <xs:complexType name="SComPartner">
+        <xs:simpleContent>
+            <xs:extension base="tns:SPartner">
+                <xs:attribute name="codeType" type="tns:SComCode" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="SPartner">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SComCode">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="EORI"/>
+            <xs:enumeration value="DUNS"/>
+            <xs:enumeration value="APCS"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SMessageNo">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="10"/>
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SPreviousMessageNo">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="STransactionCode">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CREATE"/>
+            <xs:enumeration value="REPLACE"/>
+            <xs:enumeration value="CANCEL"/>
+            <xs:enumeration value="UNKNOWN"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="STerminal">
+        <xs:restriction base="xs:string">
+            <xs:length value="15"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SDocumentNumber">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="18"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SCustomsProcedure">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SCustomsStatus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="BLOCKED"/>
+            <xs:enumeration value="RELEASED"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SDocumentType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="MRN"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SCargoNumber">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="17"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="SUnitType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="bookingsReference" type="tns:SUnitBookingsreference" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="SUnitBookingsreference">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="23"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SCargoType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="RORO"/>
+            <xs:enumeration value="CONT"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SUnitTypeQualifier">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FRRY"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SAttachmentName">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5"/>
+            <xs:maxLength value="35"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SDocAvailable">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Y"/>
+            <xs:enumeration value="N"/>
+        </xs:restriction>
+    </xs:simpleType>  
+</xs:schema>

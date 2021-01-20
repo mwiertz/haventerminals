@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+****************************************************************************
+Ident: Portbase port community system
+Copyright: (c) 2019 Portbase bv All Rights Reserved.
+****************************************************************************
+Portbase bv              *  No part of this file may be reproduced or
+                         *  transmitted in any form or by any means,
+Blaak 16                 *  electronic or mechanical, or otherwise,
+3011 TA Rotterdam        *  without prior written permission of the
+The Netherlands          *  copyright holder.
+****************************************************************************
+Author: Interface specialisten
+Email: interface.specialist@portbase.com
+$Id: importDocument_In_M2400.xsd 202059 2019-01-02 12:00:00Z $ 
+-->
+<!--
+Date		Version		Author			Changelog
+02-01-2019	1.0			p.van.trigt			Initial version
+09-05-2019	1.1			p.van.trigt			Length number of importDocument changed from 27 to 35 characters
+01-10-2019	1.2			p.van.trigt			BXI code added for element type
+20-11-2019	1.3			p.van.trigt			Support for replace messages
+-->
+<xs:schema targetNamespace="http://www.portbase.com/schema" xmlns:pb="http://www.portbase.com/schema" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0" xmlns:xsd="undefined">
+	<xs:annotation>
+		<xs:documentation>Description: Document structure for the Import Document M2400</xs:documentation>
+		<xs:documentation>Important: In case of not used conditional or optional tags empty tags must be omitted.</xs:documentation>
+		<xs:documentation>Remarks: In many cases, optionality for elements is governed / specified by the default value: if not specified, minOccurs="1" and maxOccurs="1" is assumed (which is the default).</xs:documentation>
+		<xs:documentation>The same is true for attributes: if they are not required, no "use=required" is specified, so it is optional by default.</xs:documentation>
+	</xs:annotation>
+	<xs:element name="pcsDocument">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pcsDocumentHeader">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="headerVersion" type="xs:decimal" fixed="1.0">
+								<xs:annotation>
+									<xs:documentation>Version number of the pcsDocumentHeader (not the same as the contentVersion of the pcsDocumentContent).</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="senderIdentifier">
+								<xs:annotation>
+									<xs:documentation>Information to identify the sending party that has created this pcsDocument.</xs:documentation>
+									<xs:documentation>Description: Customs number (= EORI number) or EAN number.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string"/>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="receiverIdentifier">
+								<xs:annotation>
+									<xs:documentation>Information to identify the receiving party that receives this pcsDocument.</xs:documentation>
+									<xs:documentation>Description: Terminal.</xs:documentation>
+									<xs:documentation>Allowed value(s): The identifying Fenex location code of the party.</xs:documentation>
+									<xs:documentation>Remarks: Reports error D02 when the sender is not authorised to submit a notification of the document type specified to the terminal.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+										<xs:maxLength value="25"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="documentIdentification">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="instanceIdentifier" type="pb:LabelType">
+											<xs:annotation>
+												<xs:documentation>Contains information which uniquely identifies this instance of the pcsDocument between the sender and the receiver. To be assigned by the document sender.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="creationDateTime">
+											<xs:annotation>
+												<xs:documentation>Contains date and time of pcsDocument creation. To be set by document sender.</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:dateTime"/>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="numberOfDocumentContents" type="xs:positiveInteger" fixed="1">
+								<xs:annotation>
+									<xs:documentation>Indicates the number of pcsDocumentContents sent in the pcsDocument. The number of document contents is always “1”.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="pcsDocumentContent">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="contentHeader">
+								<xs:annotation>
+									<xs:documentation>Start of the header information for the body.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="contentType" type="xs:string" fixed="Import Document - XML (in)">
+											<xs:annotation>
+												<xs:documentation>Identification of the content type.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="contentVersion" type="xs:decimal" fixed="1.0">
+											<xs:annotation>
+												<xs:documentation>Contains version number of the document content.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="contentStandard" type="xs:string" fixed="importDocument_In_M2400.xsd">
+											<xs:annotation>
+												<xs:documentation>Reference to the xsd describing the document structure.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="contentReference" type="pb:LabelType">
+											<xs:annotation>
+												<xs:documentation>Reference uniquely identifying the document content. To be assigned by the document sender.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="contentAction">
+											<xs:annotation>
+												<xs:documentation>Description: Function of the pcsDocumentContent.</xs:documentation>
+												<xs:documentation>Remarks: At this stage only contentAction “original” is supported by PCS.</xs:documentation>
+												<xs:documentation>Remarks: contentAction “replace” can be added in the future. Make sure to be prepared for this.</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="original"/>
+													<xs:enumeration value="replace"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="previousContentReference" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Only appears in case the contentAction = “replace”</xs:documentation>
+												<xs:documentation>Reference identifying the original document to which this message refers.</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="pb:NonEmptyStringType">
+													<xs:maxLength value="35"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="contentBody">
+								<xs:annotation>
+									<xs:documentation>Start of the content.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="pb:importDocument">
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="importDocument">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="number">
+					<xs:annotation>
+						<xs:documentation>Description: Document number.</xs:documentation>
+						<xs:documentation>Remarks: Reports error D05 when the length of the document number is invalid.</xs:documentation>
+						<xs:documentation>Remarks: Reports error D06 when the format of the document number is invalid.</xs:documentation>
+						<xs:documentation>Remarks: Reports error D07 when the number's checkdigit of the document number is invalid.</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="pb:NonEmptyStringType">
+							<xs:maxLength value="35"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="type">
+					<xs:annotation>
+						<xs:documentation>Description: Document type of the indicated document number.
+						</xs:documentation>
+						<xs:documentation>Remarks: Reports error D02 when the sender is not authorised to submit a notification of the document type specified to the terminal.</xs:documentation>
+						<xs:documentation>Remarks: The list of possible values for “type” can be changed in the future. Make sure to be prepared for this.</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="pb:NonEmptyStringType">
+							<xs:maxLength value="3"/>
+							<xs:enumeration value="NT1">
+								<xs:annotation>
+									<xs:documentation>Used for NCTS</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="MRN">
+								<xs:annotation>
+									<xs:documentation>Used for NCTS</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="IM4">
+								<xs:annotation>
+									<xs:documentation>Used for DSI</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="DIN">
+								<xs:annotation>
+									<xs:documentation>Used for DomProc</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="DEN">
+								<xs:annotation>
+									<xs:documentation>Used for DomProc</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="ICT">
+								<xs:annotation>
+									<xs:documentation>Used for Intra-Community Transaction</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="FWV">
+								<xs:annotation>
+									<xs:documentation>Used for Fiat wegvoering</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="IM7">
+								<xs:annotation>
+									<xs:documentation>Used for storage longer than 45 days at terminal
+									</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="PIE">
+								<xs:annotation>
+									<xs:documentation>Used for IMA regeling 71.00 voor vervoer</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="NAR">
+								<xs:annotation>
+									<xs:documentation>Used for Militaire zendingen</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="ENL">
+								<xs:annotation>
+									<xs:documentation>Used for ETT transport</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="RNL">
+								<xs:annotation>
+									<xs:documentation>Used for ETT transport</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="BXI">
+								<xs:annotation>
+									<xs:documentation>Used for bonded transport in transit (T1) via the Dutch port</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="transportMode">
+					<xs:annotation>
+						<xs:documentation>Description: Continued modality.</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="pb:NumberType">
+							<xs:totalDigits value="1"/>
+							<xs:enumeration value="1">
+								<xs:annotation>
+									<xs:documentation>Sea ship</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="2">
+								<xs:annotation>
+									<xs:documentation>Rail</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="3">
+								<xs:annotation>
+									<xs:documentation>Road</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="8">
+								<xs:annotation>
+									<xs:documentation>Barge</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="9">
+								<xs:annotation>
+									<xs:documentation>Unknown</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="shipmentId">
+						<xs:annotation>
+							<xs:documentation>Description: Shipment number.</xs:documentation>
+							<xs:documentation>Remarks: Only applicable for Ferry terminals.</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="pb:NonEmptyStringType">
+								<xs:maxLength value="17"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="equipmentList">
+						<xs:annotation>
+							<xs:documentation>Description: List of equipments.</xs:documentation>
+							<xs:documentation>Remarks: Only applicable for Container terminals.</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="equipment" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="id">
+												<xs:annotation>
+													<xs:documentation>Description: Equipment number.</xs:documentation>
+													<xs:documentation>Remarks: Reports error D04 when the equipment number is missing.</xs:documentation>
+													<xs:documentation>Remarks: Reports error D10 when a duplicate equipment number is mentioned on the same import document.</xs:documentation>
+												</xs:annotation>
+												<xs:simpleType>
+													<xs:restriction base="pb:NonEmptyStringType">
+														<xs:maxLength value="17"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:element>
+											<xs:element name="type">
+												<xs:annotation>
+													<xs:documentation>Description: Code identifying type of equipment.</xs:documentation>
+													<xs:documentation>Remarks: At this stage only type “CN” is supported.</xs:documentation>
+													<xs:documentation>Remarks: The list of possible values for “type” can be changed in the future. Make sure to be prepared for this.</xs:documentation>
+												</xs:annotation>
+												<xs:simpleType>
+													<xs:restriction base="pb:NonEmptyStringType">
+														<xs:maxLength value="3"/>
+														<xs:enumeration value="CH">
+															<xs:annotation>
+																<xs:documentation>Used for Chassis (also for truck and
+                                                                    truck-trailer combination)
+																</xs:documentation>
+															</xs:annotation>
+														</xs:enumeration>
+														<xs:enumeration value="CN">
+															<xs:annotation>
+																<xs:documentation>Used for Container</xs:documentation>
+															</xs:annotation>
+														</xs:enumeration>
+														<xs:enumeration value="SW">
+															<xs:annotation>
+																<xs:documentation>Used for Swap body</xs:documentation>
+															</xs:annotation>
+														</xs:enumeration>
+														<xs:enumeration value="TE">
+															<xs:annotation>
+																<xs:documentation>Used for Trailer</xs:documentation>
+															</xs:annotation>
+														</xs:enumeration>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:element>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="NonEmptyStringType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NumberType">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:fractionDigits value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LabelType">
+		<xs:restriction base="pb:NonEmptyStringType">
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
